@@ -20,6 +20,7 @@ module.exports = {
 	},
 	buildOptions: {
 		/* ... */
+		baseUrl: '/iitbh-calendar/',
 	},
 	proxy: {
 		/* ... */
