@@ -16,6 +16,7 @@
     "@web/test-runner": "^0.10.0",
     "chai": "^4.2.0",
     "dayjs": "^1.9.8",
+    "exceljs": "^4.2.0",
     "ics": "^2.26.2",
     "simple-svelte-autocomplete": "^1.2.4",
     "snowpack": "^2.18.4"
