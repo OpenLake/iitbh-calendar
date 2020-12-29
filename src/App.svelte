@@ -63,4 +63,6 @@
 
 <button on:click={reset}>reset</button>
 
-<button on:click={downloadCalendar}>Download calendar</button>
+{#if selectedCourses.length > 0}
+  <button on:click={downloadCalendar}>Download calendar</button>
+{/if}
