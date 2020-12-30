@@ -52,6 +52,16 @@
 
 <button disabled={!selectedCourse} on:click={addCourse}>Add</button>
 
+{#if selectedCourse}
+  <pre>
+Slot: {selectedCourse.lecture}
+Link: <a
+      href={selectedCourse.link}>{selectedCourse.link}</a>
+Instructor: {selectedCourse.instructor}
+Credits: {selectedCourse.credits}
+</pre>
+{/if}
+
 <ul>
   {#each selectedCourses as course, idx}
     <li>
