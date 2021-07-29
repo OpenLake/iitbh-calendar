@@ -2,13 +2,14 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "deploy":"npm run build && node ./scripts/deploy.js",
+    "deploy": "npm run build && node ./scripts/deploy.js",
     "test": "web-test-runner \"src/**/*.test.js\""
   },
   "dependencies": {
     "svelte": "^3.24.0"
   },
   "devDependencies": {
+    "@native-elements/core": "^1.5.4",
     "@snowpack/plugin-dotenv": "^2.0.5",
     "@snowpack/plugin-svelte": "^3.4.0",
     "@snowpack/plugin-webpack": "^2.2.0",
