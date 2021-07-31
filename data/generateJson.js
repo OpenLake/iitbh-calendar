@@ -1,6 +1,8 @@
 const excel = require('exceljs');
 const fs = require('fs/promises');
 
+const START_ROW = 3;
+
 const workbook = new excel.Workbook();
 
 const getValue = val => {
@@ -16,17 +18,16 @@ const run = async () => {
 	const sheet = workbook.worksheets[0];
 
 	const table = sheet.getSheetValues().map(row => row.map(getValue));
-	const lastRow = sheet.rowCount;
 
 	const data = [];
 
-	for (let row = 4; row <= lastRow; row++) {
+	for (let row = START_ROW; table[row]; row++) {
 		data.push({
 			code: table[row][2],
 			name: table[row][3],
 			credits: table[row][4],
-			lecture: table[row][5],
-			link: table[row][7],
+			link: table[row][6],
+			lecture: table[row][7],
 			instructor: table[row][8],
 		});
 	}

@@ -45,6 +45,8 @@
 
 <h1>Calendar Generator</h1>
 
+<p>Add your courses to generate ICS calendar file</p>
+
 <AutoComplete
 	items={courses}
 	bind:selectedItem={selectedCourse}
