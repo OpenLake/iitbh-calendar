@@ -1,81 +1,62 @@
 <script>
-	import AutoComplete from 'simple-svelte-autocomplete';
-	import courseData from './data/courses.json';
-	import { makeCalendar } from './createCalendar';
+	import CourseSelector from './CourseSelector.svelte';
 
-	const courses = courseData
-		.filter(course => !['NA', 'TBA'].includes(course.lecture))
-		.map(course => ({
-			...course,
-			label: `${course.code} ${course.name}`,
-		}));
+	import { makeCalendar } from './lib/createCalendar';
+	import { download } from './lib/util';
+	import RotateCCWIcon from './assets/icons/rotate-ccw.svg';
 
-	let selectedCourse;
-	let selectedCourses = [];
+	let courses = [];
+	export const reset = () => (courses = []);
 
-	function addCourse() {
-		selectedCourses = [...selectedCourses, selectedCourse];
-		selectedCourse = '';
-	}
-	function deleteCourse(idx) {
-		selectedCourses = selectedCourses.filter((_, i) => i !== idx);
-	}
-	function reset() {
-		selectedCourse = '';
-		selectedCourses = [];
-	}
 	function downloadCalendar() {
-		const text = makeCalendar(selectedCourses);
-		const fileName = 'course-calendar.ics',
-			fileType = 'text/calendar';
-
-		const blob = new Blob([text], { type: fileType });
-
-		const a = document.createElement('a');
-		a.download = fileName;
-		a.href = URL.createObjectURL(blob);
-		a.dataset.downloadurl = [fileType, a.download, a.href].join(':');
-		a.style.display = 'none';
-		a.click();
-		setTimeout(function () {
-			URL.revokeObjectURL(a.href);
-		}, 10000);
+		download({
+			text: makeCalendar(courses),
+			filename: 'course-calendar.ics',
+			filetype: 'text/calendar',
+		});
 	}
 </script>
 
-<h1>Calendar Generator</h1>
+<main>
+	<h1>Calendar Generator</h1>
 
-<p>Add your courses to generate ICS calendar file</p>
+	<h2>Add your courses to generate ICS calendar file</h2>
 
-<AutoComplete
-	items={courses}
-	bind:selectedItem={selectedCourse}
-	labelFieldName="label"
-/>
+	<CourseSelector bind:courses />
 
-<button disabled={!selectedCourse} on:click={addCourse}>Add</button>
+	<div style="display: flex; justify-content: center; gap: 0.5rem;">
+		<button on:click={reset} class="outline"><RotateCCWIcon /> Reset</button>
 
-{#if selectedCourse}
-	<pre>
-Slot: {selectedCourse.lecture}
-Link: <a
-      href={selectedCourse.link}>{selectedCourse.link}</a>
-Instructor: {selectedCourse.instructor}
-Credits: {selectedCourse.credits}
-</pre>
-{/if}
+		<button
+			class="raised"
+			disabled={courses.length === 0}
+			on:click={downloadCalendar}
+		>
+			Download Calendar
+		</button>
+	</div>
+</main>
 
-<ul>
-	{#each selectedCourses as course, idx}
-		<li>
-			{course.label}
-			<button on:click={() => deleteCourse(idx)}>delete</button>
-		</li>
-	{/each}
-</ul>
+<style>
+	main {
+		display: flex;
+		flex-direction: column;
+		max-width: 700px;
+		padding: 0 1rem;
+		margin: 0 auto;
+	}
 
-<button on:click={reset}>reset</button>
+	h1 {
+		color: var(--primary);
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 4rem;
+		font-weight: 100;
+		line-height: 1.1;
+		margin: 5rem auto;
+	}
 
-{#if selectedCourses.length > 0}
-	<button on:click={downloadCalendar}>Download calendar</button>
-{/if}
+	h2 {
+		font-weight: normal;
+	}
+</style>

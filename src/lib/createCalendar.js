@@ -2,8 +2,8 @@ import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 dayjs.extend(utc);
 
-import ics from 'ics';
-import { slots, fractals, days } from './data/slots';
+import { createEvents } from 'ics';
+import { slots, fractals, days } from '../data/slots';
 
 const getSlotInfo = course => {
 	if (course.lecture === 'NA') return [];
@@ -35,7 +35,7 @@ const nextWeekday = (date, weekday) => {
 };
 
 const generateIcal = selectedCourses =>
-	ics.createEvents(
+	createEvents(
 		selectedCourses
 			.map(course => ({ ...course, ...getSlotInfo(course) }))
 			.map(course => {

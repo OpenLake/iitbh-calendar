@@ -1,0 +1,55 @@
+:root {
+	--bg-1: #1f2325;
+	--bg-2: #2c3235;
+	--off-white: #d4d4d4;
+	--primary: white;
+
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background: var(--bg-1);
+	color: var(--off-white);
+}
+
+html,
+body,
+#app,
+main {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+button {
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+button:enabled {
+	cursor: pointer;
+}
+button:disabled {
+	cursor: not-allowed;
+}
+button.outline {
+	background: none;
+	color: var(--primary);
+	border: 2px solid var(--primary);
+}
+button.raised {
+	background: var(--primary);
+	border: none;
+}
+button.flat {
+	background: none;
+	color: var(--primary);
+	border: none;
+}
+
+svg {
+	width: 1rem;
+}
