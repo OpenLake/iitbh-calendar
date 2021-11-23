@@ -1,961 +1,961 @@
 [
-  {
-    "code": "AA101*",
-    "name": "Essential Physical Activity",
-    "credits": "1 to 4",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "Dr. Purnendu Das"
-  },
-  {
-    "code": "AA102*",
-    "name": "National Sports Organization",
-    "credits": "1 to 4",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "Dr. Purnendu Das"
-  },
-  {
-    "code": "AA103*",
-    "name": "National Service Scheme",
-    "credits": "1 to 4",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "Dr. Pawan Kumar Mishra"
-  },
-  {
-    "code": "CS300",
-    "name": "Principles of Programming Languages",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b203",
-    "lecture": "A16",
-    "instructor": "Dr. Subhajit Sidhanta"
-  },
-  {
-    "code": "CS301",
-    "name": "Computer Networks",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b203",
-    "lecture": "E16",
-    "instructor": "Dr. Baswade Anand Madhavrao"
-  },
-  {
-    "code": "CS499",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DUGC EECS"
-  },
-  {
-    "code": "CS500",
-    "name": "Science of Computation",
-    "credits": 3,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "E13",
-    "instructor": "Dr. Rishi Ranjan Singh"
-  },
-  {
-    "code": "CS501",
-    "name": "Computer Systems",
-    "credits": 3,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "E46",
-    "instructor": "Dr. S K Subidh Ali"
-  },
-  {
-    "code": "CS502",
-    "name": "Graph Theory and Applications",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "C16",
-    "instructor": "Dr. Vinod Kumar Reddy"
-  },
-  {
-    "code": "CS516",
-    "name": "Parallelization of Programs",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "G16",
-    "instructor": "Dr. Vishwesh Jatala"
-  },
-  {
-    "code": "CS550",
-    "name": "Machine Learning",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b203",
-    "lecture": "B16",
-    "instructor": "Dr. S K Subidh Ali"
-  },
-  {
-    "code": "CS553",
-    "name": "Cryptography",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b302",
-    "lecture": "D16",
-    "instructor": "Dr. Dhiman Saha"
-  },
-  {
-    "code": "CS554",
-    "name": "Blockchain Technology",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b304",
-    "lecture": "F16",
-    "instructor": "Dr. Souradyuti Paul"
-  },
-  {
-    "code": "CS599",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC EECS"
-  },
-  {
-    "code": "CS613",
-    "name": "Social and Complex Network Analysis",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "I16",
-    "instructor": "Dr. Rishi Ranjan Singh"
-  },
-  {
-    "code": "CS795",
-    "name": "Phd Candidacy",
-    "credits": 0,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC EECS"
-  },
-  {
-    "code": "CS799",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC EECS"
-  },
-  {
-    "code": "CY501",
-    "name": "Quantum Chemistry",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b203",
-    "lecture": "K16",
-    "instructor": "Dr. Rukmankesh"
-  },
-  {
-    "code": "CY502",
-    "name": "Chemical Kinetics and Surface Science",
-    "credits": 4,
-    "link": "https://iitbhilai.webex.com/meet/b203",
-    "lecture": "G36",
-    "instructor": "Dr. Satyajit Gupta"
-  },
-  {
-    "code": "CY503",
-    "name": "Coordination Chemistry",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b204",
-    "lecture": "A16",
-    "instructor": "Dr. Raghavender Medishetty"
-  },
-  {
-    "code": "CY504",
-    "name": "Chemistry of main group Elements",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b203",
-    "lecture": "C16",
-    "instructor": "Dr. Arup Mukherjee"
-  },
-  {
-    "code": "CY505",
-    "name": "Organic Reactions and Reagents",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b302",
-    "lecture": "E16",
-    "instructor": "Dr. Ganapathy D, Dr. Sanjib Banerjee"
-  },
-  {
-    "code": "CY506*",
-    "name": "Inorganic Chemistry Practical",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "N36",
-    "instructor": "Dr. Raghavender Medishetty, Dr. Arup Mukherjee"
-  },
-  {
-    "code": "CY513*",
-    "name": "Physical Chemistry Lab",
-    "credits": 2,
-    "link": "NA",
-    "lecture": "O36",
-    "instructor": "Dr. Suchetan Pal"
-  },
-  {
-    "code": "CY515",
-    "name": "Computations in Chemistry",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b303",
-    "lecture": "G23",
-    "instructor": "Dr. Rukmankesh"
-  },
-  {
-    "code": "CY603",
-    "name": "Organometallic Chemistry: Principles and Applications",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b302",
-    "lecture": "F16",
-    "instructor": "Dr. Arup Mukherjee"
-  },
-  {
-    "code": "CY605",
-    "name": "Advanced Organic Chemistry",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b204",
-    "lecture": "B16",
-    "instructor": "Dr. Ganapathy D"
-  },
-  {
-    "code": "CY607",
-    "name": "Interpretative Molecular Spectroscopy",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b303",
-    "lecture": "D16",
-    "instructor": "Dr. Suchetan Pal"
-  },
-  {
-    "code": "CY614",
-    "name": "Biomaterials Science and Engineering",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "J12",
-    "instructor": "Dr. Suchetan Pal"
-  },
-  {
-    "code": "CY699",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC CY"
-  },
-  {
-    "code": "CY795",
-    "name": "Phd Candidacy",
-    "credits": 0,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC CY"
-  },
-  {
-    "code": "CY799",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC CY"
-  },
-  {
-    "code": "DS503",
-    "name": "Advanced Data Analytics",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "H16",
-    "instructor": "Dr. Gagan Raj Gupta"
-  },
-  {
-    "code": "DS601",
-    "name": "Digital Image Processing",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "J16",
-    "instructor": "Dr. Nitin Khanna"
-  },
-  {
-    "code": "EE226*",
-    "name": "Electrical Engineering Lab – I – Part II",
-    "credits": 1,
-    "link": "NA",
-    "lecture": "Q56",
-    "instructor": "Dr. Nikhil Chander"
-  },
-  {
-    "code": "EE301",
-    "name": "Communication Systems",
-    "credits": 4,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "A14",
-    "instructor": "Dr. Arzad Alam Kherani"
-  },
-  {
-    "code": "EE351*",
-    "name": "EE Lab-II (Communication Systems Lab)",
-    "credits": 2,
-    "link": "NA",
-    "lecture": "P36",
-    "instructor": "Dr. Prashant Agnihotri"
-  },
-  {
-    "code": "EE499",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DUGC EECS"
-  },
-  {
-    "code": "EE504",
-    "name": "Design of Analog and Mixed Signal Circuits",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "H16",
-    "instructor": "Dr. Avishek Adhikary"
-  },
-  {
-    "code": "EE509",
-    "name": "Power Electronics",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b303",
-    "lecture": "F16",
-    "instructor": "Dr. Prashant Agnihotri"
-  },
-  {
-    "code": "EE526",
-    "name": "Digital IC Design",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "C16",
-    "instructor": "Dr. Kapil Jainwal"
-  },
-  {
-    "code": "EE543",
-    "name": "Fundamentals of Mlops",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "D34",
-    "instructor": "Dr. Arzad Alam Kherani, Dr. Subhajit Sidhanta"
-  },
-  {
-    "code": "EE599",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC EECS"
-  },
-  {
-    "code": "EE601",
-    "name": "Solar Photovoltaic Devices and Systems",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "I16",
-    "instructor": "Dr. Nikhil Chander"
-  },
-  {
-    "code": "EE611",
-    "name": "Introduction to Information Theory and Coding",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b302",
-    "lecture": "B16",
-    "instructor": "Dr. Sreejith T. V"
-  },
-  {
-    "code": "EE777",
-    "name": "Mobile Communications Systems",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b303",
-    "lecture": "E16",
-    "instructor": "Dr. Arzad Alam Kherani"
-  },
-  {
-    "code": "EE795",
-    "name": "Phd Candidacy",
-    "credits": 0,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC EECS"
-  },
-  {
-    "code": "EE799",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC EECS"
-  },
-  {
-    "code": "IC300",
-    "name": "Materials Chemistry III",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "D12",
-    "instructor": "Dr. Satyajit Gupta"
-  },
-  {
-    "code": "IC601",
-    "name": "Research Methodology",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b302",
-    "lecture": "A16",
-    "instructor": "Dr. Sanjib Banerjee"
-  },
-  {
-    "code": "LA795",
-    "name": "Phd Candidacy",
-    "credits": 0,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC LA"
-  },
-  {
-    "code": "LA799",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC LA"
-  },
-  {
-    "code": "LA325",
-    "name": "Concepts Of Personality Psychology",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "L34",
-    "instructor": "Dr. Anindita Ghosh"
-  },
-  {
-    "code": "LA347",
-    "name": "Introduction to Organizational Behaviour",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "L12",
-    "instructor": "Dr. Anindita Ghosh"
-  },
-  {
-    "code": "LA703",
-    "name": "Positive Organizational Behaviour",
-    "credits": 6,
-    "lecture": "TBA",
-    "instructor": "Dr. Anindita Ghosh"
-  },
-  {
-    "code": "LA322",
-    "name": "Microeconomics",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "I12",
-    "instructor": "Dr. Radeef Chundakkadan"
-  },
-  {
-    "code": "LA710",
-    "name": "Modern Indian Literature: Currents and Countercurrents",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "F16",
-    "instructor": "Dr. Anubhav Pradhan"
-  },
-  {
-    "code": "LA339",
-    "name": "Financial Economics",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "I34",
-    "instructor": "Dr. Radeef Chundakkadan"
-  },
-  {
-    "code": "LA360",
-    "name": "Self and Society in Modern India",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b204",
-    "lecture": "I56",
-    "instructor": "Dr. Anubhav Pradhan"
-  },
-  {
-    "code": "LA323",
-    "name": "Introduction to Popular Culture",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b203",
-    "lecture": "D12",
-    "instructor": "Dr. Sonal Jha"
-  },
-  {
-    "code": "LA337",
-    "name": "Entrepreneurship and Startups",
-    "credits": 4,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "D36",
-    "instructor": "Dr. Sitakanta Panda"
-  },
-  {
-    "code": "LA706",
-    "name": "Development Economics",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b303",
-    "lecture": "B16",
-    "instructor": "Dr. Sitakanta Panda"
-  },
-  {
-    "code": "LA349",
-    "name": "Contemporary Indian Cinema: Beyond Bollywood",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b203",
-    "lecture": "D34",
-    "instructor": "Dr. Sonal Jha"
-  },
-  {
-    "code": "LA707",
-    "name": "Macroeconomics Theory",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b304",
-    "lecture": "D16",
-    "instructor": "Dr. Radeef Chundakkadan"
-  },
-  {
-    "code": "LA705",
-    "name": "Cultural Studies: Theory and Practice",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "E16",
-    "instructor": "Dr. Sonal Jha"
-  },
-  {
-    "code": "LA345",
-    "name": "Introduction to Classical Theatre",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "L56",
-    "instructor": "Dr. Thirthankar Chakraborty"
-  },
-  {
-    "code": "LA351",
-    "name": "Elements of World Literature",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "L34",
-    "instructor": "Dr. Thirthankar Chakraborty"
-  },
-  {
-    "code": "LA704",
-    "name": "Literary Theory",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b302",
-    "lecture": "C16",
-    "instructor": "Dr. Thirthankar Chakraborty"
-  },
-  {
-    "code": "LA303",
-    "name": "Chinese Language Beginner’s-1",
-    "credits": 1,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "K11",
-    "instructor": "Ms Hao-Yu Lu"
-  },
-  {
-    "code": "LA311",
-    "name": "Chinese Language Beginner’s-3",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "L34",
-    "instructor": "Ms Hao-Yu Lu"
-  },
-  {
-    "code": "LA312",
-    "name": "Chinese Language Beginner’s-4",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "K56",
-    "instructor": "Ms Hao-Yu Lu"
-  },
-  {
-    "code": "LA315",
-    "name": "Chinese Language Beginner’s-2",
-    "credits": 1,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "K22",
-    "instructor": "Ms Hao-Yu Lu"
-  },
-  {
-    "code": "LA332",
-    "name": "Chinese Culture",
-    "credits": 1,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "K33",
-    "instructor": "Ms Hao-Yu Lu"
-  },
-  {
-    "code": "LA333*",
-    "name": "Chinese Calligraphy",
-    "credits": 1,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "L55",
-    "instructor": "Ms Hao-Yu Lu"
-  },
-  {
-    "code": "LA798",
-    "name": "Independent Study: Literary and Urban Studies",
-    "credits": 6,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "Dr. Anubhav Pradhan"
-  },
-  {
-    "code": "LA798",
-    "name": "Independent Study: Literary and Cultural Studies",
-    "credits": 6,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "Dr. Thirthankar Chakraborty"
-  },
-  {
-    "code": "MA500",
-    "name": "Real Analysis",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b303",
-    "lecture": "C16",
-    "instructor": "Dr. Avijit Pal"
-  },
-  {
-    "code": "MA501",
-    "name": "Linear Algebra",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b303",
-    "lecture": "A16",
-    "instructor": "Dr. Arnab Patra"
-  },
-  {
-    "code": "MA502",
-    "name": "Modern Algebra",
-    "credits": 4,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "B14",
-    "instructor": "Dr. Anuj Jakhar"
-  },
-  {
-    "code": "MA503",
-    "name": "Introduction to Probability Theory",
-    "credits": 4,
-    "link": "https://iitbhilai.webex.com/meet/b207",
-    "lecture": "E14",
-    "instructor": "Dr. Lakshmi Kanta Patra"
-  },
-  {
-    "code": "MA504",
-    "name": "Differential Equations",
-    "credits": 4,
-    "link": "https://iitbhilai.webex.com/meet/b302",
-    "lecture": "G36",
-    "instructor": "Dr. Pawan Kumar Mishra"
-  },
-  {
-    "code": "MA509",
-    "name": "Statistical Inference",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b302",
-    "lecture": "H16",
-    "instructor": "Dr. Kuldeep Kumar Kataria"
-  },
-  {
-    "code": "MA510",
-    "name": "Elementary Number Theory",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "J16",
-    "instructor": "Dr. Raj Kumar Mistri"
-  },
-  {
-    "code": "MA513",
-    "name": "Introduction to Linear Regression and Experimental Design",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "L16",
-    "instructor": "Dr. Lakshmi Kanta Patra"
-  },
-  {
-    "code": "MA604",
-    "name": "Functional Analysis",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "F16",
-    "instructor": "Dr. Parameshwary Dayal Srivastava"
-  },
-  {
-    "code": "MA605",
-    "name": "Operations Research",
-    "credits": 4,
-    "link": "https://iitbhilai.webex.com/meet/b204",
-    "lecture": "D14",
-    "instructor": "Dr. Arnab Patra"
-  },
-  {
-    "code": "MA606",
-    "name": "Partial Differential Equations",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "E16",
-    "instructor": "Dr. Pawan Kumar Mishra"
-  },
-  {
-    "code": "MA609",
-    "name": "Numerical Optimization Techniques",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "D56",
-    "instructor": "Dr. Asrifa Sultana"
-  },
-  {
-    "code": "MA616",
-    "name": "Algebraic Number Theory",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "G16",
-    "instructor": "Dr. Anuj Jakhar"
-  },
-  {
-    "code": "MA699",
-    "name": "Project",
-    "credits": 24,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC MA"
-  },
-  {
-    "code": "MA795",
-    "name": "Phd Candidacy",
-    "credits": 0,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC MA"
-  },
-  {
-    "code": "MA799",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC MA"
-  },
-  {
-    "code": "ME333",
-    "name": "Theory of Machines and Mechanism",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b304",
-    "lecture": "A16",
-    "instructor": "Dr. Purnendu Das"
-  },
-  {
-    "code": "ME371*",
-    "name": "Mechanical Engineering Labs-I",
-    "credits": 3,
-    "link": "NA",
-    "lecture": "P36",
-    "instructor": "Dr. Vijay Shantaram Duryodhan, Dr. Anshul Faye"
-  },
-  {
-    "code": "ME415",
-    "name": "Introduction to Turbomachines",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "A16",
-    "instructor": "Dr. Balkrishna Mehta"
-  },
-  {
-    "code": "ME499",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DUGC EECS"
-  },
-  {
-    "code": "ME512",
-    "name": "Advanced Fluid Mechanics",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b304",
-    "lecture": "B16",
-    "instructor": "Dr. Vijay Shantaram Duryodhan"
-  },
-  {
-    "code": "ME514",
-    "name": "Internal Combustion Engines Fundamental",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b207",
-    "lecture": "C16",
-    "instructor": "Dr. Pravesh Chandra Shukla"
-  },
-  {
-    "code": "ME531",
-    "name": "Advanced Mechanics of Solids",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "C16",
-    "instructor": "Dr. Anshul Faye"
-  },
-  {
-    "code": "ME551",
-    "name": "Advanced Manufacturing Processes",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "E16",
-    "instructor": "Dr. Soumya Gangopadhyay"
-  },
-  {
-    "code": "ME553",
-    "name": "Advanced Materials and Processing",
-    "credits": 4,
-    "link": "https://iitbhilai.webex.com/meet/b203",
-    "lecture": "I36",
-    "instructor": "Dr. Jose Immanuel R"
-  },
-  {
-    "code": "ME557",
-    "name": "Laser Material Processing",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "G16",
-    "instructor": "Dr. Kaushik Bandyopadhyay"
-  },
-  {
-    "code": "ME599",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC ME"
-  },
-  {
-    "code": "ME601",
-    "name": "Applied numerical methods",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "F16",
-    "instructor": "Dr. Vijay Shantaram Duryodhan"
-  },
-  {
-    "code": "ME615",
-    "name": "Computational Fluid Dynamics",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "D16",
-    "instructor": "Dr. Nagesh Devidas Patil"
-  },
-  {
-    "code": "ME795",
-    "name": "Phd Candidacy",
-    "credits": 0,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC ME"
-  },
-  {
-    "code": "ME798",
-    "name": "Independent Study: Electronic Cooling Systems",
-    "credits": 6,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "Dr. Nagesh Devidas Patil"
-  },
-  {
-    "code": "ME799",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC ME"
-  },
-  {
-    "code": "PH501",
-    "name": "Classical Mechanics",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "A16",
-    "instructor": "Dr. Sabyasachi Ghosh"
-  },
-  {
-    "code": "PH502",
-    "name": "Quantum Mechanics-I",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "C16",
-    "instructor": "Dr. Sabyasachi Ghosh"
-  },
-  {
-    "code": "PH503",
-    "name": "Mathematical Physics",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/btech_2020",
-    "lecture": "E16",
-    "instructor": "Dr. Sudhanwa Patra"
-  },
-  {
-    "code": "PH504",
-    "name": "Computational Physics",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b202",
-    "lecture": "G16",
-    "instructor": "Dr. Sudhanwa Patra"
-  },
-  {
-    "code": "PH511",
-    "name": "Atomic and Molecular Physics",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b103",
-    "lecture": "B16",
-    "instructor": "Dr. Mahavir Sharma"
-  },
-  {
-    "code": "PH512",
-    "name": "Solid State Physics",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b104",
-    "lecture": "D16",
-    "instructor": "Dr. Sesha Pavan Kumar Vempati"
-  },
-  {
-    "code": "PH513",
-    "name": "Experimental and Measurement Techniques",
-    "credits": 6,
-    "link": "https://iitbhilai.webex.com/meet/b207",
-    "lecture": "F16",
-    "instructor": "Dr. Dhruv Pratap Singh"
-  },
-  {
-    "code": "PH604",
-    "name": "Advanced Quantum Mechanics",
-    "credits": 4,
-    "link": "https://iitbhilai.webex.com/meet/b102",
-    "lecture": "H14",
-    "instructor": "Dr. Sudhanwa Patra"
-  },
-  {
-    "code": "PH657",
-    "name": "Feynman Diagram Calculation",
-    "credits": 2,
-    "link": "https://iitbhilai.webex.com/meet/b303",
-    "lecture": "H56",
-    "instructor": "Dr. Sabyasachi Ghosh"
-  },
-  {
-    "code": "PH699",
-    "name": "Project",
-    "credits": 24,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC PH"
-  },
-  {
-    "code": "PH795",
-    "name": "Phd Candidacy",
-    "credits": 0,
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC PH"
-  },
-  {
-    "code": "PH799",
-    "name": "Thesis",
-    "credits": "0 to 24",
-    "link": "NA",
-    "lecture": "NA",
-    "instructor": "DPGC PH"
-  }
+	{
+		"code": "AA101*",
+		"name": "Essential Physical Activity",
+		"credits": "1 to 4",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "Dr. Purnendu Das"
+	},
+	{
+		"code": "AA102*",
+		"name": "National Sports Organization",
+		"credits": "1 to 4",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "Dr. Purnendu Das"
+	},
+	{
+		"code": "AA103*",
+		"name": "National Service Scheme",
+		"credits": "1 to 4",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "Dr. Pawan Kumar Mishra"
+	},
+	{
+		"code": "CS300",
+		"name": "Principles of Programming Languages",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b203",
+		"lecture": "A16",
+		"instructor": "Dr. Subhajit Sidhanta"
+	},
+	{
+		"code": "CS301",
+		"name": "Computer Networks",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b203",
+		"lecture": "E16",
+		"instructor": "Dr. Baswade Anand Madhavrao"
+	},
+	{
+		"code": "CS499",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DUGC EECS"
+	},
+	{
+		"code": "CS500",
+		"name": "Science of Computation",
+		"credits": 3,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "E13",
+		"instructor": "Dr. Rishi Ranjan Singh"
+	},
+	{
+		"code": "CS501",
+		"name": "Computer Systems",
+		"credits": 3,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "E46",
+		"instructor": "Dr. S K Subidh Ali"
+	},
+	{
+		"code": "CS502",
+		"name": "Graph Theory and Applications",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "C16",
+		"instructor": "Dr. Vinod Kumar Reddy"
+	},
+	{
+		"code": "CS516",
+		"name": "Parallelization of Programs",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "G16",
+		"instructor": "Dr. Vishwesh Jatala"
+	},
+	{
+		"code": "CS550",
+		"name": "Machine Learning",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b203",
+		"lecture": "B16",
+		"instructor": "Dr. S K Subidh Ali"
+	},
+	{
+		"code": "CS553",
+		"name": "Cryptography",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b302",
+		"lecture": "D16",
+		"instructor": "Dr. Dhiman Saha"
+	},
+	{
+		"code": "CS554",
+		"name": "Blockchain Technology",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b304",
+		"lecture": "F16",
+		"instructor": "Dr. Souradyuti Paul"
+	},
+	{
+		"code": "CS599",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC EECS"
+	},
+	{
+		"code": "CS613",
+		"name": "Social and Complex Network Analysis",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "I16",
+		"instructor": "Dr. Rishi Ranjan Singh"
+	},
+	{
+		"code": "CS795",
+		"name": "Phd Candidacy",
+		"credits": 0,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC EECS"
+	},
+	{
+		"code": "CS799",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC EECS"
+	},
+	{
+		"code": "CY501",
+		"name": "Quantum Chemistry",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b203",
+		"lecture": "K16",
+		"instructor": "Dr. Rukmankesh"
+	},
+	{
+		"code": "CY502",
+		"name": "Chemical Kinetics and Surface Science",
+		"credits": 4,
+		"link": "https://iitbhilai.webex.com/meet/b203",
+		"lecture": "G36",
+		"instructor": "Dr. Satyajit Gupta"
+	},
+	{
+		"code": "CY503",
+		"name": "Coordination Chemistry",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b204",
+		"lecture": "A16",
+		"instructor": "Dr. Raghavender Medishetty"
+	},
+	{
+		"code": "CY504",
+		"name": "Chemistry of main group Elements",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b203",
+		"lecture": "C16",
+		"instructor": "Dr. Arup Mukherjee"
+	},
+	{
+		"code": "CY505",
+		"name": "Organic Reactions and Reagents",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b302",
+		"lecture": "E16",
+		"instructor": "Dr. Ganapathy D, Dr. Sanjib Banerjee"
+	},
+	{
+		"code": "CY506*",
+		"name": "Inorganic Chemistry Practical",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "N36",
+		"instructor": "Dr. Raghavender Medishetty, Dr. Arup Mukherjee"
+	},
+	{
+		"code": "CY513*",
+		"name": "Physical Chemistry Lab",
+		"credits": 2,
+		"link": "NA",
+		"lecture": "O36",
+		"instructor": "Dr. Suchetan Pal"
+	},
+	{
+		"code": "CY515",
+		"name": "Computations in Chemistry",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b303",
+		"lecture": "G23",
+		"instructor": "Dr. Rukmankesh"
+	},
+	{
+		"code": "CY603",
+		"name": "Organometallic Chemistry: Principles and Applications",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b302",
+		"lecture": "F16",
+		"instructor": "Dr. Arup Mukherjee"
+	},
+	{
+		"code": "CY605",
+		"name": "Advanced Organic Chemistry",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b204",
+		"lecture": "B16",
+		"instructor": "Dr. Ganapathy D"
+	},
+	{
+		"code": "CY607",
+		"name": "Interpretative Molecular Spectroscopy",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b303",
+		"lecture": "D16",
+		"instructor": "Dr. Suchetan Pal"
+	},
+	{
+		"code": "CY614",
+		"name": "Biomaterials Science and Engineering",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "J12",
+		"instructor": "Dr. Suchetan Pal"
+	},
+	{
+		"code": "CY699",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC CY"
+	},
+	{
+		"code": "CY795",
+		"name": "Phd Candidacy",
+		"credits": 0,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC CY"
+	},
+	{
+		"code": "CY799",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC CY"
+	},
+	{
+		"code": "DS503",
+		"name": "Advanced Data Analytics",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "H16",
+		"instructor": "Dr. Gagan Raj Gupta"
+	},
+	{
+		"code": "DS601",
+		"name": "Digital Image Processing",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "J16",
+		"instructor": "Dr. Nitin Khanna"
+	},
+	{
+		"code": "EE226*",
+		"name": "Electrical Engineering Lab – I – Part II",
+		"credits": 1,
+		"link": "NA",
+		"lecture": "Q56",
+		"instructor": "Dr. Nikhil Chander"
+	},
+	{
+		"code": "EE301",
+		"name": "Communication Systems",
+		"credits": 4,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "A14",
+		"instructor": "Dr. Arzad Alam Kherani"
+	},
+	{
+		"code": "EE351*",
+		"name": "EE Lab-II (Communication Systems Lab)",
+		"credits": 2,
+		"link": "NA",
+		"lecture": "P36",
+		"instructor": "Dr. Prashant Agnihotri"
+	},
+	{
+		"code": "EE499",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DUGC EECS"
+	},
+	{
+		"code": "EE504",
+		"name": "Design of Analog and Mixed Signal Circuits",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "H16",
+		"instructor": "Dr. Avishek Adhikary"
+	},
+	{
+		"code": "EE509",
+		"name": "Power Electronics",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b303",
+		"lecture": "F16",
+		"instructor": "Dr. Prashant Agnihotri"
+	},
+	{
+		"code": "EE526",
+		"name": "Digital IC Design",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "C16",
+		"instructor": "Dr. Kapil Jainwal"
+	},
+	{
+		"code": "EE543",
+		"name": "Fundamentals of Mlops",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "D34",
+		"instructor": "Dr. Arzad Alam Kherani, Dr. Subhajit Sidhanta"
+	},
+	{
+		"code": "EE599",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC EECS"
+	},
+	{
+		"code": "EE601",
+		"name": "Solar Photovoltaic Devices and Systems",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "I16",
+		"instructor": "Dr. Nikhil Chander"
+	},
+	{
+		"code": "EE611",
+		"name": "Introduction to Information Theory and Coding",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b302",
+		"lecture": "B16",
+		"instructor": "Dr. Sreejith T. V"
+	},
+	{
+		"code": "EE777",
+		"name": "Mobile Communications Systems",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b303",
+		"lecture": "E16",
+		"instructor": "Dr. Arzad Alam Kherani"
+	},
+	{
+		"code": "EE795",
+		"name": "Phd Candidacy",
+		"credits": 0,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC EECS"
+	},
+	{
+		"code": "EE799",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC EECS"
+	},
+	{
+		"code": "IC300",
+		"name": "Materials Chemistry III",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "D12",
+		"instructor": "Dr. Satyajit Gupta"
+	},
+	{
+		"code": "IC601",
+		"name": "Research Methodology",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b302",
+		"lecture": "A16",
+		"instructor": "Dr. Sanjib Banerjee"
+	},
+	{
+		"code": "LA795",
+		"name": "Phd Candidacy",
+		"credits": 0,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC LA"
+	},
+	{
+		"code": "LA799",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC LA"
+	},
+	{
+		"code": "LA325",
+		"name": "Concepts Of Personality Psychology",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "L34",
+		"instructor": "Dr. Anindita Ghosh"
+	},
+	{
+		"code": "LA347",
+		"name": "Introduction to Organizational Behaviour",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "L12",
+		"instructor": "Dr. Anindita Ghosh"
+	},
+	{
+		"code": "LA703",
+		"name": "Positive Organizational Behaviour",
+		"credits": 6,
+		"lecture": "TBA",
+		"instructor": "Dr. Anindita Ghosh"
+	},
+	{
+		"code": "LA322",
+		"name": "Microeconomics",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "I12",
+		"instructor": "Dr. Radeef Chundakkadan"
+	},
+	{
+		"code": "LA710",
+		"name": "Modern Indian Literature: Currents and Countercurrents",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "F16",
+		"instructor": "Dr. Anubhav Pradhan"
+	},
+	{
+		"code": "LA339",
+		"name": "Financial Economics",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "I34",
+		"instructor": "Dr. Radeef Chundakkadan"
+	},
+	{
+		"code": "LA360",
+		"name": "Self and Society in Modern India",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b204",
+		"lecture": "I56",
+		"instructor": "Dr. Anubhav Pradhan"
+	},
+	{
+		"code": "LA323",
+		"name": "Introduction to Popular Culture",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b203",
+		"lecture": "D12",
+		"instructor": "Dr. Sonal Jha"
+	},
+	{
+		"code": "LA337",
+		"name": "Entrepreneurship and Startups",
+		"credits": 4,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "D36",
+		"instructor": "Dr. Sitakanta Panda"
+	},
+	{
+		"code": "LA706",
+		"name": "Development Economics",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b303",
+		"lecture": "B16",
+		"instructor": "Dr. Sitakanta Panda"
+	},
+	{
+		"code": "LA349",
+		"name": "Contemporary Indian Cinema: Beyond Bollywood",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b203",
+		"lecture": "D34",
+		"instructor": "Dr. Sonal Jha"
+	},
+	{
+		"code": "LA707",
+		"name": "Macroeconomics Theory",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b304",
+		"lecture": "D16",
+		"instructor": "Dr. Radeef Chundakkadan"
+	},
+	{
+		"code": "LA705",
+		"name": "Cultural Studies: Theory and Practice",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "E16",
+		"instructor": "Dr. Sonal Jha"
+	},
+	{
+		"code": "LA345",
+		"name": "Introduction to Classical Theatre",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "L56",
+		"instructor": "Dr. Thirthankar Chakraborty"
+	},
+	{
+		"code": "LA351",
+		"name": "Elements of World Literature",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "L34",
+		"instructor": "Dr. Thirthankar Chakraborty"
+	},
+	{
+		"code": "LA704",
+		"name": "Literary Theory",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b302",
+		"lecture": "C16",
+		"instructor": "Dr. Thirthankar Chakraborty"
+	},
+	{
+		"code": "LA303",
+		"name": "Chinese Language Beginner’s-1",
+		"credits": 1,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "K11",
+		"instructor": "Ms Hao-Yu Lu"
+	},
+	{
+		"code": "LA311",
+		"name": "Chinese Language Beginner’s-3",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "L34",
+		"instructor": "Ms Hao-Yu Lu"
+	},
+	{
+		"code": "LA312",
+		"name": "Chinese Language Beginner’s-4",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "K56",
+		"instructor": "Ms Hao-Yu Lu"
+	},
+	{
+		"code": "LA315",
+		"name": "Chinese Language Beginner’s-2",
+		"credits": 1,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "K22",
+		"instructor": "Ms Hao-Yu Lu"
+	},
+	{
+		"code": "LA332",
+		"name": "Chinese Culture",
+		"credits": 1,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "K33",
+		"instructor": "Ms Hao-Yu Lu"
+	},
+	{
+		"code": "LA333*",
+		"name": "Chinese Calligraphy",
+		"credits": 1,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "L55",
+		"instructor": "Ms Hao-Yu Lu"
+	},
+	{
+		"code": "LA798",
+		"name": "Independent Study: Literary and Urban Studies",
+		"credits": 6,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "Dr. Anubhav Pradhan"
+	},
+	{
+		"code": "LA798",
+		"name": "Independent Study: Literary and Cultural Studies",
+		"credits": 6,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "Dr. Thirthankar Chakraborty"
+	},
+	{
+		"code": "MA500",
+		"name": "Real Analysis",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b303",
+		"lecture": "C16",
+		"instructor": "Dr. Avijit Pal"
+	},
+	{
+		"code": "MA501",
+		"name": "Linear Algebra",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b303",
+		"lecture": "A16",
+		"instructor": "Dr. Arnab Patra"
+	},
+	{
+		"code": "MA502",
+		"name": "Modern Algebra",
+		"credits": 4,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "B14",
+		"instructor": "Dr. Anuj Jakhar"
+	},
+	{
+		"code": "MA503",
+		"name": "Introduction to Probability Theory",
+		"credits": 4,
+		"link": "https://iitbhilai.webex.com/meet/b207",
+		"lecture": "E14",
+		"instructor": "Dr. Lakshmi Kanta Patra"
+	},
+	{
+		"code": "MA504",
+		"name": "Differential Equations",
+		"credits": 4,
+		"link": "https://iitbhilai.webex.com/meet/b302",
+		"lecture": "G36",
+		"instructor": "Dr. Pawan Kumar Mishra"
+	},
+	{
+		"code": "MA509",
+		"name": "Statistical Inference",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b302",
+		"lecture": "H16",
+		"instructor": "Dr. Kuldeep Kumar Kataria"
+	},
+	{
+		"code": "MA510",
+		"name": "Elementary Number Theory",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "J16",
+		"instructor": "Dr. Raj Kumar Mistri"
+	},
+	{
+		"code": "MA513",
+		"name": "Introduction to Linear Regression and Experimental Design",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "L16",
+		"instructor": "Dr. Lakshmi Kanta Patra"
+	},
+	{
+		"code": "MA604",
+		"name": "Functional Analysis",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "F16",
+		"instructor": "Dr. Parameshwary Dayal Srivastava"
+	},
+	{
+		"code": "MA605",
+		"name": "Operations Research",
+		"credits": 4,
+		"link": "https://iitbhilai.webex.com/meet/b204",
+		"lecture": "D14",
+		"instructor": "Dr. Arnab Patra"
+	},
+	{
+		"code": "MA606",
+		"name": "Partial Differential Equations",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "E16",
+		"instructor": "Dr. Pawan Kumar Mishra"
+	},
+	{
+		"code": "MA609",
+		"name": "Numerical Optimization Techniques",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "D56",
+		"instructor": "Dr. Asrifa Sultana"
+	},
+	{
+		"code": "MA616",
+		"name": "Algebraic Number Theory",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "G16",
+		"instructor": "Dr. Anuj Jakhar"
+	},
+	{
+		"code": "MA699",
+		"name": "Project",
+		"credits": 24,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC MA"
+	},
+	{
+		"code": "MA795",
+		"name": "Phd Candidacy",
+		"credits": 0,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC MA"
+	},
+	{
+		"code": "MA799",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC MA"
+	},
+	{
+		"code": "ME333",
+		"name": "Theory of Machines and Mechanism",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b304",
+		"lecture": "A16",
+		"instructor": "Dr. Purnendu Das"
+	},
+	{
+		"code": "ME371*",
+		"name": "Mechanical Engineering Labs-I",
+		"credits": 3,
+		"link": "NA",
+		"lecture": "P36",
+		"instructor": "Dr. Vijay Shantaram Duryodhan, Dr. Anshul Faye"
+	},
+	{
+		"code": "ME415",
+		"name": "Introduction to Turbomachines",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "A16",
+		"instructor": "Dr. Balkrishna Mehta"
+	},
+	{
+		"code": "ME499",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DUGC EECS"
+	},
+	{
+		"code": "ME512",
+		"name": "Advanced Fluid Mechanics",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b304",
+		"lecture": "B16",
+		"instructor": "Dr. Vijay Shantaram Duryodhan"
+	},
+	{
+		"code": "ME514",
+		"name": "Internal Combustion Engines Fundamental",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b207",
+		"lecture": "C16",
+		"instructor": "Dr. Pravesh Chandra Shukla"
+	},
+	{
+		"code": "ME531",
+		"name": "Advanced Mechanics of Solids",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "C16",
+		"instructor": "Dr. Anshul Faye"
+	},
+	{
+		"code": "ME551",
+		"name": "Advanced Manufacturing Processes",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "E16",
+		"instructor": "Dr. Soumya Gangopadhyay"
+	},
+	{
+		"code": "ME553",
+		"name": "Advanced Materials and Processing",
+		"credits": 4,
+		"link": "https://iitbhilai.webex.com/meet/b203",
+		"lecture": "I36",
+		"instructor": "Dr. Jose Immanuel R"
+	},
+	{
+		"code": "ME557",
+		"name": "Laser Material Processing",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "G16",
+		"instructor": "Dr. Kaushik Bandyopadhyay"
+	},
+	{
+		"code": "ME599",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC ME"
+	},
+	{
+		"code": "ME601",
+		"name": "Applied numerical methods",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "F16",
+		"instructor": "Dr. Vijay Shantaram Duryodhan"
+	},
+	{
+		"code": "ME615",
+		"name": "Computational Fluid Dynamics",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "D16",
+		"instructor": "Dr. Nagesh Devidas Patil"
+	},
+	{
+		"code": "ME795",
+		"name": "Phd Candidacy",
+		"credits": 0,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC ME"
+	},
+	{
+		"code": "ME798",
+		"name": "Independent Study: Electronic Cooling Systems",
+		"credits": 6,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "Dr. Nagesh Devidas Patil"
+	},
+	{
+		"code": "ME799",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC ME"
+	},
+	{
+		"code": "PH501",
+		"name": "Classical Mechanics",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "A16",
+		"instructor": "Dr. Sabyasachi Ghosh"
+	},
+	{
+		"code": "PH502",
+		"name": "Quantum Mechanics-I",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "C16",
+		"instructor": "Dr. Sabyasachi Ghosh"
+	},
+	{
+		"code": "PH503",
+		"name": "Mathematical Physics",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/btech_2020",
+		"lecture": "E16",
+		"instructor": "Dr. Sudhanwa Patra"
+	},
+	{
+		"code": "PH504",
+		"name": "Computational Physics",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b202",
+		"lecture": "G16",
+		"instructor": "Dr. Sudhanwa Patra"
+	},
+	{
+		"code": "PH511",
+		"name": "Atomic and Molecular Physics",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b103",
+		"lecture": "B16",
+		"instructor": "Dr. Mahavir Sharma"
+	},
+	{
+		"code": "PH512",
+		"name": "Solid State Physics",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b104",
+		"lecture": "D16",
+		"instructor": "Dr. Sesha Pavan Kumar Vempati"
+	},
+	{
+		"code": "PH513",
+		"name": "Experimental and Measurement Techniques",
+		"credits": 6,
+		"link": "https://iitbhilai.webex.com/meet/b207",
+		"lecture": "F16",
+		"instructor": "Dr. Dhruv Pratap Singh"
+	},
+	{
+		"code": "PH604",
+		"name": "Advanced Quantum Mechanics",
+		"credits": 4,
+		"link": "https://iitbhilai.webex.com/meet/b102",
+		"lecture": "H14",
+		"instructor": "Dr. Sudhanwa Patra"
+	},
+	{
+		"code": "PH657",
+		"name": "Feynman Diagram Calculation",
+		"credits": 2,
+		"link": "https://iitbhilai.webex.com/meet/b303",
+		"lecture": "H56",
+		"instructor": "Dr. Sabyasachi Ghosh"
+	},
+	{
+		"code": "PH699",
+		"name": "Project",
+		"credits": 24,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC PH"
+	},
+	{
+		"code": "PH795",
+		"name": "Phd Candidacy",
+		"credits": 0,
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC PH"
+	},
+	{
+		"code": "PH799",
+		"name": "Thesis",
+		"credits": "0 to 24",
+		"link": "NA",
+		"lecture": "NA",
+		"instructor": "DPGC PH"
+	}
 ]

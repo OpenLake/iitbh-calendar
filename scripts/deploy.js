@@ -1,7 +1,7 @@
-const ghpages = require('gh-pages');
+import { publish } from 'gh-pages';
 
-ghpages.publish(
-	'build',
+publish(
+	'dist',
 	{
 		branch: 'gh-pages',
 		repo: 'https://github.com/supercoww/iitbh-calendar.git',
