@@ -9,14 +9,14 @@
 		"deploy": "pnpm build && node ./scripts/deploy.js"
 	},
 	"devDependencies": {
-		"@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+		"@sveltejs/vite-plugin-svelte": "^1.0.0-next.33",
 		"dayjs": "^1.10.7",
 		"exceljs": "^4.3.0",
 		"gh-pages": "^3.2.3",
-		"ics": "^2.31.0",
-		"prettier": "^2.4.1",
+		"ics": "^2.35.0",
+		"prettier": "^2.5.1",
 		"simple-svelte-autocomplete": "^2.2.4",
-		"svelte": "^3.44.2",
-		"vite": "^2.6.14"
+		"svelte": "^3.44.3",
+		"vite": "^2.7.9"
 	}
 }

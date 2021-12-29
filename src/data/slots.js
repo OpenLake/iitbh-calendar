@@ -59,13 +59,14 @@ export const slots = {
 	U: [{ day: 'Thursday', start: '10:00', end: '12:50' }],
 	V: [{ day: 'Friday', start: '10:00', end: '12:50' }],
 };
+
 export const fractals = {
-	1: { start: '2 Aug 2021', end: '17 Aug 2021' },
-	2: { start: '18 Aug 2021', end: '6 Sep 2021' },
-	3: { start: '13 Sep 2021', end: '27 Sep 2021' },
-	4: { start: '28 Sep 2021', end: '22 Oct 2021' },
-	5: { start: '28 Oct 2021', end: '11 Nov 2021' },
-	6: { start: '12 Nov 2021', end: '30 Nov 2021' },
+	1: { start: '30 Dec 2021', end: '14 Jan 2022' },
+	2: { start: '17 Jan 2022', end: '02 Feb 2022' },
+	3: { start: '08 Feb 2022', end: '23 Feb 2022' },
+	4: { start: '24 Feb 2022', end: '11 Mar 2022' },
+	5: { start: '24 Mar 2022', end: '08 Apr 2022' },
+	6: { start: '11 Apr 2022', end: '29 Apr 2022' },
 };
 
 export const days = [
