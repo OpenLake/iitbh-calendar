@@ -22,18 +22,20 @@ const run = async () => {
 	const data = [];
 
 	for (let row = START_ROW; table[row]; row++) {
-		data.push({
-			code: table[row][2],
-			name: table[row][3],
-			credits: table[row][4],
-			link: table[row][6] && `Room ${table[row][6]}`,
-			lecture: table[row][5],
-			instructor:
-				table[row][9] +
-				(table[row][10] && table[row][9] !== table[row][10]
-					? ` ${table[row][10]}`
-					: ''),
-		});
+		const lecture = table[row][5];
+		lecture &&
+			data.push({
+				code: table[row][2],
+				name: table[row][3],
+				credits: table[row][4],
+				link: table[row][6] && `Room ${table[row][6]}`,
+				lecture,
+				instructor:
+					table[row][9] +
+					(table[row][10] && table[row][9] !== table[row][10]
+						? ` ${table[row][10]}`
+						: ''),
+			});
 	}
 	await fs.writeFile('../src/data/courses.json', JSON.stringify(data, null, 2));
 	console.log('Written to data/courses.json');
