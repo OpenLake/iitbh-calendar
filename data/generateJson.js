@@ -28,7 +28,7 @@ const run = async () => {
 				code: table[row][2],
 				name: table[row][3],
 				credits: table[row][4],
-				link: table[row][6] && `Room ${table[row][6]}`,
+				link: `${table[row][6]}`,
 				lecture,
 				instructor:
 					table[row][9] +

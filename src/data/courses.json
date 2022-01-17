@@ -3,7 +3,7 @@
     "code": "CA250",
     "name": "Professional Ethics",
     "credits": 2,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "G56",
     "instructor": "Dr. Nagesh D. Patil"
   },
@@ -11,7 +11,7 @@
     "code": "CS101",
     "name": "Discrete Structures-I",
     "credits": 4,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "I14",
     "instructor": "Dr. Barun Gorain"
   },
@@ -19,15 +19,15 @@
     "code": "CS200",
     "name": "Software Tool and Technologies Lab-II",
     "credits": 4,
-    "link": "Room 204",
+    "link": "207",
     "lecture": "K14",
-    "instructor": "Dr. Amit Kumar Dhar"
+    "instructor": "Dr. Amit Kumar Dhar Dr. Dhiman Saha"
   },
   {
     "code": "CS203",
     "name": "Theory of Computation I",
     "credits": 4,
-    "link": "Room 107",
+    "link": "204",
     "lecture": "C14",
     "instructor": "Dr. Rishi Ranjan Singh"
   },
@@ -35,7 +35,7 @@
     "code": "CS250",
     "name": "Operating Systems",
     "credits": 4,
-    "link": "Room 304",
+    "link": "304",
     "lecture": "H36",
     "instructor": "Dr. Anand M. Baswade"
   },
@@ -43,7 +43,7 @@
     "code": "CS251",
     "name": "Introduction to Language Processing",
     "credits": 4,
-    "link": "Room 102",
+    "link": "102 & 204",
     "lecture": "D14",
     "instructor": "Dr. Vishwesh Jatala"
   },
@@ -51,7 +51,7 @@
     "code": "CS252",
     "name": "Algorithms-II",
     "credits": 4,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "F36",
     "instructor": "Dr. I. Vinod Kumar Reddy"
   },
@@ -59,7 +59,7 @@
     "code": "CS254",
     "name": "Database Management Systems",
     "credits": 4,
-    "link": "Room 103",
+    "link": "TBA",
     "lecture": "L14",
     "instructor": "Dr. Subhajit Sidhanta"
   },
@@ -67,15 +67,15 @@
     "code": "CS518",
     "name": "Simulation of Biology",
     "credits": 2,
-    "link": "Room 302",
+    "link": "302",
     "lecture": "F56",
-    "instructor": "Dr. Arzad Alam Kherani"
+    "instructor": "Dr. Arzad Alam Kherani Dr. Rishi Ranjan Singh\nDr. Rukmankesh"
   },
   {
     "code": "CS519",
     "name": "High Performance Computer Architecture",
     "credits": 6,
-    "link": "Room 103",
+    "link": "103",
     "lecture": "A16",
     "instructor": "Dr. Vishwesh Jatala"
   },
@@ -83,7 +83,7 @@
     "code": "CS552",
     "name": "Network Science",
     "credits": 6,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "H16",
     "instructor": "Dr. Rishi Ranjan Singh"
   },
@@ -91,15 +91,15 @@
     "code": "CS559",
     "name": "Computer System Design",
     "credits": 6,
-    "link": "Room 102",
+    "link": "202",
     "lecture": "K16",
-    "instructor": "Dr. Gagan Raj Gupta"
+    "instructor": "Dr. Gagan Raj Gupta Dr. Subhajit Sidhanta"
   },
   {
     "code": "CS607",
     "name": "Adversarial Machine Learning: Security and Privacy of ML",
     "credits": 6,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "E16",
     "instructor": "Dr. SK Subidh Ali"
   },
@@ -107,7 +107,7 @@
     "code": "CS608",
     "name": "Advanced Graph Algorithms",
     "credits": 6,
-    "link": "Room 103",
+    "link": "103",
     "lecture": "C16",
     "instructor": "Dr. Vinod I Reddy"
   },
@@ -115,15 +115,23 @@
     "code": "CS614",
     "name": "Quantum Symmetric-key cryptoanalysis",
     "credits": 6,
-    "link": "Room 204",
+    "link": "204",
     "lecture": "I16",
     "instructor": "Dr. Dhiman Saha"
+  },
+  {
+    "code": "CS798",
+    "name": "Independent Study: Integrated Space-Aerial-Terrestrial Networks",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA",
+    "instructor": "Dr. Anand M. Baswade"
   },
   {
     "code": "CY202",
     "name": "Applied Chemistry",
     "credits": 2,
-    "link": "Room 102",
+    "link": "103",
     "lecture": "B12",
     "instructor": "Dr. Arup Mukherjee"
   },
@@ -131,7 +139,7 @@
     "code": "CY203",
     "name": "An Introduction to Food Science and Technology",
     "credits": 2,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "I34",
     "instructor": "Dr. Arup Mukherjee"
   },
@@ -139,15 +147,15 @@
     "code": "CY506",
     "name": "Inorganic Chemistry Practical",
     "credits": 2,
-    "link": "Room CY Lab",
+    "link": "CY Lab",
     "lecture": "R14",
-    "instructor": "Dr. Arup Mukherjee"
+    "instructor": "Dr. Arup Mukherjee Dr. Raghavender Medishetty"
   },
   {
     "code": "CY507",
     "name": "Statistical Mechanics and Thermodynamics",
     "credits": 4,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "I36",
     "instructor": "Dr. MD. Mehboob Alam"
   },
@@ -155,7 +163,7 @@
     "code": "CY508",
     "name": "Molecular Spectroscopy",
     "credits": 4,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "H14",
     "instructor": "Dr. Satyajit Gupta"
   },
@@ -163,7 +171,7 @@
     "code": "CY509",
     "name": "Bioinorganic Chemistry",
     "credits": 6,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "A16",
     "instructor": "Dr. Suchetan Pal"
   },
@@ -171,7 +179,7 @@
     "code": "CY510",
     "name": "Stereochemistry and Reaction Mechanism",
     "credits": 6,
-    "link": "Room 202",
+    "link": "203",
     "lecture": "K16",
     "instructor": "Dr. Ganapathy D"
   },
@@ -179,7 +187,7 @@
     "code": "CY511",
     "name": "Physical Organic Chemistry",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "D12",
     "instructor": "Dr. Sanjib Banerjee"
   },
@@ -187,7 +195,7 @@
     "code": "CY512",
     "name": "Thermal and Photochemical Reactions",
     "credits": 4,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "D36",
     "instructor": "Dr. Raghavender Medishetty"
   },
@@ -195,23 +203,23 @@
     "code": "CY513",
     "name": "Physical Chemistry Lab",
     "credits": 2,
-    "link": "Room CY Lab",
+    "link": "CY Lab",
     "lecture": "S14",
-    "instructor": "Dr. Md Mehboob Alam"
+    "instructor": "Dr. Md Mehboob Alam Dr. Satyajit Gupta Dr. Rukmankesh\nDr. Suchetan Pal"
   },
   {
     "code": "CY514",
     "name": "Organic Chemistry Lab",
     "credits": 2,
-    "link": "Room CY Lab",
+    "link": "CY Lab",
     "lecture": "V36",
-    "instructor": "Dr. Ganapathy D"
+    "instructor": "Dr. Ganapathy D Dr. Sanjib Banerjee"
   },
   {
     "code": "CY608",
     "name": "Nanostructured Materials",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "F56",
     "instructor": "Dr. Satyajit Gupta"
   },
@@ -219,7 +227,7 @@
     "code": "CY610",
     "name": "Molecular Physical Chemistry for Engineers",
     "credits": 2,
-    "link": "Room 102",
+    "link": "103",
     "lecture": "B34",
     "instructor": "Dr. MD. Mehboob Alam"
   },
@@ -227,7 +235,7 @@
     "code": "CY613",
     "name": "Materials for Emerging Applications",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "I56",
     "instructor": "Dr. Sanjib Banerjee"
   },
@@ -235,7 +243,7 @@
     "code": "CY616",
     "name": "Molecular Geometry Predictions",
     "credits": 2,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "L56",
     "instructor": "Dr. Md Mehboob Alam"
   },
@@ -243,7 +251,7 @@
     "code": "CY617",
     "name": "Introduction to Solar Energy Material",
     "credits": 2,
-    "link": "Room 102",
+    "link": "103",
     "lecture": "B56",
     "instructor": "Dr. Satyajit Gupta"
   },
@@ -251,7 +259,7 @@
     "code": "CY618",
     "name": "Bionanotechnology",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "F34",
     "instructor": "Dr. Suchetan Pal"
   },
@@ -259,7 +267,7 @@
     "code": "CY619",
     "name": "Industrial Inorganic Chemistry",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "F12",
     "instructor": "Dr. Raghavender Medishetty"
   },
@@ -267,7 +275,7 @@
     "code": "CY622",
     "name": "Introduction to Molecular Modeling",
     "credits": 2,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "L12",
     "instructor": "Dr. Rukmankesh"
   },
@@ -275,7 +283,7 @@
     "code": "CY624",
     "name": "Chemistry of Heterocyclic compounds and natural products",
     "credits": 6,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "C16",
     "instructor": "Dr. Ganapathy D"
   },
@@ -283,7 +291,7 @@
     "code": "CY626",
     "name": "Advanced Molecular Simulation – Underneath Theory and Practice",
     "credits": 6,
-    "link": "Room 302",
+    "link": "302",
     "lecture": "L16",
     "instructor": "Dr. MD. Mehboob Alam"
   },
@@ -291,7 +299,7 @@
     "code": "CY627",
     "name": "An Introduction to Catalyst Design: Function and Application",
     "credits": 2,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "L34",
     "instructor": "Dr. Arup Mukherjee"
   },
@@ -299,7 +307,7 @@
     "code": "CY629",
     "name": "Introduction to Health, Safety and Environmental Practices",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "B12",
     "instructor": "Dr. Ganapathy D"
   },
@@ -307,7 +315,7 @@
     "code": "DS201",
     "name": "Statistical Programming",
     "credits": 4,
-    "link": "Room 107",
+    "link": "107",
     "lecture": "H14",
     "instructor": "Dr. Nitin Khanna"
   },
@@ -315,7 +323,7 @@
     "code": "DS209",
     "name": "Information Security",
     "credits": 4,
-    "link": "Room 207",
+    "link": "203",
     "lecture": "D36",
     "instructor": "Dr. Souradyuti Paul"
   },
@@ -323,7 +331,7 @@
     "code": "DS250",
     "name": "Data Analytics and Visualization",
     "credits": 6,
-    "link": "Room 103",
+    "link": "107",
     "lecture": "I16",
     "instructor": "Dr. Gagan Raj Gupta"
   },
@@ -331,7 +339,7 @@
     "code": "DS251",
     "name": "Artificial Intelligence",
     "credits": 6,
-    "link": "Room 107",
+    "link": "107 & 207*",
     "lecture": "F16",
     "instructor": "Dr. Soumajit Pramanik"
   },
@@ -339,7 +347,7 @@
     "code": "DS252",
     "name": "DSAI - Lab",
     "credits": 2,
-    "link": "Room EE Lab",
+    "link": "EE Lab",
     "lecture": "Q36",
     "instructor": "Dr. SK Subidh Ali"
   },
@@ -347,7 +355,7 @@
     "code": "DS501",
     "name": "Information Retrieval",
     "credits": 6,
-    "link": "Room 103",
+    "link": "102 & 204*",
     "lecture": "B16",
     "instructor": "Dr. Soumyajit Pramanik"
   },
@@ -355,15 +363,23 @@
     "code": "DS602",
     "name": "Digital Speech Processing",
     "credits": 6,
-    "link": "Room 107",
+    "link": "107",
     "lecture": "A16",
     "instructor": "Dr. Anil Kumar Sao"
+  },
+  {
+    "code": "DS798",
+    "name": "Independent Study: Entity Resolution on Structured and Unstructured D",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA",
+    "instructor": "Dr. Soumyajit Pramanik"
   },
   {
     "code": "EE171",
     "name": "EE Independent Project",
     "credits": 2,
-    "link": "Room NA",
+    "link": "NA",
     "lecture": 36,
     "instructor": "Dr. Nitin Khanna"
   },
@@ -371,7 +387,7 @@
     "code": "EE203",
     "name": "Embedded Systems",
     "credits": 4,
-    "link": "Room 203",
+    "link": "102 & 204*",
     "lecture": "K14",
     "instructor": "Prof. Santosh Biswas"
   },
@@ -379,7 +395,7 @@
     "code": "EE204",
     "name": "Analog Circuits",
     "credits": 6,
-    "link": "Room 107",
+    "link": "204",
     "lecture": "L16",
     "instructor": "Dr. Nikhil Chander"
   },
@@ -387,7 +403,7 @@
     "code": "EE205",
     "name": "Power Engineering-I",
     "credits": 6,
-    "link": "Room 203",
+    "link": "107 & 207*",
     "lecture": "D16",
     "instructor": "Dr. Prashant Agnihotri"
   },
@@ -395,15 +411,15 @@
     "code": "EE352",
     "name": "EE Lab-III",
     "credits": 2,
-    "link": "Room EE Lab",
-    "lecture": "S14",
+    "link": "EE Lab",
+    "lecture": "S14 & T14",
     "instructor": "Dr. Sreejith T. V"
   },
   {
     "code": "EE353",
     "name": "EE Lab-IV",
     "credits": 2,
-    "link": "Room EE Lab",
+    "link": "EE Lab",
     "lecture": "U36",
     "instructor": "Dr. Nitin Khanna"
   },
@@ -411,7 +427,7 @@
     "code": "EE371",
     "name": "Independent Project",
     "credits": 2,
-    "link": "Room NA",
+    "link": "NA",
     "lecture": 14,
     "instructor": "Dr. Anil Kumar Sao"
   },
@@ -419,7 +435,7 @@
     "code": "EE512",
     "name": "Advanced and Digital Control Systems",
     "credits": 6,
-    "link": "Room 103",
+    "link": "107",
     "lecture": "K16",
     "instructor": "Dr. Avishek Adhikari"
   },
@@ -427,7 +443,7 @@
     "code": "EE515",
     "name": "Wireless Communication Security With SDRS",
     "credits": 3,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "B46",
     "instructor": "Dr. Arzad Alam Kherani"
   },
@@ -435,7 +451,7 @@
     "code": "EE521",
     "name": "Analog IC Design",
     "credits": 6,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "L16",
     "instructor": "Dr. Kapil Jainwal"
   },
@@ -443,7 +459,7 @@
     "code": "EE529",
     "name": "Introduction to Wireless and Cellular Communications",
     "credits": 6,
-    "link": "Room 103",
+    "link": "103",
     "lecture": "H16",
     "instructor": "Dr. Sreejith T. V"
   },
@@ -451,7 +467,7 @@
     "code": "EE566",
     "name": "Math of Turn-Based Strategy Games",
     "credits": 3,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "A46",
     "instructor": "Dr. Arzad Alam Kherani"
   },
@@ -459,7 +475,7 @@
     "code": "EE567",
     "name": "Math of Machine Learning",
     "credits": 3,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "A13",
     "instructor": "Dr. Arzad Alam Kherani"
   },
@@ -467,7 +483,7 @@
     "code": "EE605",
     "name": "Advanced Computer Networks",
     "credits": 6,
-    "link": "Room 103",
+    "link": "103",
     "lecture": "D16",
     "instructor": "Dr. Anand M. Baswade"
   },
@@ -475,7 +491,7 @@
     "code": "EE701",
     "name": "Wireless Mac Modeling",
     "credits": 6,
-    "link": "Room 302",
+    "link": "302",
     "lecture": "H16",
     "instructor": "Dr. Arzad Alam Kherani"
   },
@@ -483,7 +499,7 @@
     "code": "IC100",
     "name": "Introduction to Programming",
     "credits": 6,
-    "link": "Room 107, CC",
+    "link": "107, CC",
     "lecture": "J16, Q16",
     "instructor": "Dr. Barun Gorain"
   },
@@ -491,7 +507,7 @@
     "code": "IC200",
     "name": "Introduction to Astronomy and Astrophysics",
     "credits": 4,
-    "link": "Room 207",
+    "link": "107 & 207*",
     "lecture": "B14",
     "instructor": "Dr. Mahavir Sharma"
   },
@@ -499,7 +515,7 @@
     "code": "IC250",
     "name": "Materials Chemistry-II",
     "credits": 2,
-    "link": "Room 207",
+    "link": "207",
     "lecture": "B56",
     "instructor": "Dr. Arup Mukherjee"
   },
@@ -507,15 +523,39 @@
     "code": "IC601",
     "name": "Research Methodology",
     "credits": 6,
-    "link": "Room 204",
+    "link": "204",
     "lecture": "H16",
     "instructor": "Dr. Sanjib Banerjee"
+  },
+  {
+    "code": "CA106",
+    "name": "Madhubani Painting",
+    "credits": 2,
+    "link": "TBA",
+    "lecture": 56,
+    "instructor": "Ms. Shalinee Kumari (Ex. Faculty)"
+  },
+  {
+    "code": "CA109",
+    "name": "Sculpture Design",
+    "credits": 2,
+    "link": "TBA",
+    "lecture": 23,
+    "instructor": "Dr. Chhagendra Usendi (Ex. Faculty)"
+  },
+  {
+    "code": "CA110",
+    "name": "Fundamentals of Hindustani Music",
+    "credits": 2,
+    "link": "TBA",
+    "lecture": 34,
+    "instructor": "Prof. Naman Dutt (Ex. Faculty)\nDr. Likeshwar Verma (Ex. Faculty)"
   },
   {
     "code": "LA303",
     "name": "Chinese Language Beginner’s-1",
     "credits": 1,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "G11",
     "instructor": "Ms. Lu, Hao-Yu"
   },
@@ -523,7 +563,7 @@
     "code": "LA308",
     "name": "Positive Psychology",
     "credits": 2,
-    "link": "Room 202",
+    "link": "107 & 207*",
     "lecture": "C12",
     "instructor": "Dr. Anindita Ghosh"
   },
@@ -531,7 +571,7 @@
     "code": "LA311",
     "name": "Chinese Language Beginner’s-3",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "G34",
     "instructor": "Ms. Lu, Hao-Yu"
   },
@@ -539,7 +579,7 @@
     "code": "LA313",
     "name": "Chinese Language Beginner’s-5",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "J12",
     "instructor": "Ms. Lu, Hao-Yu"
   },
@@ -547,7 +587,7 @@
     "code": "LA315",
     "name": "Chinese Language Beginner’s-2",
     "credits": 1,
-    "link": "Room 202",
+    "link": "207",
     "lecture": "G22",
     "instructor": "Ms. Lu, Hao-Yu"
   },
@@ -555,7 +595,7 @@
     "code": "LA324",
     "name": "Leadership: An Organizational Behaviour Perspective",
     "credits": 2,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "J34",
     "instructor": "Dr. Anindita Ghosh"
   },
@@ -563,7 +603,7 @@
     "code": "LA326",
     "name": "Adaptation: Literature and Beyond",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "J56",
     "instructor": "Dr. Sonal Jha"
   },
@@ -571,7 +611,7 @@
     "code": "LA327",
     "name": "Introduction to Partition Literature",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "C34",
     "instructor": "Dr. Sonal Jha"
   },
@@ -579,7 +619,7 @@
     "code": "LA328",
     "name": "Economic Development in India",
     "credits": 2,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "J56",
     "instructor": "Dr. Sitakanta Panda"
   },
@@ -587,7 +627,7 @@
     "code": "LA332",
     "name": "Chinese Culture",
     "credits": 1,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "G55",
     "instructor": "Ms. Lu, Hao-Yu"
   },
@@ -595,7 +635,7 @@
     "code": "LA333",
     "name": "Chinese Calligraphy",
     "credits": 1,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "J55",
     "instructor": "Ms. Lu, Hao-Yu"
   },
@@ -603,7 +643,7 @@
     "code": "LA354",
     "name": "Introduction to Postcolonial Literature",
     "credits": 2,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "J12",
     "instructor": "Dr. Sonal Jha"
   },
@@ -611,7 +651,7 @@
     "code": "LA358",
     "name": "Game Theory",
     "credits": 2,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "G34",
     "instructor": "Dr. Radeef Chundakkadan"
   },
@@ -619,7 +659,7 @@
     "code": "LA361",
     "name": "Introduction to Modern American Poetry",
     "credits": 2,
-    "link": "Room 202",
+    "link": "202",
     "lecture": "J34",
     "instructor": "Dr. Thirthankar Chakraborty"
   },
@@ -627,7 +667,7 @@
     "code": "LA362",
     "name": "Creative Writing: The Short Story",
     "credits": 2,
-    "link": "Room 302",
+    "link": "302",
     "lecture": "G56",
     "instructor": "Dr. Thirthankar Chakraborty"
   },
@@ -635,7 +675,7 @@
     "code": "MA505",
     "name": "Complex Analysis",
     "credits": 6,
-    "link": "Room 204",
+    "link": "204",
     "lecture": "A16",
     "instructor": "Dr. Lakshmi Kanta Patra"
   },
@@ -643,7 +683,7 @@
     "code": "MA506",
     "name": "Multi-Variable Calculus",
     "credits": 4,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "E14",
     "instructor": "Dr. Anuj Jakhar"
   },
@@ -651,7 +691,7 @@
     "code": "MA507",
     "name": "Numerical Techniques",
     "credits": 6,
-    "link": "Room 102",
+    "link": "102",
     "lecture": "C16",
     "instructor": "Prof. P. D. Srivastava"
   },
@@ -659,7 +699,7 @@
     "code": "MA508",
     "name": "Topology",
     "credits": 6,
-    "link": "Room 204",
+    "link": "204",
     "lecture": "G16",
     "instructor": "Dr. Asrifa Sultana"
   },
@@ -667,7 +707,7 @@
     "code": "MA514",
     "name": "Analytic Number Theory",
     "credits": 6,
-    "link": "Room 103",
+    "link": "103",
     "lecture": "F16",
     "instructor": "Dr. Raj Kumar Mistri"
   },
@@ -675,7 +715,7 @@
     "code": "MA607",
     "name": "Fourier Analysis",
     "credits": 6,
-    "link": "Room 107",
+    "link": "103",
     "lecture": "I16",
     "instructor": "Dr. Avijit Pal"
   },
@@ -683,7 +723,7 @@
     "code": "MA611",
     "name": "Stochastic Processes",
     "credits": 6,
-    "link": "Room 303",
+    "link": "303",
     "lecture": "L16",
     "instructor": "Dr. Kuldeep Kumar Kataria"
   },
@@ -691,7 +731,7 @@
     "code": "MA618",
     "name": "Introduction to Spectral Theory",
     "credits": 6,
-    "link": "Room 204",
+    "link": "203",
     "lecture": "B16",
     "instructor": "Dr. Arnab Patra"
   },
@@ -699,7 +739,7 @@
     "code": "MA619",
     "name": "Advanced Algebraic Number Theory",
     "credits": 6,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "H16",
     "instructor": "Dr. Anuj Jhakar"
   },
@@ -707,7 +747,7 @@
     "code": "ME102",
     "name": "Engineering and Machine Drawing",
     "credits": 3,
-    "link": "Room ME Lab",
+    "link": "ME Lab",
     "lecture": "S16",
     "instructor": "Dr. Kaushik Bandyopadhayay"
   },
@@ -715,7 +755,7 @@
     "code": "ME151",
     "name": "Fundamentals of Metallurgy",
     "credits": 3,
-    "link": "Room 304",
+    "link": "304",
     "lecture": "I46",
     "instructor": "Dr. Rahul Jain"
   },
@@ -723,7 +763,7 @@
     "code": "ME213",
     "name": "Heat and Mass Transfer",
     "credits": 6,
-    "link": "Room 304",
+    "link": "304",
     "lecture": "L16",
     "instructor": "Dr. Udayraj"
   },
@@ -731,7 +771,7 @@
     "code": "ME232",
     "name": "Dynamics",
     "credits": 6,
-    "link": "Room 207",
+    "link": "207",
     "lecture": "H16",
     "instructor": "Dr. Anshul Faye"
   },
@@ -739,7 +779,7 @@
     "code": "ME334",
     "name": "Design of Machine Elements",
     "credits": 6,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "A16",
     "instructor": "Dr. Purnendu Das"
   },
@@ -747,7 +787,7 @@
     "code": "ME352",
     "name": "Manufacturing Science II",
     "credits": 6,
-    "link": "Room 107",
+    "link": "304",
     "lecture": "D16",
     "instructor": "Dr. Soumya Gangopadhyay Dr. Purnendu Das"
   },
@@ -755,7 +795,7 @@
     "code": "ME371",
     "name": "Mechanical Engineering Labs-I",
     "credits": 3,
-    "link": "Room ME Lab",
+    "link": "ME Lab",
     "lecture": "S16",
     "instructor": "Dr. Anshul Faye Dr. Vijay Shantaram Duryodhan"
   },
@@ -763,7 +803,7 @@
     "code": "ME372",
     "name": "Mechanical Engineering Labs-II",
     "credits": 3,
-    "link": "Room ME Lab",
+    "link": "ME Lab",
     "lecture": "U16",
     "instructor": "Dr. Rahul Jain Dr. Udayraj"
   },
@@ -771,7 +811,7 @@
     "code": "ME413",
     "name": "Refrigeration and Air-Conditioning",
     "credits": 6,
-    "link": "Room 203",
+    "link": "303",
     "lecture": "B16",
     "instructor": "Dr. Pravesh C. Shukla"
   },
@@ -779,7 +819,7 @@
     "code": "ME416",
     "name": "Power Plant Engineering",
     "credits": 6,
-    "link": "Room 207",
+    "link": "207",
     "lecture": "I16",
     "instructor": "Dr. Pravesh C. Shukla"
   },
@@ -787,7 +827,7 @@
     "code": "ME513",
     "name": "Convective heat transfer",
     "credits": 6,
-    "link": "Room 303",
+    "link": "303",
     "lecture": "H16",
     "instructor": "Dr. Vijay S. Duryodhan"
   },
@@ -795,7 +835,7 @@
     "code": "ME555",
     "name": "The Science and Technology of Metal Forming",
     "credits": 6,
-    "link": "Room 302",
+    "link": "302",
     "lecture": "K16",
     "instructor": "Dr. Kaushik Bandyopadhayay"
   },
@@ -803,7 +843,7 @@
     "code": "ME556",
     "name": "Fluid Power Systems",
     "credits": 4,
-    "link": "Room 207",
+    "link": "207",
     "lecture": "E36",
     "instructor": "Dr. Jose Immanuel R."
   },
@@ -811,7 +851,7 @@
     "code": "ME613",
     "name": "Microfluidics",
     "credits": 6,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "L16",
     "instructor": "Dr. Vijay S. Duryodhan"
   },
@@ -819,7 +859,7 @@
     "code": "ME616",
     "name": "Interfacial Transport Phenomena",
     "credits": 6,
-    "link": "Room 203",
+    "link": "203",
     "lecture": "F16",
     "instructor": "Dr. Nagesh Patil"
   },
@@ -827,7 +867,7 @@
     "code": "ME632",
     "name": "Fracture Mechanics",
     "credits": 6,
-    "link": "Room 204",
+    "link": "204",
     "lecture": "F16",
     "instructor": "Dr. Anshul Faye"
   },
@@ -835,7 +875,7 @@
     "code": "ME633",
     "name": "Finite Element Method",
     "credits": 6,
-    "link": "Room 107",
+    "link": "103",
     "lecture": "K16",
     "instructor": "Dr. Rahul Jain"
   },
@@ -843,7 +883,7 @@
     "code": "ME652",
     "name": "Automation",
     "credits": 6,
-    "link": "Room 207",
+    "link": "207",
     "lecture": "A16",
     "instructor": "Dr. Soumya Gangopadhyay"
   },
@@ -851,7 +891,7 @@
     "code": "ME653",
     "name": "Experimental Methods in Fluids and Thermal Science",
     "credits": 6,
-    "link": "Room 304",
+    "link": "304",
     "lecture": "K16",
     "instructor": "Dr. Balkrishna Mehta"
   },
@@ -859,7 +899,7 @@
     "code": "ME654",
     "name": "Advanced Materials - Development and Characterization",
     "credits": 6,
-    "link": "Room NA",
+    "link": "NA",
     "lecture": 16,
     "instructor": "Dr. Jose Immanuel R."
   },
@@ -867,15 +907,23 @@
     "code": "ME673",
     "name": "Computational Fluid Dynamics Laboratory",
     "credits": 1,
-    "link": "Room CC",
+    "link": "CC",
     "lecture": "R34",
     "instructor": "Dr. Udayraj"
+  },
+  {
+    "code": "ME798",
+    "name": "Independent Study: Mocromachining",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA",
+    "instructor": "Dr. Soumya Gangopadhyay Dr. Purnendu Das"
   },
   {
     "code": "PH505",
     "name": "Electronics Laboratory",
     "credits": 6,
-    "link": "Room PH Lab",
+    "link": "PH Lab",
     "lecture": "R16, I",
     "instructor": "Dr. Dhruv Singh"
   },
@@ -883,7 +931,7 @@
     "code": "PH506",
     "name": "Statistical Physics",
     "credits": 6,
-    "link": "Room 207",
+    "link": "107 & 207*",
     "lecture": "L16",
     "instructor": "Dr. Sabyasachi Ghosh"
   },
@@ -891,7 +939,7 @@
     "code": "PH507",
     "name": "Quantum Mechanics-II",
     "credits": 6,
-    "link": "Room 204",
+    "link": "204",
     "lecture": "E16",
     "instructor": "Dr. Sesha Vempati"
   },
@@ -899,7 +947,7 @@
     "code": "PH509",
     "name": "Nuclear and Particle Physics",
     "credits": 6,
-    "link": "Room 204",
+    "link": "302",
     "lecture": "D16",
     "instructor": "Dr. Sudhanwa Patra"
   },
@@ -907,7 +955,7 @@
     "code": "PH510",
     "name": "Experimental Laboratory",
     "credits": 6,
-    "link": "Room PH Lab",
+    "link": "PH Lab",
     "lecture": "T16, I",
     "instructor": "Dr. Sesha Vempati"
   },
@@ -915,7 +963,7 @@
     "code": "PH606",
     "name": "Particle Physics",
     "credits": 6,
-    "link": "Room 207",
+    "link": "303",
     "lecture": "F16",
     "instructor": "Dr. Sudhanwa Patra Dr. Sabyasachi Ghosh"
   },
@@ -923,7 +971,7 @@
     "code": "PH607",
     "name": "Relativistic matter at finite magnetic field",
     "credits": 6,
-    "link": "Room 107",
+    "link": "302",
     "lecture": "B16",
     "instructor": "Dr Sabyasachi Ghosh"
   },
@@ -931,7 +979,7 @@
     "code": "PH608",
     "name": "Physics of Galaxies and Interstellar Medium",
     "credits": 6,
-    "link": "Room 103",
+    "link": "103",
     "lecture": "E16",
     "instructor": "Dr. Mahavir Sharma"
   }
