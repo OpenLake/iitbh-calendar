@@ -6,6 +6,7 @@
 		"dev": "vite",
 		"build": "vite build",
 		"serve": "vite preview",
+		"generate-data": "cd data && node generateJson.js",
 		"deploy": "pnpm build && node ./scripts/deploy.js"
 	},
 	"devDependencies": {
