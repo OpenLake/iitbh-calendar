@@ -1,9 +1,7 @@
 import dayjs from 'dayjs';
-import utc from 'dayjs/plugin/utc';
-dayjs.extend(utc);
 
 import { createEvents } from 'ics';
-import { slots, fractals, days } from '../data/slots';
+import { slots, fractals, days, tierceDays, tierceSlots } from '../data/slots';
 
 const getSlotInfo = course => {
 	if (course.lecture === 'NA') return [];
@@ -14,6 +12,7 @@ const getSlotInfo = course => {
 	return { slots: courseSlots, startDate, endDate };
 };
 
+/** @param {dayjs.Dayjs} date */
 const dateArray = date => {
 	return [
 		date.year(),
@@ -24,6 +23,10 @@ const dateArray = date => {
 	];
 };
 
+/**
+ * @param {dayjs.Dayjs} date
+ * @param {number} weekday
+ */
 const nextWeekday = (date, weekday) => {
 	if (date.day() <= weekday) {
 		// then just give me this week's instance of that day
@@ -39,7 +42,7 @@ const generateIcal = selectedCourses =>
 		selectedCourses
 			.map(course => ({ ...course, ...getSlotInfo(course) }))
 			.map(course => {
-				return course.slots.map(slot => {
+				const classEntries = course.slots.map(slot => {
 					const isoDay = days.indexOf(slot.day),
 						fractalStart = dayjs(fractals[course.lecture[1]].start),
 						[startHr, startMin] = slot.start.split(':'),
@@ -67,6 +70,29 @@ const generateIcal = selectedCourses =>
 						startOutputType: 'local',
 					};
 				});
+
+				const startFractal = parseInt(course.lecture[1], 10);
+				const endFractal = parseInt(course.lecture[2], 10);
+				const tierceEntries = [];
+				tierceDays.forEach((dates, tierceIndex) => {
+					const tierceFractal = (tierceIndex + 1) * 2;
+					if (tierceFractal < startFractal || tierceFractal > endFractal)
+						return;
+					const tierceSlot = tierceSlots[course.lecture[0]];
+					const tierceDate = dates[tierceSlot.day];
+					const [startHr, startMin] = tierceSlot.start.split(':');
+					const [endHr, endMin] = tierceSlot.end.split(':');
+					const startDate = dayjs(tierceDate).hour(startHr).minute(startMin);
+					const endDate = dayjs(tierceDate).hour(endHr).minute(endMin);
+					tierceEntries.push({
+						title: `Tierce ${tierceIndex + 1}: ${course.code} ${course.name}`,
+						start: dateArray(startDate),
+						end: dateArray(endDate),
+						description: `Instructor: ${course.instructor}`,
+						startOutputType: 'local',
+					});
+				});
+				return [...classEntries, ...tierceEntries];
 			})
 			.flat(),
 	);

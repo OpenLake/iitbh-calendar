@@ -60,6 +60,29 @@ export const slots = {
 	V: [{ day: 'Friday', start: '10:00', end: '12:50' }],
 };
 
+export const tierceSlots = {
+	A: { start: '8:30', end: '10:00', day: 0 },
+	B: { start: '11:00', end: '12:30', day: 0 },
+	G: { start: '13:30', end: '15:00', day: 0 },
+	H: { start: '16:00', end: '17:30', day: 0 },
+
+	C: { start: '8:30', end: '10:00', day: 1 },
+	D: { start: '11:00', end: '12:30', day: 1 },
+	I: { start: '13:30', end: '15:00', day: 1 },
+	J: { start: '16:00', end: '17:30', day: 1 },
+
+	E: { start: '8:30', end: '10:00', day: 2 },
+	F: { start: '11:00', end: '12:30', day: 2 },
+	K: { start: '13:30', end: '15:00', day: 2 },
+	L: { start: '16:00', end: '17:30', day: 2 },
+};
+
+export const tierceDays = [
+	['3 Feb 2022', '4 Feb 2022', '7 Feb 2022'],
+	['21 Mar 2022', '22 Mar 2022', '23 Mar 2022'],
+	['2 May 2022', '4 May 2022', '5 May 2022'],
+];
+
 export const fractals = {
 	1: { start: '30 Dec 2021', end: '14 Jan 2022' },
 	2: { start: '17 Jan 2022', end: '02 Feb 2022' },
