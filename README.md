@@ -2,7 +2,7 @@
 
 Select your courses and generate a `.ics` 📆 calendar file.
 
-https://supercoww.github.io/iitbh-calendar/
+https://ambarvm.github.io/iitbh-calendar/
 
 ## Development
 

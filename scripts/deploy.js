@@ -4,7 +4,7 @@ publish(
 	'dist',
 	{
 		branch: 'gh-pages',
-		repo: 'https://github.com/supercoww/iitbh-calendar.git',
+		repo: 'https://github.com/ambarvm/iitbh-calendar.git',
 		user: {
 			name: 'Ambar Mutha',
 			email: 'ambar.ytl@gmail.com',
