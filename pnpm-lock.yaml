@@ -5,6 +5,7 @@ specifiers:
   dayjs: ^1.10.7
   exceljs: ^4.3.0
   gh-pages: ^3.2.3
+  github-buttons: ^2.21.1
   ics: ^2.35.0
   prettier: ^2.5.1
   simple-svelte-autocomplete: ^2.2.4
@@ -16,6 +17,7 @@ devDependencies:
   dayjs: 1.10.7
   exceljs: 4.3.0
   gh-pages: 3.2.3
+  github-buttons: 2.21.1
   ics: 2.35.0
   prettier: 2.5.1
   simple-svelte-autocomplete: 2.2.4
@@ -563,6 +565,10 @@ packages:
       find-cache-dir: 3.3.2
       fs-extra: 8.1.0
       globby: 6.1.0
+    dev: true
+
+  /github-buttons/2.21.1:
+    resolution: {integrity: sha512-n9bCQ8sj+5oX1YH5NeyWGbAclRDtHEhMBzqw2ctsWpdEHOwVgfruRu0VIVy01Ah10dd/iFajMHYU71L7IBWBOw==}
     dev: true
 
   /glob/7.2.0:
