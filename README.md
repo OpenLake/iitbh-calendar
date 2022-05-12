@@ -2,7 +2,7 @@
 
 Select your courses and generate a `.ics` 📆 calendar file.
 
-https://ambarvm.github.io/iitbh-calendar/
+https://openlake.github.io/iitbh-calendar/
 
 ## Development
 
