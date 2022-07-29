@@ -11,7 +11,7 @@
 		.filter(course => !['NA', 'TBA'].includes(course.lecture))
 		.map(course => ({
 			...course,
-			label: `${course.code} ${course.name}`,
+			label: `${course.code} ${course.name} ${course.link}`,
 		}));
 
 	let selectedCourse;
@@ -55,6 +55,8 @@
 		>
 			<div class="course-name">
 				<div>{course.label}</div>
+				<div style="color: red;">{(course.link=="NA")?"Slots not avialable":""}</div>
+				
 			</div>
 			<button
 				class="flat"
