@@ -21,14 +21,14 @@
 
 	renderGhButton(
 		{
-			href: 'https://github.com/ambarvm/iitbh-calendar',
+			href: 'https://github.com/OpenLake/iitbh-calendar',
 			'data-text': 'Star',
 			'data-color-scheme':
 				'no-preference: dark_dimmed; light: dark_dimmed; dark: dark_dimmed;',
 			'data-icon': 'octicon-star',
 			'data-size': 'large',
 			'data-show-count': true,
-			ariaLabel: 'Star ambarvm/iitbh-calendar on GitHub',
+			ariaLabel: 'Star OpenLake/iitbh-calendar on GitHub',
 		},
 		el => {
 			topRightContainer.appendChild(el);
