@@ -64,7 +64,7 @@ export const slots = {
 	],
 	Y: [
 		{ day: 'Tuesday', start: '17:00', end: '18:30' },
-		{ day: 'Friday', start: '17:00', end: '18:30' },
+		{ day: 'Thursday', start: '17:00', end: '18:30' },
 	],
 	Z: [
 		{ day: 'Wednesday', start: '17:00', end: '18:30' },
