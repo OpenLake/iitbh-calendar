@@ -12,6 +12,7 @@
 	export const reset = () => (courses = []);
 
 	function downloadCalendar() {
+		plausible('Download Calendar', {props: {courseCount: courses.length}});
 		download({
 			text: makeCalendar(courses),
 			filename: 'course-calendar.ics',
