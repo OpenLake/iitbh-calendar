@@ -9,13 +9,13 @@
 	/** @type {HTMLDivElement} */
 	let topRightContainer;
 	let courses = [];
-	let calanderInclude = {classEntries : true, tierceEntries : true};
+	let calendarInclude = {classEntries : true, tierceEntries : true};
 	export const reset = () => (courses = []);
 
 	function downloadCalendar() {
 		window.plausible('Download Calendar', {props: {courseCount: courses.length}});
 		download({
-			text: makeCalendar(courses, calanderInclude),
+			text: makeCalendar(courses, calendarInclude),
 			filename: 'course-calendar.ics',
 			filetype: 'text/calendar',
 		});
@@ -49,11 +49,11 @@
 
 	<div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
 		<label>
-		<input type="checkbox" bind:checked={calanderInclude.classEntries}/>
+		<input type="checkbox" bind:checked={calendarInclude.classEntries}/>
 			Class Shedule
 		</label>
 		<label>
-		<input type="checkbox" bind:checked={calanderInclude.tierceEntries}/>
+		<input type="checkbox" bind:checked={calendarInclude.tierceEntries}/>
 			Tierce Shedule
 		</label>
 	</div>
@@ -62,7 +62,7 @@
 
 		<button
 			class="raised"
-			disabled={courses.length === 0 || (calanderInclude.classEntries == false && calanderInclude.tierceEntries == false)}
+			disabled={courses.length === 0 || (calendarInclude.classEntries == false && calendarInclude.tierceEntries == false)}
 			on:click={downloadCalendar}
 		>
 			Download Calendar

@@ -37,7 +37,7 @@ const nextWeekday = (date, weekday) => {
 	}
 };
 
-const generateIcal = (selectedCourses, calanderInclude) =>
+const generateIcal = (selectedCourses, calendarInclude) =>
 	createEvents(
 		selectedCourses
 			.map(course => ({ ...course, ...getSlotInfo(course) }))
@@ -93,10 +93,10 @@ const generateIcal = (selectedCourses, calanderInclude) =>
 					});
 				});
 				let entries = []
-				if(calanderInclude.classEntries == true){
+				if(calendarInclude.classEntries == true){
 					entries = [...classEntries];
 				}
-				if(calanderInclude.tierceEntries == true){
+				if(calendarInclude.tierceEntries == true){
 					entries = [...entries, ...tierceEntries];
 				}
 				return entries;
@@ -104,8 +104,8 @@ const generateIcal = (selectedCourses, calanderInclude) =>
 			.flat(),
 	);
 
-export function makeCalendar(selectedCourses, calanderInclude) {
-	const { value, error } = generateIcal(selectedCourses, calanderInclude);
+export function makeCalendar(selectedCourses, calendarInclude) {
+	const { value, error } = generateIcal(selectedCourses, calendarInclude);
 	if (error) throw error;
 	return value;
 }
