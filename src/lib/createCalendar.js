@@ -92,14 +92,7 @@ const generateIcal = (selectedCourses, calendarInclude) =>
 						startOutputType: 'local',
 					});
 				});
-				let entries = []
-				if(calendarInclude.classEntries == true){
-					entries = [...classEntries];
-				}
-				if(calendarInclude.tierceEntries == true){
-					entries = [...entries, ...tierceEntries];
-				}
-				return entries;
+				return [...(calendarInclude.classEntries ? classEntries : []), ...(calendarInclude.tierceEntries ? tierceEntries : [])];
 			})
 			.flat(),
 	);
