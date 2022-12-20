@@ -37,7 +37,7 @@ const nextWeekday = (date, weekday) => {
 	}
 };
 
-const generateIcal = selectedCourses =>
+const generateIcal = (selectedCourses, calendarInclude) =>
 	createEvents(
 		selectedCourses
 			.map(course => ({ ...course, ...getSlotInfo(course) }))
@@ -92,13 +92,13 @@ const generateIcal = selectedCourses =>
 						startOutputType: 'local',
 					});
 				});
-				return [...classEntries, ...tierceEntries];
+				return [...(calendarInclude.classEntries ? classEntries : []), ...(calendarInclude.tierceEntries ? tierceEntries : [])];
 			})
 			.flat(),
 	);
 
-export function makeCalendar(selectedCourses) {
-	const { value, error } = generateIcal(selectedCourses);
+export function makeCalendar(selectedCourses, calendarInclude) {
+	const { value, error } = generateIcal(selectedCourses, calendarInclude);
 	if (error) throw error;
 	return value;
 }
