@@ -95,18 +95,18 @@ export const tierceSlots = {
 };
 
 export const tierceDays = [ // not updated
-	['3 Feb 2022', '4 Feb 2022', '7 Feb 2022'],
-	['21 Mar 2022', '22 Mar 2022', '23 Mar 2022'],
-	['2 May 2022', '4 May 2022', '5 May 2022'],
+	['3 Feb 2023', '6 Feb 2023', '7 Feb 2023'],
+	['21 Mar 2023', '22 Mar 2023', '23 Mar 2023'],
+	['1 May 2023', '2 May 2023', '3 May 2023'],
 ];
 
 export const fractals = {
-	1: { start: '29 July 2022', end: '16 Aug 2022' },
-	2: { start: '17 Aug 2022', end: '06 Sep 2022' },
-	3: { start: '12 Sep 2022', end: '27 Sep 2022' },
-	4: { start: '28 Sep 2022', end: '20 Oct 2022' },
-	5: { start: '27 Oct 2022', end: '15 Nov 2022' },
-	6: { start: '16 Nov 2022', end: '29 Nov 2022' },
+	1: { start: '30 Dec 2022', end: '16 Jan 2023' },
+	2: { start: '17 Jan 2023', end: '2 Feb 2023' },
+	3: { start: '8 Feb 2023', end: '23 Feb 2023' },
+	4: { start: '24 Feb 2023', end: '20 Mar 2023' },
+	5: { start: '24 Mar 2023', end: '12 Apr 2023' },
+	6: { start: '13 Apr 2023', end: '28 Apr 2023' },
 };
 
 export const days = [

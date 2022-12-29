@@ -16,156 +16,164 @@
     "instructor": " Dr. Pawan Kumar Mishra"
   },
   {
-    "code": "CA200",
-    "name": "Professional Communication Lab-III- Technical Literature Structure",
+    "code": "CA150",
+    "name": "Professional Communication Lab II- Presentation Skills",
     "credits": 1,
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202256",
+    "instructor": " Dr. Anindita Ghosh"
+  },
+  {
+    "code": "CA250",
+    "name": "Professional Ethics",
+    "credits": 2,
     "link": "207",
-    "lecture": "P56",
-    "instructor": " Dr. Satyajit Gupta"
+    "lecture": "K56",
+    "instructor": " Dr. Jose Immanuel R"
   },
   {
     "code": "CS100",
     "name": "Software Tools & Technologies Lab I",
     "credits": 4,
-    "link": "207",
-    "lecture": "H36",
-    "instructor": " Dr. Souradyuti Paul"
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202236",
+    "instructor": " Dr. Vishwesh Jatala"
+  },
+  {
+    "code": "CS101",
+    "name": "Discrete Structures I",
+    "credits": 4,
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 2022 & D1 and A2 for MSc_MA14/",
+    "instructor": " Dr. Rishi Ranjan Singh"
   },
   {
     "code": "CS102",
     "name": "Data Structures",
     "credits": 4,
-    "link": "207",
-    "lecture": "I36",
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 2022 & B for MSc_MA14/",
     "instructor": " Dr. Amit Kumar Dhar"
   },
   {
-    "code": "CS201",
-    "name": "Discrete Structures II",
-    "credits": 2,
-    "link": "204",
-    "lecture": "F12",
+    "code": "CS200",
+    "name": "Software Tools & Technologies Lab II",
+    "credits": 4,
+    "link": "202",
+    "lecture": "A36",
+    "instructor": " Dr. Dhiman Saha"
+  },
+  {
+    "code": "CS202",
+    "name": "Algorithms I",
+    "credits": 4,
+    "link": "103",
+    "lecture": "E36",
+    "instructor": " Dr. I Vinod Kumar Reddy"
+  },
+  {
+    "code": "CS203",
+    "name": "Theory of Computation I",
+    "credits": 4,
+    "link": "202",
+    "lecture": "C14",
     "instructor": " Dr. Barun Gorain"
   },
   {
-    "code": "CS204",
-    "name": "Computer Organization & Architecture",
+    "code": "CS250",
+    "name": "Operating Systems",
     "credits": 4,
-    "link": "107",
-    "lecture": "J14",
-    "instructor": " Dr. Anil Kumar Sao"
-  },
-  {
-    "code": "CS300",
-    "name": "Principles of Programming Languages",
-    "credits": 6,
     "link": "202",
-    "lecture": "E16",
+    "lecture": "D14",
     "instructor": " Dr. Subhajit Sidhanta"
   },
   {
-    "code": "CS301",
-    "name": "Computer Networks",
-    "credits": 6,
-    "link": "203",
-    "lecture": "A16",
-    "instructor": " Dr. Anand M. Baswade"
+    "code": "CS253",
+    "name": "Theory of Computation II",
+    "credits": 2,
+    "link": "202",
+    "lecture": "C56",
+    "instructor": " Dr. Barun Gorain"
+  },
+  {
+    "code": "CS254",
+    "name": "Database Management Systems",
+    "credits": 4,
+    "link": "303",
+    "lecture": "K14",
+    "instructor": " Dr. Souradyuti Paul"
   },
   {
     "code": "CS499",
-    "name": "Thesis (BTech)",
-    "credits": "6 to 12",
+    "name": "Thesis (For BTech)",
+    "credits": "6 to 18",
     "link": "NA",
-    "lecture": "NA16",
+    "lecture": "NANA",
     "instructor": " DUGC EECS"
   },
   {
     "code": "CS500",
     "name": "Science of Computation",
     "credits": 3,
-    "link": "303",
-    "lecture": "A13",
-    "instructor": " Dr. Rishi Ranjan Singh"
+    "link": "103",
+    "lecture": "B13",
+    "instructor": " Prof. Santosh Biswas"
   },
   {
     "code": "CS501",
-    "name": "Computer Systems (OS, Architecture, Compilers, DBMS)",
+    "name": "Computer Systems",
     "credits": 3,
-    "link": "303",
-    "lecture": "A46",
-    "instructor": " Dr. Vishwesh Jatala"
-  },
-  {
-    "code": "CS502",
-    "name": "Graph Theory and Applications",
-    "credits": 6,
-    "link": "107",
-    "lecture": "C16",
-    "instructor": " Dr. Vinod Reddy"
-  },
-  {
-    "code": "CS510",
-    "name": "Approximation ALgorithms",
-    "credits": 6,
     "link": "103",
-    "lecture": "J16",
-    "instructor": " Dr. Barun Gorain"
+    "lecture": "B46",
+    "instructor": " Dr. Anand Baswade"
   },
   {
-    "code": "CS516",
-    "name": "Parallelization of Programs",
+    "code": "CS503",
+    "name": "Lightweight Crypto",
     "credits": 6,
-    "link": "303",
-    "lecture": "L16",
-    "instructor": " Dr. Vishwesh Jatala"
-  },
-  {
-    "code": "CS518",
-    "name": "Simulation of Biology",
-    "credits": 2,
-    "link": "303",
-    "lecture": "E12",
-    "instructor": " Dr. Arzad Alam Kherani"
-  },
-  {
-    "code": "CS550",
-    "name": "Machine Learning",
-    "credits": 6,
-    "link": "303",
-    "lecture": "G16",
-    "instructor": " Dr. Gagan Raj Gupta"
-  },
-  {
-    "code": "CS553",
-    "name": "Cryptography",
-    "credits": 6,
-    "link": "207",
+    "link": "204",
     "lecture": "Z16",
     "instructor": " Dr. Dhiman Saha"
   },
   {
-    "code": "CS558",
-    "name": "CAD for VLSI",
+    "code": "CS525",
+    "name": "Distributed Systems",
     "credits": 6,
-    "link": "303",
-    "lecture": "D16",
-    "instructor": " Prof. Santosh Biswas"
+    "link": "202",
+    "lecture": "K16",
+    "instructor": " Dr. Subhajit Sidhanta"
+  },
+  {
+    "code": "CS552",
+    "name": "Network Science",
+    "credits": 6,
+    "link": "204",
+    "lecture": "G16",
+    "instructor": " Dr. Rishi Ranjan Singh"
+  },
+  {
+    "code": "CS554",
+    "name": "Blockchain Technologies",
+    "credits": 6,
+    "link": "302",
+    "lecture": "F16",
+    "instructor": " Dr. Souradyuti paul"
   },
   {
     "code": "CS599",
-    "name": "Thesis (MTech)",
+    "name": "Thesis (For MTech)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
+    "lecture": "NANA",
     "instructor": " DPGC EECS"
   },
   {
-    "code": "CS613",
-    "name": "Social and Complex Network Analysis",
+    "code": "CS608",
+    "name": "Advanced Graph Algorithms",
     "credits": 6,
-    "link": "303",
-    "lecture": "K16",
-    "instructor": " Dr. Rishi Ranjan Singh"
+    "link": "304",
+    "lecture": "I16",
+    "instructor": " Dr. I Vinod Kumar Reddy"
   },
   {
     "code": "CS795",
@@ -177,115 +185,163 @@
   },
   {
     "code": "CS799",
-    "name": "Thesis (PhD)",
+    "name": "Thesis (For PhD)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
+    "lecture": "NANA",
     "instructor": " DPGC EECS"
   },
   {
-    "code": "CY502",
-    "name": "Chemical Kinetics and Surface Science",
-    "credits": 4,
-    "link": "203",
-    "lecture": "D36",
-    "instructor": " Dr. Satyajit Gupta"
+    "code": "CY202",
+    "name": "Applied Chemistry",
+    "credits": 2,
+    "link": "202",
+    "lecture": "I34",
+    "instructor": " Dr. Arup Mukherjee"
   },
   {
-    "code": "CY503",
-    "name": "Coordination Chemistry",
-    "credits": 6,
+    "code": "CY203",
+    "name": "An introduction to food science and technology",
+    "credits": 2,
     "link": "202",
-    "lecture": "F16",
+    "lecture": "I56",
+    "instructor": " Dr. Arup Mukherjee"
+  },
+  {
+    "code": "CY507",
+    "name": "Statistical Mechanics and Thermodynamics",
+    "credits": 4,
+    "link": "303",
+    "lecture": "B14",
+    "instructor": " Dr. Rukmankesh"
+  },
+  {
+    "code": "CY508",
+    "name": "Molecular Spectroscopy",
+    "credits": 4,
+    "link": "303",
+    "lecture": "A36",
+    "instructor": " Dr. Satyajit (IC), Dr. MD Mehboob Alam"
+  },
+  {
+    "code": "CY509",
+    "name": "Bioinorganic Chemistry",
+    "credits": 6,
+    "link": "104",
+    "lecture": "C16",
     "instructor": " Dr. Ramasamy Mayilmurugan"
   },
   {
-    "code": "CY504",
-    "name": "Chemistry of Main Group Elements",
-    "credits": 6,
-    "link": "104",
-    "lecture": "I16",
-    "instructor": " Dr. Arup Mukherjee"
-  },
-  {
-    "code": "CY505",
-    "name": "Organic Reactions and Reagents",
-    "credits": 6,
-    "link": "202",
-    "lecture": "H16",
-    "instructor": " Dr. Sanjib Banerjee"
-  },
-  {
-    "code": "CY515",
-    "name": "Computations in Chemistry",
-    "credits": 2,
-    "link": "202",
-    "lecture": "A56",
-    "instructor": " Dr. Rukmankesh"
-  },
-  {
-    "code": "CY516",
-    "name": "Mathematics for Chemists",
-    "credits": 4,
-    "link": "202",
-    "lecture": "A14",
-    "instructor": " Dr. MD. Mehboob Alam"
-  },
-  {
-    "code": "CY517",
-    "name": "Basics of Molecular Biology",
-    "credits": 4,
-    "link": "204",
-    "lecture": "A14",
-    "instructor": " Dr. Rukmankesh"
-  },
-  {
-    "code": "CY518",
-    "name": "Quantum Chemistry",
-    "credits": 4,
-    "link": "302",
-    "lecture": "E36",
-    "instructor": " Dr. MD. Mehboob Alam"
-  },
-  {
-    "code": "CY603",
-    "name": "Organometallic Chemistry: Principles and Applications",
-    "credits": 6,
-    "link": "104",
-    "lecture": "E16",
-    "instructor": " Dr. Arup Mukherjee"
-  },
-  {
-    "code": "CY604",
-    "name": "Solid State Chemistry",
-    "credits": 4,
-    "link": "202",
-    "lecture": "L36",
-    "instructor": " Dr. Raghavender Medishetty"
-  },
-  {
-    "code": "CY605",
-    "name": "Advanced Organic Chemistry",
+    "code": "CY510",
+    "name": "Stereochemistry and Reaction Mechanism",
     "credits": 6,
     "link": "304",
-    "lecture": "C16",
+    "lecture": "E16",
     "instructor": " Dr. Ganapathy D"
   },
   {
-    "code": "CY607",
-    "name": "Interpretative Molecular Spectroscopy",
+    "code": "CY511",
+    "name": "Physical Organic Chemistry",
+    "credits": 2,
+    "link": "104",
+    "lecture": "D34",
+    "instructor": " Dr. Sanjib Banerjee"
+  },
+  {
+    "code": "CY513",
+    "name": "Physical Chemistry Practical",
+    "credits": 2,
+    "link": "CY LAB",
+    "lecture": "N14",
+    "instructor": " Dr. MD Mehboob Alam (IC), Dr. Suchetan Pal, Dr.\n"
+  },
+  {
+    "code": "CY514",
+    "name": "Organic Chemistry Practical",
+    "credits": 2,
+    "link": "CY LAB",
+    "lecture": "M36",
+    "instructor": " Dr. Ganapathy D, Dr. Sanjib Banerjee"
+  },
+  {
+    "code": "CY519",
+    "name": "Organic Photochemistry",
+    "credits": 2,
+    "link": "303",
+    "lecture": "B56",
+    "instructor": " Dr. Raghavender Medishetty"
+  },
+  {
+    "code": "CY520",
+    "name": "Computations in Chemistry",
+    "credits": 2,
+    "link": "104",
+    "lecture": "D56",
+    "instructor": " Dr. MD Mehboob Alam"
+  },
+  {
+    "code": "CY613",
+    "name": "Materials for Emerging Applications",
+    "credits": 2,
+    "link": "203",
+    "lecture": "Y56",
+    "instructor": " Dr. Sanjib Banerjee"
+  },
+  {
+    "code": "CY622",
+    "name": "Introduction to Molecular Modeling",
+    "credits": 2,
+    "link": "202",
+    "lecture": "Z56",
+    "instructor": " Dr. Rukmankesh"
+  },
+  {
+    "code": "CY626",
+    "name": "Advanced Molecular Simulation - Theory and Practice",
     "credits": 6,
     "link": "304",
-    "lecture": "G16",
-    "instructor": " Dr. Suchetan Pal"
+    "lecture": "F16",
+    "instructor": " Dr. MD Mehboob Alam"
+  },
+  {
+    "code": "CY627",
+    "name": "An introduction to catalyst design: function and application",
+    "credits": 2,
+    "link": "303",
+    "lecture": "J56",
+    "instructor": " Dr. Arup Mukherjee"
+  },
+  {
+    "code": "CY628",
+    "name": "Nanoengineered Molecular Materials",
+    "credits": 6,
+    "link": "103",
+    "lecture": "K16",
+    "instructor": " Dr. Sanjib Banerjee (12 Segment)\n"
+  },
+  {
+    "code": "CY630",
+    "name": "Chemistry of Magnetic Resonance Imaging (MRI) and Contrast Agents",
+    "credits": 2,
+    "link": "207",
+    "lecture": "G56",
+    "instructor": " Dr. Ramasamy Mayilmurugan"
+  },
+  {
+    "code": "CY631",
+    "name": "Semiempirical quantum methods",
+    "credits": 4,
+    "link": "207",
+    "lecture": "G14",
+    "instructor": " Dr. MD Mehboob Alam"
   },
   {
     "code": "CY699",
-    "name": "Thesis",
-    "credits": 6,
+    "name": "Thesis (For MSc)",
+    "credits": "6 to 18",
     "link": "NA",
-    "lecture": "NA16",
-    "instructor": " DPGC-CY"
+    "lecture": "NANA",
+    "instructor": " DPGC CY"
   },
   {
     "code": "CY795",
@@ -293,63 +349,143 @@
     "credits": 0,
     "link": "NA",
     "lecture": "NANA",
-    "instructor": " DPGC-CY"
+    "instructor": " DPGC CY"
+  },
+  {
+    "code": "CY798",
+    "name": "Independent Study: Biomaterials Chemistry",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA34",
+    "instructor": " Dr. Suchetan Pal"
+  },
+  {
+    "code": "CY798",
+    "name": "Independent Study: Bioinformatics and Protein Science",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Rukmankesh"
+  },
+  {
+    "code": "CY798",
+    "name": "Independent Study: Basics of Solar-Cell",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Satyajit Gupta"
+  },
+  {
+    "code": "CY798",
+    "name": "Independent Study: Photochemsitry of metal-complexes",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Raghavender Medishetty"
+  },
+  {
+    "code": "CY798",
+    "name": "Independent Study: MRI Contrast Agents",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Ramasamy Mayilmurugan"
+  },
+  {
+    "code": "CY798",
+    "name": "Independent Study: Bioinspired Small Molecule Activation",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Ramasamy Mayilmurugan"
+  },
+  {
+    "code": "CY798",
+    "name": "Independent Study: Macromolecular Engineering towards Smart Materials",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Sanjib Banerjee"
   },
   {
     "code": "CY799",
-    "name": "PhD Thesis",
+    "name": "Thesis (For PhD)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
-    "instructor": " DPGC-CY"
+    "lecture": "NANA",
+    "instructor": " DPGC CY"
   },
   {
-    "code": "DS201",
-    "name": "Statistical Programming",
+    "code": "DS100",
+    "name": "Mathematical Foundations for Data Science",
     "credits": 4,
-    "link": "104",
-    "lecture": "D36",
-    "instructor": " Dr. Nitin Khanna"
-  },
-  {
-    "code": "DS499",
-    "name": "Thesis (BTech)",
-    "credits": "6 to 12",
-    "link": "NA",
-    "lecture": "NA16",
-    "instructor": " DUGC EECS"
-  },
-  {
-    "code": "DS502",
-    "name": "Basic Maths for Data science and Artificial Intelligence",
-    "credits": 3,
-    "link": "303",
-    "lecture": "E46",
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202214",
     "instructor": " Dr. Anil Kumar Sao"
   },
   {
-    "code": "DS504",
-    "name": "Natural Language Processing",
-    "credits": 6,
-    "link": "107",
-    "lecture": "Y16",
-    "instructor": " Dr. Soumajit Pramanik"
+    "code": "DS210",
+    "name": "Data Analytics and Visualization Lab",
+    "credits": 2,
+    "link": "CC LAB B309                            Dr. Soumajit Pramanik",
+    "lecture": "Q36",
+    "instructor": " CC LAB B309                            Dr. Soumajit Pramanik"
   },
   {
-    "code": "DS505",
-    "name": "Programming for Data science Lab",
-    "credits": 3,
+    "code": "DS250",
+    "name": "Data Analytics and Visualization",
+    "credits": 6,
+    "link": "204                                    Dr. Gagan Raj Gupta",
+    "lecture": "Y16",
+    "instructor": " 204                                    Dr. Gagan Raj Gupta"
+  },
+  {
+    "code": "DS499",
+    "name": "Thesis (For BTech)",
+    "credits": "6 to 18",
     "link": "NA",
-    "lecture": "NA16",
+    "lecture": "NANA",
+    "instructor": " DUGC EECS"
+  },
+  {
+    "code": "DS501",
+    "name": "Information Retrieval",
+    "credits": 6,
+    "link": "207",
+    "lecture": "A16",
     "instructor": " Dr. Soumajit Pramanik"
   },
   {
     "code": "DS599",
-    "name": "Thesis (MTech)",
+    "name": "Thesis (For MTech)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
+    "lecture": "NANA",
     "instructor": " DPGC EECS"
+  },
+  {
+    "code": "DS601",
+    "name": "Digital Image Processing",
+    "credits": 6,
+    "link": "204",
+    "lecture": "I16",
+    "instructor": " Dr. Nitin khanna"
+  },
+  {
+    "code": "DS602",
+    "name": "Digital Speech Processing",
+    "credits": 6,
+    "link": "302",
+    "lecture": "Z16",
+    "instructor": " Dr. Anil Kumar Sao"
+  },
+  {
+    "code": "DS603",
+    "name": "Advanced Machine Learning",
+    "credits": 6,
+    "link": "207",
+    "lecture": "H16",
+    "instructor": " Dr. Gagan Raj Gupta"
   },
   {
     "code": "DS795",
@@ -361,139 +497,139 @@
   },
   {
     "code": "DS799",
-    "name": "Thesis (PhD)",
+    "name": "Thesis (For PhD)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
+    "lecture": "NANA",
     "instructor": " DPGC EECS"
   },
   {
     "code": "EE101",
     "name": "Digital Signal Processing",
     "credits": 4,
-    "link": "104",
-    "lecture": "C14",
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202214",
     "instructor": " Dr. Arzad Alam Kherani"
   },
   {
-    "code": "EE126",
-    "name": "EE Independent Project - Part-II",
-    "credits": 1,
-    "link": "NA",
-    "lecture": "NA12",
-    "instructor": " Dr. Kapil Jainwal"
+    "code": "EE103",
+    "name": "Circuits and Systems",
+    "credits": 6,
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202216",
+    "instructor": " Dr. Avishek Adhikari"
   },
   {
     "code": "EE171",
     "name": "EE Independent Project",
     "credits": 2,
-    "link": "NA",
-    "lecture": "NA14",
-    "instructor": " Dr. Nitin Khanna"
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 2022NA",
+    "instructor": " Dr. Anil Kumar Sao"
   },
   {
-    "code": "EE201",
-    "name": "Electronic Devices",
-    "credits": 4,
-    "link": "203",
-    "lecture": "I14",
-    "instructor": " Dr. Kapil Jainwal"
-  },
-  {
-    "code": "EE202",
-    "name": "Control Systems - I",
+    "code": "EE204",
+    "name": "Analog Circuits",
     "credits": 6,
-    "link": "304",
-    "lecture": "F16",
-    "instructor": " Dr. Avishek Adhikary"
-  },
-  {
-    "code": "EE203",
-    "name": "Embedded Systems",
-    "credits": 4,
-    "link": "203",
-    "lecture": "H14",
-    "instructor": " Prof. Santosh Biswas"
-  },
-  {
-    "code": "EE207",
-    "name": "Engineering Electromagnetics",
-    "credits": 4,
     "link": "204",
-    "lecture": "J14",
+    "lecture": "C16",
     "instructor": " Dr. Nikhil Chander"
+  },
+  {
+    "code": "EE205",
+    "name": "Power Engineering - I",
+    "credits": 6,
+    "link": "204",
+    "lecture": "D16",
+    "instructor": " Dr. Prashant Agnihotri"
+  },
+  {
+    "code": "EE208",
+    "name": "Electrical Machines",
+    "credits": 4,
+    "link": "302",
+    "lecture": "A36",
+    "instructor": " Dr. Prashant Agnihotri"
   },
   {
     "code": "EE251",
-    "name": "Electrical Engineering Lab - I (Control Lab)",
+    "name": "Control systems Lab",
     "credits": 2,
-    "link": "NA",
-    "lecture": "NA36",
+    "link": "EE LAB",
+    "lecture": "N14",
     "instructor": " Dr. Nikhil Chander"
   },
   {
-    "code": "EE301",
-    "name": "Communication Systems",
-    "credits": 4,
-    "link": "104",
-    "lecture": "A36",
+    "code": "EE352",
+    "name": "Communication Lab",
+    "credits": 2,
+    "link": "EE LAB",
+    "lecture": "M36",
     "instructor": " Dr. Sreejith T. V"
   },
   {
-    "code": "EE351",
-    "name": "Electrical Engineering Lab – II (Machine Lab)",
+    "code": "EE353",
+    "name": "Devices and Circuits lab",
+    "credits": 2,
+    "link": "EE LAB",
+    "lecture": "P14",
+    "instructor": " Dr. Avishek Adhikari"
+  },
+  {
+    "code": "EE371",
+    "name": "Independent Project",
     "credits": 2,
     "link": "NA",
     "lecture": "NA36",
-    "instructor": " Dr. Prashant Agnihotri"
+    "instructor": " Dr. Nitin Khanna"
   },
   {
     "code": "EE499",
-    "name": "Thesis (BTech)",
-    "credits": "6 to 12",
+    "name": "Thesis (For BTech)",
+    "credits": "6 to 18",
     "link": "NA",
-    "lecture": "NA16",
+    "lecture": "NANA",
     "instructor": " DUGC EECS"
   },
   {
-    "code": "EE509",
-    "name": "Power Electronics",
-    "credits": 6,
-    "link": "302",
-    "lecture": "K16",
-    "instructor": " Dr. Prashant Agnihotri"
+    "code": "EE515",
+    "name": "Wireless Security With SDRs",
+    "credits": 3,
+    "link": "304",
+    "lecture": "J13",
+    "instructor": " Dr. Arzad Alam Kherani"
   },
   {
-    "code": "EE522",
-    "name": "Machine Learning Applications for Wireless Communications",
+    "code": "EE526",
+    "name": "Digital IC design",
     "credits": 6,
-    "link": "303",
+    "link": "202",
     "lecture": "F16",
-    "instructor": " Arzad Alam Kherani"
+    "instructor": " Dr. Kapil Jainwal"
   },
   {
-    "code": "EE529",
-    "name": "Fundamentals of wireless and cellular communication",
-    "credits": 6,
-    "link": "103",
-    "lecture": "C16",
-    "instructor": " Dr. Sreejith T. V"
+    "code": "EE566",
+    "name": "Math of Turn-Based Strategy Games",
+    "credits": 3,
+    "link": "304",
+    "lecture": "J46",
+    "instructor": " Dr. Arzad Alam Kherani"
   },
   {
     "code": "EE599",
-    "name": "Thesis (MTech)",
+    "name": "Thesis (For MTech)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
+    "lecture": "NANA",
     "instructor": " DPGC EECS"
   },
   {
-    "code": "EE601",
-    "name": "Solar Photovoltaic Devices and Systems",
+    "code": "EE605",
+    "name": "Advanced Computer Networks",
     "credits": 6,
     "link": "204",
-    "lecture": "I16",
-    "instructor": " Dr. Nikhil Chander"
+    "lecture": "H16",
+    "instructor": " Dr. Anand Baswade"
   },
   {
     "code": "EE795",
@@ -505,91 +641,115 @@
   },
   {
     "code": "EE799",
-    "name": "Thesis (PhD)",
+    "name": "Thesis (For PhD)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
+    "lecture": "NANA",
     "instructor": " DPGC EECS"
   },
   {
-    "code": "EV501",
-    "name": "Electric Vehicles: Policies and Regulations",
-    "credits": 3,
-    "link": "202",
-    "lecture": "J13",
-    "instructor": " Dr. Ramasamy Mayilmurugan"
-  },
-  {
-    "code": "EV502",
-    "name": "Introduction to Automobiles",
-    "credits": 3,
-    "link": "302",
-    "lecture": "I13",
-    "instructor": " Dr. Rahul Jain"
-  },
-  {
-    "code": "EV503",
-    "name": "Basics of Electrical Engineering",
-    "credits": 3,
-    "link": "104",
-    "lecture": "H13",
-    "instructor": " Dr. Nitin Khanna"
-  },
-  {
-    "code": "EV504",
-    "name": "Energy Storage Materials and Technologies",
-    "credits": 3,
-    "link": "202",
-    "lecture": "Y13",
-    "instructor": " Dr. Raghavender Medishetty"
-  },
-  {
-    "code": "EV505",
-    "name": "Hybrid and Electric Vehicles",
-    "credits": 3,
-    "link": "104",
-    "lecture": "H46",
-    "instructor": " Dr. Pravesh C. Shukla"
-  },
-  {
-    "code": "EV506",
-    "name": "Battery Chemistry, Components and Manufacturing",
-    "credits": 3,
-    "link": "302",
-    "lecture": "I46",
-    "instructor": " Dr. Sanjib Banerjee"
-  },
-  {
-    "code": "EV601",
-    "name": "Advanced Automobile Technologies",
-    "credits": 3,
-    "link": "104",
-    "lecture": "Z46",
-    "instructor": " Dr. Nagesh Devidas Patil"
-  },
-  {
-    "code": "IC100",
-    "name": "Introduction to Programming",
+    "code": "EV605",
+    "name": "EV Thermal Management System",
     "credits": 6,
-    "link": "207",
-    "lecture": "A16",
-    "instructor": " Dr. Sk Subidh Ali"
+    "link": "104",
+    "lecture": "E16",
+    "instructor": " Dr. Nagesh D. Patil, Dr. Pravesh C Shukla"
   },
   {
-    "code": "IC200",
-    "name": "Introduction to Astronomy and Astrophysics",
-    "credits": 4,
-    "link": "207",
-    "lecture": "B36",
-    "instructor": " Dr. Mahavir Sharma"
+    "code": "EV608",
+    "name": "Application of Power Electronics in Electric Vehicle and Smart Grid",
+    "credits": 6,
+    "link": "203",
+    "lecture": "J16",
+    "instructor": " Dr. Prashant Agnihotri, Prof. Santosh Biswas"
   },
   {
-    "code": "IC300",
-    "name": "Materials Chemistry III",
+    "code": "EV795",
+    "name": "PhD Candidacy",
+    "credits": 0,
+    "link": "NA",
+    "lecture": "NANA",
+    "instructor": " DPGC EVT"
+  },
+  {
+    "code": "EV798",
+    "name": "Independent Study: Data Analytics for Electric Vehicle",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NANA",
+    "instructor": " Dr. Prashant Agnihotri"
+  },
+  {
+    "code": "EV799",
+    "name": "Thesis (For PhD)",
+    "credits": "6 to 24",
+    "link": "NA",
+    "lecture": "NANA",
+    "instructor": " DPGC EVT"
+  },
+  {
+    "code": "IC106",
+    "name": "Chemistry Lab",
+    "credits": 3,
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202216",
+    "instructor": " Dr. Raghavender Medishetty, Dr. Arup Mukhurjee, Dr.\n"
+  },
+  {
+    "code": "IC107",
+    "name": "Physics Lab",
+    "credits": 3,
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202216",
+    "instructor": " Dr. Dhruv Pratap Singh"
+  },
+  {
+    "code": "IC150",
+    "name": "Applied Digital Logic Design",
+    "credits": 6,
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202216",
+    "instructor": " Dr. Kapil Jainwal and Prof. Santosh Biswas"
+  },
+  {
+    "code": "IC151",
+    "name": "Quantum Physics",
     "credits": 2,
-    "link": "207",
-    "lecture": "D12",
-    "instructor": " Dr. Satyajit Gupta"
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202212",
+    "instructor": " Dr. Dhruv Pratap Singh"
+  },
+  {
+    "code": "IC152",
+    "name": "Linear Algebra II",
+    "credits": 3,
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202213",
+    "instructor": " Dr. Avijit Pal"
+  },
+  {
+    "code": "IC153",
+    "name": "Calculus I",
+    "credits": 3,
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202246",
+    "instructor": " Dr. Arnab Patra"
+  },
+  {
+    "code": "IC250",
+    "name": "Materials Chemistry II",
+    "credits": 2,
+    "link": "207/202,  203, 302,  303",
+    "lecture": "B/X12",
+    "instructor": " Dr. Arup Mukherjee"
+  },
+  {
+    "code": "IC251",
+    "name": "Basics of Bioinformatics",
+    "credits": 4,
+    "link": "207/202,  203, 302,  303",
+    "lecture": "B/X36",
+    "instructor": " Dr. Rukmankesh"
   },
   {
     "code": "IC601",
@@ -600,139 +760,115 @@
     "instructor": " Dr. Suchetan Pal"
   },
   {
+    "code": "LA302",
+    "name": "Indian Writing in English",
+    "credits": 4,
+    "link": "107",
+    "lecture": "G36",
+    "instructor": " Dr. Anubhav Pradhan"
+  },
+  {
     "code": "LA303",
     "name": "Chinese Beginner's 1",
     "credits": 1,
-    "link": "103",
-    "lecture": "L11",
-    "instructor": " Ms. Hao Yu LU"
+    "link": "303",
+    "lecture": "L33",
+    "instructor": " Ms. Hao Yu Lu"
   },
   {
-    "code": "LA305",
-    "name": "City in Literature",
-    "credits": 4,
-    "link": "104",
-    "lecture": "L14",
-    "instructor": " Dr. Anubhav Pradhan"
+    "code": "LA308",
+    "name": "Positive Psychology",
+    "credits": 2,
+    "link": "207",
+    "lecture": "L12",
+    "instructor": " Dr. Anindita Ghosh"
   },
   {
     "code": "LA311",
     "name": "Chinese Beginner's 3",
     "credits": 2,
-    "link": "103",
-    "lecture": "Z34",
-    "instructor": " Ms. Hao Yu LU"
+    "link": "207",
+    "lecture": "L56",
+    "instructor": " Ms. Hao Yu Lu"
   },
   {
-    "code": "LA312",
-    "name": "Chinese Beginner's 4",
+    "code": "LA313",
+    "name": "Chinese Beginner's 5",
     "credits": 2,
-    "link": "103",
-    "lecture": "L56",
-    "instructor": " Ms. Hao Yu LU"
+    "link": "303",
+    "lecture": "L12",
+    "instructor": " Ms. Hao Yu Lu"
   },
   {
     "code": "LA315",
     "name": "Chinese Beginner's 2",
     "credits": 1,
-    "link": "103",
-    "lecture": "L22",
-    "instructor": " Ms. Hao Yu LU"
+    "link": "303",
+    "lecture": "L44",
+    "instructor": " Ms. Hao Yu Lu"
   },
   {
-    "code": "LA321",
-    "name": "Macroeconomics",
-    "credits": 2,
-    "link": "302",
-    "lecture": "J34",
-    "instructor": " Dr. Sitakanta Panda"
+    "code": "LA318",
+    "name": "Chinese Basic 1",
+    "credits": 1,
+    "link": "304",
+    "lecture": "G33",
+    "instructor": " Ms. Hao Yu Lu"
   },
   {
-    "code": "LA323",
-    "name": "Introduction to Popular Culture",
-    "credits": 2,
-    "link": "302",
-    "lecture": "L12",
-    "instructor": " Dr. Sonal Jha"
-  },
-  {
-    "code": "LA329",
-    "name": "Selected Topics on Indian Economy",
-    "credits": 2,
-    "link": "302",
-    "lecture": "J12",
-    "instructor": " Dr. Sitakanta Panda"
+    "code": "LA319",
+    "name": "Chinese Basic 2",
+    "credits": 1,
+    "link": "304",
+    "lecture": "G44",
+    "instructor": " Ms. Hao Yu Lu"
   },
   {
     "code": "LA332",
     "name": "Chinese Culture",
     "credits": 1,
-    "link": "204",
-    "lecture": "Z55",
-    "instructor": " Ms. Hao Yu LU"
+    "link": "304",
+    "lecture": "G55",
+    "instructor": " Ms. Hao Yu Lu"
   },
   {
-    "code": "LA333",
-    "name": "Chinese Calligraphy",
-    "credits": 1,
-    "link": "103",
-    "lecture": "L33",
-    "instructor": " Ms. Hao Yu LU"
-  },
-  {
-    "code": "LA347",
-    "name": "Introduction to Organizational Behaviour",
+    "code": "LA354",
+    "name": "Introduction to Postcolonial Literature",
     "credits": 2,
     "link": "207",
-    "lecture": "L56",
-    "instructor": " Dr. Anindita Ghosh"
-  },
-  {
-    "code": "LA349",
-    "name": "Contemporary Indian Cinema: Beyond Bollywood",
-    "credits": 2,
-    "link": "302",
     "lecture": "L34",
     "instructor": " Dr. Sonal Jha"
   },
   {
-    "code": "LA635",
-    "name": "Applied Positive Psychology",
-    "credits": 2,
-    "link": "207",
-    "lecture": "L12",
+    "code": "LA702",
+    "name": "Advanced Positive Psychology",
+    "credits": 6,
+    "link": "202",
+    "lecture": "E16",
     "instructor": " Dr. Anindita Ghosh"
   },
   {
-    "code": "LA701",
-    "name": "Econometric Methods",
+    "code": "LA703",
+    "name": "Positive Organizational Behaviour",
     "credits": 6,
-    "link": "302",
+    "link": "103",
     "lecture": "F16",
-    "instructor": " Dr. Sitakanta Panda"
+    "instructor": " Dr. Anindita Ghosh"
   },
   {
     "code": "LA705",
     "name": "Cultural Studies: Theory and Practice",
     "credits": 6,
-    "link": "303",
-    "lecture": "H16",
+    "link": "203",
+    "lecture": "E16",
     "instructor": " Dr. Sonal Jha"
-  },
-  {
-    "code": "LA706",
-    "name": "Development Economics",
-    "credits": 6,
-    "link": "303",
-    "lecture": "I16",
-    "instructor": " Dr. Sitakanta Panda"
   },
   {
     "code": "LA710",
     "name": "Modern Indian Literature: Currents and Countercurrents",
     "credits": 6,
-    "link": "303",
-    "lecture": "J16",
+    "link": "103",
+    "lecture": "Y16",
     "instructor": " Dr. Anubhav Pradhan"
   },
   {
@@ -745,11 +881,11 @@
   },
   {
     "code": "LA798",
-    "name": "Independent Study: Development Economics",
+    "name": "Independent Study: Literary and Cultural Studies",
     "credits": 6,
     "link": "NA",
     "lecture": "NA16",
-    "instructor": " Dr. Sitakanta Panda"
+    "instructor": " Dr. Sonal Jha"
   },
   {
     "code": "LA798",
@@ -760,108 +896,92 @@
     "instructor": " Dr. Anubhav Pradhan"
   },
   {
+    "code": "LA798",
+    "name": "Independent Study: Positive Psychology",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Anindita Ghosh"
+  },
+  {
     "code": "LA799",
     "name": "Thesis (PhD)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
+    "lecture": "NANA",
     "instructor": " DPGC LA"
   },
   {
-    "code": "MA500",
-    "name": "Real Analysis",
+    "code": "MA505",
+    "name": "Complex Analysis",
     "credits": 6,
-    "link": "304",
+    "link": "103",
     "lecture": "H16",
-    "instructor": " Dr. Arnab Patra"
-  },
-  {
-    "code": "MA501",
-    "name": "Linear Algebra",
-    "credits": 6,
-    "link": "303",
-    "lecture": "B16",
     "instructor": " Dr. Raj Kumar Mistri"
   },
   {
-    "code": "MA502",
-    "name": "Modern Algebra",
+    "code": "MA506",
+    "name": "Multi-Variable Calculus",
     "credits": 4,
-    "link": "203",
-    "lecture": "L14",
-    "instructor": " Dr. Anuj Jakhar"
-  },
-  {
-    "code": "MA503",
-    "name": "Introduction to Probability Theory",
-    "credits": 4,
-    "link": "304",
-    "lecture": "E14",
-    "instructor": " Dr.Kuldeep Kumar Kataria"
-  },
-  {
-    "code": "MA504",
-    "name": "Differential Equations",
-    "credits": 4,
-    "link": "304",
-    "lecture": "I14",
+    "link": "104",
+    "lecture": "J36",
     "instructor": " Dr. Pawan Kumar Mishra"
   },
   {
-    "code": "MA509",
-    "name": "Statistical Inference",
+    "code": "MA507",
+    "name": "Numerical Techniques",
     "credits": 6,
-    "link": "203",
-    "lecture": "J16",
-    "instructor": " Dr. Lakshmi Kanta Patra"
+    "link": "303",
+    "lecture": "E16",
+    "instructor": " Prof. P.D. Srivastava and Dr. Asrifa Sultana"
   },
   {
-    "code": "MA516",
-    "name": "Enumerative Combinatorics",
+    "code": "MA508",
+    "name": "Topology",
     "credits": 6,
-    "link": "204",
-    "lecture": "K16",
+    "link": "203",
+    "lecture": "C16",
     "instructor": " Dr. Anurag Singh"
   },
   {
-    "code": "MA605",
-    "name": "Operations Research",
-    "credits": 4,
+    "code": "MA510",
+    "name": "Elementary Number Theory",
+    "credits": 6,
     "link": "203",
-    "lecture": "C14",
-    "instructor": " Dr. Asrifa Sultana"
-  },
-  {
-    "code": "MA608",
-    "name": "Martingale Theory",
-    "credits": 6,
-    "link": "204",
     "lecture": "L16",
-    "instructor": " Dr. Kuldeep Kumar Kataria"
-  },
-  {
-    "code": "MA609",
-    "name": "Numerical Optimization Techniques",
-    "credits": 2,
-    "link": "104",
-    "lecture": "G56",
-    "instructor": " Dr. Pawan Kumar Mishra"
-  },
-  {
-    "code": "MA614",
-    "name": "Introductory Additive Number Theory",
-    "credits": 6,
-    "link": "302",
-    "lecture": "H16",
     "instructor": " Dr. Raj Kumar Mistri"
   },
   {
-    "code": "MA699",
-    "name": "MSc Thesis",
+    "code": "MA610",
+    "name": "Operator Theory",
     "credits": 6,
+    "link": "104",
+    "lecture": "G16",
+    "instructor": " Dr. Avijit Pal"
+  },
+  {
+    "code": "MA611",
+    "name": "Stochastic Process",
+    "credits": 6,
+    "link": "104",
+    "lecture": "I16",
+    "instructor": " Dr. Kuldeep Kumar Kataria"
+  },
+  {
+    "code": "MA617",
+    "name": "Statistical Decision Theory",
+    "credits": 6,
+    "link": "103",
+    "lecture": "C16",
+    "instructor": " Dr. Lakshmi Kanta Patra"
+  },
+  {
+    "code": "MA699",
+    "name": "Thesis (For MSc)",
+    "credits": "6 to 18",
     "link": "NA",
-    "lecture": "NA16",
-    "instructor": " DPGC_MA"
+    "lecture": "NANA",
+    "instructor": " DPGC MA"
   },
   {
     "code": "MA795",
@@ -869,199 +989,191 @@
     "credits": 0,
     "link": "NA",
     "lecture": "NANA",
-    "instructor": " DPGC_MA"
+    "instructor": " DPGC MA"
   },
   {
     "code": "MA799",
-    "name": "PhD Thesis",
+    "name": "Thesis (For PhD)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
-    "instructor": " DPGC_MA"
+    "lecture": "NANA",
+    "instructor": " DPGC MA"
   },
   {
     "code": "ME102",
     "name": "Engineering and Machine Drawing",
     "credits": 3,
-    "link": "NA",
-    "lecture": "NA16",
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202216",
     "instructor": " Dr. Kaushik Bandyopadhyay"
+  },
+  {
+    "code": "ME111",
+    "name": "Thermodynamics",
+    "credits": 6,
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202216",
+    "instructor": " Dr. Nagesh D. Patil"
   },
   {
     "code": "ME151",
     "name": "Fundamentals of Metallurgy",
     "credits": 3,
-    "link": "204",
-    "lecture": "E46",
-    "instructor": " Dr. Rahul Jain"
+    "link": "As per BTech 2022 schedule",
+    "lecture": "BTech 202213",
+    "instructor": " Dr. Jose Immanuel R"
   },
   {
-    "code": "ME212",
-    "name": "Fluid Mechanics",
+    "code": "ME213",
+    "name": "Heat and Mass Transfer",
     "credits": 6,
-    "link": "204",
-    "lecture": "H16",
+    "link": "303",
+    "lecture": "I16",
     "instructor": " Dr. Udayraj"
   },
   {
-    "code": "ME231",
-    "name": "Solid Mechanics – I",
+    "code": "ME232",
+    "name": "Dynamics",
     "credits": 6,
-    "link": "104",
-    "lecture": "F16",
+    "link": "203 For D slot students",
+    "lecture": "BTech 2022, 16",
     "instructor": " Dr. Anshul Faye"
   },
   {
-    "code": "ME251",
-    "name": "Manufacturing Science – I",
+    "code": "ME334",
+    "name": "Design of Machine Elements",
     "credits": 6,
-    "link": "202",
-    "lecture": "I16",
-    "instructor": " Dr. Soumya Gangopadhyay"
-  },
-  {
-    "code": "ME333",
-    "name": "Theory of Machines and Mechanisms",
-    "credits": 6,
-    "link": "304",
+    "link": "203",
     "lecture": "A16",
+    "instructor": " Dr. Rahul Jain"
+  },
+  {
+    "code": "ME352",
+    "name": "Manufacturing Science II",
+    "credits": 6,
+    "link": "302",
+    "lecture": "C16",
     "instructor": " Dr. Purnendu Das"
-  },
-  {
-    "code": "ME353",
-    "name": "Total Quality Management",
-    "credits": 3,
-    "link": "204",
-    "lecture": "X46",
-    "instructor": " Dr. Kaushik Bandyopadhyay"
-  },
-  {
-    "code": "ME371",
-    "name": "Mechanical Engineering Lab I",
-    "credits": 3,
-    "link": "NA",
-    "lecture": "NA16",
-    "instructor": " Dr. Anshul Faye"
   },
   {
     "code": "ME372",
     "name": "Mechanical Engineering Lab II",
     "credits": 3,
-    "link": "NA",
-    "lecture": "NA16",
-    "instructor": " Dr. Rahul Jain"
+    "link": "ME LAB",
+    "lecture": "P16",
+    "instructor": " Dr. Vijay S. Duryodhan, Dr. Purnendu Das"
   },
   {
-    "code": "ME413",
-    "name": "Refrigeration and Air-Conditioning",
-    "credits": 6,
-    "link": "202",
-    "lecture": "Z16",
-    "instructor": " Dr. Udayraj"
+    "code": "ME495",
+    "name": "Mooc-Based (NPTEL): Wheeled Mobile Robots",
+    "credits": 4,
+    "link": "NA",
+    "lecture": "NA36",
+    "instructor": " DUGC ME"
   },
   {
     "code": "ME499",
-    "name": "Thesis (BTech)",
-    "credits": "6 to 12",
+    "name": "Thesis (For BTech)",
+    "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
-    "instructor": " DUGC_ME"
+    "lecture": "NANA",
+    "instructor": " DUGC ME"
   },
   {
-    "code": "ME512",
-    "name": "Advanced Fluid Mechanics",
+    "code": "ME513",
+    "name": "Convective Heat Transfer",
+    "credits": 6,
+    "link": "104",
+    "lecture": "K16",
+    "instructor": " Dr. Balkrishna Mehta"
+  },
+  {
+    "code": "ME515",
+    "name": "Engine Management Systems",
     "credits": 6,
     "link": "202",
-    "lecture": "K16",
-    "instructor": " Dr. Nagesh Devidas Patil"
-  },
-  {
-    "code": "ME514",
-    "name": "IC Engine",
-    "credits": 6,
-    "link": "302",
-    "lecture": "D16",
-    "instructor": " Dr. Pravesh Chandra Shukla"
-  },
-  {
-    "code": "ME535",
-    "name": "Theory of Elasticity",
-    "credits": 6,
-    "link": "302",
-    "lecture": "C16",
-    "instructor": " Dr. Anshul Faye"
-  },
-  {
-    "code": "ME551",
-    "name": "Advanced Manufacturing Processes",
-    "credits": 6,
-    "link": "203",
-    "lecture": "K16",
-    "instructor": " Dr. Rahul Jain"
-  },
-  {
-    "code": "ME552",
-    "name": "Knowledge Based Systems",
-    "credits": 3,
-    "link": "204",
-    "lecture": "X13",
-    "instructor": " Dr. Kaushik Bandyopadhyay"
+    "lecture": "Y16",
+    "instructor": " Dr. Pravesh C. Shukla"
   },
   {
     "code": "ME553",
     "name": "Advanced Materials and Processing",
     "credits": 3,
-    "link": "103",
-    "lecture": "A46",
-    "instructor": " Dr. Jose Immanuel R"
-  },
-  {
-    "code": "ME557",
-    "name": "Laser materials processing",
-    "credits": 6,
-    "link": "103",
-    "lecture": "F16",
-    "instructor": " Dr. Kaushik Bandyopadhyay"
-  },
-  {
-    "code": "ME558",
-    "name": "Surface Engineering",
-    "credits": 6,
     "link": "204",
-    "lecture": "C16",
-    "instructor": " Dr. Soumya Gangopadhyay"
+    "lecture": "J46",
+    "instructor": " Dr. Jose Immanuel R"
   },
   {
     "code": "ME559",
     "name": "Mechanical Behaviour of Materials",
     "credits": 3,
-    "link": "103",
-    "lecture": "A13",
+    "link": "204",
+    "lecture": "J13",
     "instructor": " Dr. Jose Immanuel R"
   },
   {
     "code": "ME599",
-    "name": "Thesis (MTech)",
+    "name": "Thesis (For MTech)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
-    "instructor": " DPGC_ME"
+    "lecture": "NANA",
+    "instructor": " DPGC ME"
   },
   {
-    "code": "ME601",
-    "name": "Applied Numerical Methods",
+    "code": "ME613",
+    "name": "Microfluidics",
+    "credits": 6,
+    "link": "304",
+    "lecture": "Z16",
+    "instructor": " Dr. Vijay S. Duryodhan"
+  },
+  {
+    "code": "ME633",
+    "name": "Finite element Methods",
+    "credits": 6,
+    "link": "304",
+    "lecture": "H16",
+    "instructor": " Dr. Anshul Faye"
+  },
+  {
+    "code": "ME652",
+    "name": "Automation",
+    "credits": 6,
+    "link": "204",
+    "lecture": "F16",
+    "instructor": " Dr. Soumya Gangopadhyay"
+  },
+  {
+    "code": "ME653",
+    "name": "Experimental Methods in Fluids and Thermal Science",
     "credits": 6,
     "link": "203",
-    "lecture": "Z16",
-    "instructor": " Dr. Vijay S Duryodhan"
+    "lecture": "F16",
+    "instructor": " Dr. Balkrishna Mehta, Dr. Vijay S. Duryodhan"
   },
   {
-    "code": "ME615",
-    "name": "Computational Fluid Dynamics",
+    "code": "ME654",
+    "name": "Advanced Materials - Development and Characterization",
     "credits": 6,
-    "link": "103",
-    "lecture": "D16",
-    "instructor": " Dr. Vijay S Duryodhan"
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Jose Immanuel R"
+  },
+  {
+    "code": "ME673",
+    "name": "Computational Fluid Dynamics Lab",
+    "credits": 1,
+    "link": "ME LAB",
+    "lecture": "O34",
+    "instructor": " Dr. Udayraj"
+  },
+  {
+    "code": "ME674",
+    "name": "Finite Element Methods Lab",
+    "credits": 1,
+    "link": "ME LAB",
+    "lecture": "O56",
+    "instructor": " Dr. Anshul Faye, Dr. Rahul Jain"
   },
   {
     "code": "ME795",
@@ -1069,111 +1181,95 @@
     "credits": 0,
     "link": "NA",
     "lecture": "NANA",
-    "instructor": " DPGC_ME"
+    "instructor": " DPGC ME"
   },
   {
     "code": "ME799",
-    "name": "Thesis (PhD)",
+    "name": "Thesis (For PhD)",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
-    "instructor": " DPGC_ME"
+    "lecture": "NANA",
+    "instructor": " DPGC ME"
   },
   {
-    "code": "MT501",
-    "name": "Fundamentals of Sensing and Control for Mechatronics",
+    "code": "MT503",
+    "name": "Fabrication techniques for MEMs",
     "credits": 6,
-    "link": "203",
-    "lecture": "G16",
-    "instructor": " Dr. Avishek Adhikary"
+    "link": "302",
+    "lecture": "Y16",
+    "instructor": " Dr. Soumya Gangopadhyay, Dr. Vijay S. Duryodhan"
   },
   {
-    "code": "MT502",
-    "name": "Fundamentals of Mechanical Engineering for Mechatronics",
-    "credits": 6,
-    "link": "304",
-    "lecture": "J16",
-    "instructor": " Dr. Purnendu Das"
-  },
-  {
-    "code": "PH501",
-    "name": "Classical Mechanics",
-    "credits": 6,
-    "link": "107",
-    "lecture": "B16",
-    "instructor": " Dr. Dhruv  Pratap Singh"
-  },
-  {
-    "code": "PH502",
-    "name": "Quantum Mechanics-I",
-    "credits": 6,
-    "link": "107",
-    "lecture": "E16",
-    "instructor": " Dr. Sabyasachi Ghosh"
-  },
-  {
-    "code": "PH503",
-    "name": "Mathematical Physics",
-    "credits": 6,
-    "link": "104",
-    "lecture": "J16",
-    "instructor": " Dr. Sudhanwa Patra"
-  },
-  {
-    "code": "PH504",
-    "name": "Computational Physics",
+    "code": "MT554",
+    "name": "Optimal Control for Unmanned Aerial System",
     "credits": 6,
     "link": "304",
     "lecture": "K16",
-    "instructor": " Dr. MD. Mehboob Alam"
+    "instructor": " Dr. Avishek Adhikari"
   },
   {
-    "code": "PH505",
-    "name": "Electronics Laboratory",
+    "code": "PH506",
+    "name": "Statistical Mechanics",
     "credits": 6,
-    "link": "202",
+    "link": "304",
     "lecture": "C16",
-    "instructor": " Dr. Dhriti S. Ghosh"
+    "instructor": " Dr. Sabyasachi Ghosh"
+  },
+  {
+    "code": "PH507",
+    "name": "Quantum Mechanics-II",
+    "credits": 6,
+    "link": "303",
+    "lecture": "F16",
+    "instructor": " Dr. Sesha Vempati"
   },
   {
     "code": "PH508",
     "name": "Electrodynamics",
     "credits": 6,
-    "link": "204",
-    "lecture": "G16",
-    "instructor": " Dr. Dhriti S. Ghosh"
-  },
-  {
-    "code": "PH511",
-    "name": "Atomic and Molecular Physics",
-    "credits": 6,
-    "link": "203",
-    "lecture": "F16",
-    "instructor": " Dr. Mahavir Sharma"
-  },
-  {
-    "code": "PH512",
-    "name": "Solid State Physics",
-    "credits": 6,
-    "link": "103",
+    "link": "104",
     "lecture": "H16",
+    "instructor": " Dr. Dhriti Ghosh"
+  },
+  {
+    "code": "PH509",
+    "name": "Nuclear and Particle Physics",
+    "credits": 6,
+    "link": "204",
+    "lecture": "A16",
+    "instructor": " Dr. Sudhanwa Patra"
+  },
+  {
+    "code": "PH510",
+    "name": "Experimental Laboratory",
+    "credits": 6,
+    "link": "304/PH LAB",
+    "lecture": "L1/P16",
     "instructor": " Dr. Sesha Vempati"
   },
   {
-    "code": "PH514",
-    "name": "Electronics",
+    "code": "PH517",
+    "name": "Astrophysics & Cosmology",
+    "credits": 6,
+    "link": "202",
+    "lecture": "J16",
+    "instructor": " Dr. Mahavir Sharma"
+  },
+  {
+    "code": "PH606",
+    "name": "Particle Physics",
     "credits": 6,
     "link": "204",
-    "lecture": "D16",
-    "instructor": " Dr. Dhriti S. Ghosh"
+    "lecture": "K16",
+    "instructor": " Dr. Sudhanwa Patra"
   },
   {
     "code": "PH699",
-    "name": "MSc Thesis",
-    "credits": 6,
+    "name": "Thesis",
+    "credits": "6 to 18",
     "link": "NA",
-    "lecture": "NA16",
-    "instructor": " DPGC_PH"
+    "lecture": "NANA",
+    "instructor": " DPGC PH"
   },
   {
     "code": "PH795",
@@ -1181,14 +1277,54 @@
     "credits": 0,
     "link": "NA",
     "lecture": "NANA",
-    "instructor": " DPGC_PH"
+    "instructor": " DPGC PH"
+  },
+  {
+    "code": "PH798",
+    "name": "Independent Study: Magnetic properties of MoS2",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Sesha Vempati"
+  },
+  {
+    "code": "PH798",
+    "name": "Independent Study: Design and applications of microrobots",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Dhruv Singh"
+  },
+  {
+    "code": "PH798",
+    "name": "Independent Study: High Energy Nuclear Physics",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Sabyasachi Ghosh"
+  },
+  {
+    "code": "PH798",
+    "name": "Independent Study: Tandem Solar Cells- Physics and Realization Techniques",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Dhriti Ghosh"
+  },
+  {
+    "code": "PH798",
+    "name": "Independent Study: astrophysical fluid dynamics",
+    "credits": 6,
+    "link": "NA",
+    "lecture": "NA16",
+    "instructor": " Dr. Mahavir Sharma"
   },
   {
     "code": "PH799",
     "name": "PhD Thesis",
     "credits": "6 to 24",
     "link": "NA",
-    "lecture": "NA16",
-    "instructor": " DPGC_PH"
+    "lecture": "NANA",
+    "instructor": " DPGC PH"
   }
 ]

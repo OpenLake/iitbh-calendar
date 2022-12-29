@@ -13,7 +13,7 @@ const getValue = val => {
 };
 
 const run = async () => {
-	await workbook.xlsx.readFile('./courses3.xlsx');
+	await workbook.xlsx.readFile('./courses2022-23W.xlsx');
 
 	const sheet = workbook.worksheets[0];
 
@@ -28,11 +28,11 @@ const run = async () => {
 				code: table[row][2],
 				name: table[row][3],
 				credits: table[row][4],
-				link: `${table[row][8]}`,
+				link: `${table[row][7]}`,
 				lecture,
 				instructor:
 					(1
-						? ` ${table[row][10]}`
+						? ` ${table[row][8]}`
 						: ''),
 			});
 	}
