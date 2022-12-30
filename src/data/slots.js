@@ -33,15 +33,15 @@ export const slots = {
 	],
 	I: [
 		{ day: 'Monday', start: '15:30', end: '16:50' },
-		{ day: 'Wednesday', start: '14:00', end: '15:20' },
+		{ day: 'Tuesday', start: '14:00', end: '15:20' },
 	],
 	J: [
-		{ day: 'Tuesday', start: '14:00', end: '15:20' },
-		{ day: 'Thursday', start: '15:30', end: '16:50' },
+		{ day: 'Wednesday', start: '14:00', end: '15:20' },
+		{ day: 'Friday', start: '14:00', end: '15:20' },
 	],
 	K: [
 		{ day: 'Thursday', start: '14:00', end: '15:20' },
-		{ day: 'Friday', start: '14:00', end: '15:20' },
+		{ day: 'Monday', start: '17:00', end: '18:30' },
 	],
 	L: [
 		{ day: 'Wednesday', start: '15:30', end: '16:50' },
@@ -60,7 +60,7 @@ export const slots = {
 	V: [{ day: 'Friday', start: '10:00', end: '12:50' }],
 	X: [
 		{ day: 'Monday', start: '17:00', end: '18:30' },
-		{ day: 'Wednesday', start: '10:00', end: '11:20' },
+		{ day: 'Thursday', start: '10:00', end: '11:20' },
 	],
 	Y: [
 		{ day: 'Tuesday', start: '17:00', end: '18:30' },
