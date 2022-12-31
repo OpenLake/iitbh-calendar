@@ -59,8 +59,8 @@ export const slots = {
 	U: [{ day: 'Thursday', start: '10:00', end: '12:50' }],
 	V: [{ day: 'Friday', start: '10:00', end: '12:50' }],
 	X: [
-		{ day: 'Monday', start: '17:00', end: '18:30' },
-		{ day: 'Thursday', start: '10:00', end: '11:20' },
+		{ day: 'Wednesday', start: '10:00', end: '11:20' },
+		{ day: 'Thursday', start: '15:30', end: '16:50' },
 	],
 	Y: [
 		{ day: 'Tuesday', start: '17:00', end: '18:30' },
