@@ -19,7 +19,7 @@
     "code": "CA150",
     "name": "Professional Communication Lab II- Presentation Skills",
     "credits": 1,
-    "link": "As per BTech 2022 schedule",
+    "link": "107",
     "lecture": "BTech 202256",
     "instructor": " Dr. Anindita Ghosh"
   },
@@ -35,7 +35,7 @@
     "code": "CS100",
     "name": "Software Tools & Technologies Lab I",
     "credits": 4,
-    "link": "As per BTech 2022 schedule",
+    "link": "207",
     "lecture": "BTech 202236",
     "instructor": " Dr. Vishwesh Jatala"
   },
@@ -43,7 +43,7 @@
     "code": "CS101",
     "name": "Discrete Structures I",
     "credits": 4,
-    "link": "As per BTech 2022 schedule",
+    "link": "107",
     "lecture": "BTech 2022 & D1 and A2 for MSc_MA14/",
     "instructor": " Dr. Rishi Ranjan Singh"
   },
@@ -51,7 +51,7 @@
     "code": "CS102",
     "name": "Data Structures",
     "credits": 4,
-    "link": "As per BTech 2022 schedule",
+    "link": "104",
     "lecture": "BTech 2022 & B for MSc_MA14/",
     "instructor": " Dr. Amit Kumar Dhar"
   },
@@ -419,7 +419,7 @@
     "code": "DS100",
     "name": "Mathematical Foundations for Data Science",
     "credits": 4,
-    "link": "As per BTech 2022 schedule",
+    "link": "203",
     "lecture": "BTech 202214",
     "instructor": " Dr. Anil Kumar Sao"
   },
@@ -507,7 +507,7 @@
     "code": "EE101",
     "name": "Digital Signal Processing",
     "credits": 4,
-    "link": "As per BTech 2022 schedule",
+    "link": "203",
     "lecture": "BTech 202214",
     "instructor": " Dr. Arzad Alam Kherani"
   },
@@ -515,7 +515,7 @@
     "code": "EE103",
     "name": "Circuits and Systems",
     "credits": 6,
-    "link": "As per BTech 2022 schedule",
+    "link": "207",
     "lecture": "BTech 202216",
     "instructor": " Dr. Avishek Adhikari"
   },
@@ -523,7 +523,7 @@
     "code": "EE171",
     "name": "EE Independent Project",
     "credits": 2,
-    "link": "As per BTech 2022 schedule",
+    "link": "NA",
     "lecture": "BTech 2022NA",
     "instructor": " Dr. Anil Kumar Sao"
   },
@@ -691,7 +691,7 @@
     "code": "IC106",
     "name": "Chemistry Lab",
     "credits": 3,
-    "link": "As per BTech 2022 schedule",
+    "link": "CY Lab",
     "lecture": "BTech 202216",
     "instructor": " Dr. Raghavender Medishetty, Dr. Arup Mukhurjee, Dr.\n"
   },
@@ -699,7 +699,7 @@
     "code": "IC107",
     "name": "Physics Lab",
     "credits": 3,
-    "link": "As per BTech 2022 schedule",
+    "link": "Physics Lab",
     "lecture": "BTech 202216",
     "instructor": " Dr. Dhruv Pratap Singh"
   },
@@ -707,7 +707,7 @@
     "code": "IC150",
     "name": "Applied Digital Logic Design",
     "credits": 6,
-    "link": "As per BTech 2022 schedule",
+    "link": "107",
     "lecture": "BTech 202216",
     "instructor": " Dr. Kapil Jainwal and Prof. Santosh Biswas"
   },
@@ -715,7 +715,7 @@
     "code": "IC151",
     "name": "Quantum Physics",
     "credits": 2,
-    "link": "As per BTech 2022 schedule",
+    "link": "207",
     "lecture": "BTech 202212",
     "instructor": " Dr. Dhruv Pratap Singh"
   },
@@ -723,7 +723,7 @@
     "code": "IC152",
     "name": "Linear Algebra II",
     "credits": 3,
-    "link": "As per BTech 2022 schedule",
+    "link": "107",
     "lecture": "BTech 202213",
     "instructor": " Dr. Avijit Pal"
   },
@@ -731,7 +731,7 @@
     "code": "IC153",
     "name": "Calculus I",
     "credits": 3,
-    "link": "As per BTech 2022 schedule",
+    "link": "107",
     "lecture": "BTech 202246",
     "instructor": " Dr. Arnab Patra"
   },
@@ -1003,7 +1003,7 @@
     "code": "ME102",
     "name": "Engineering and Machine Drawing",
     "credits": 3,
-    "link": "As per BTech 2022 schedule",
+    "link": "ME Lab",
     "lecture": "BTech 202216",
     "instructor": " Dr. Kaushik Bandyopadhyay"
   },
@@ -1011,7 +1011,7 @@
     "code": "ME111",
     "name": "Thermodynamics",
     "credits": 6,
-    "link": "As per BTech 2022 schedule",
+    "link": "103/303",
     "lecture": "BTech 202216",
     "instructor": " Dr. Nagesh D. Patil"
   },
@@ -1019,7 +1019,7 @@
     "code": "ME151",
     "name": "Fundamentals of Metallurgy",
     "credits": 3,
-    "link": "As per BTech 2022 schedule",
+    "link": "103/204",
     "lecture": "BTech 202213",
     "instructor": " Dr. Jose Immanuel R"
   },
@@ -1035,7 +1035,7 @@
     "code": "ME232",
     "name": "Dynamics",
     "credits": 6,
-    "link": "203 For D slot students",
+    "link": "302",
     "lecture": "BTech 2022, 16",
     "instructor": " Dr. Anshul Faye"
   },
