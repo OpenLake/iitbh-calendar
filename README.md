@@ -1,26 +1,44 @@
 # IITBh Calendar Generator
 
-Select your courses and generate a `.ics` 📆 calendar file.
+Easily generate your course timetable as a `.ics` 📆 file.
 
-https://openlake.github.io/iitbh-calendar/
+Visit https://openlake.github.io/iitbh-calendar/ to use.
 
-## Development
+## Setup for development
 
-- Get [pnpm](https://pnpm.io)
+- Install node and get [pnpm](https://pnpm.io)
 - Install dependencies
   ```sh
   pnpm install
   ```
-- Run
+- Run development server
   ```sh
   pnpm dev
   ```
+- These commands will run development server on port 3000.
+
+## Deploying
+
+- Edit `deploy.sh` file and fill your options.
+- Deploy
+ ```sh
+ ./deploy.sh
+ ```
 
 ## Course List
 
-I use [ilovepdf](https://www.ilovepdf.com/pdf_to_excel) to convert the course list to an Excel file.
+I use [ilovepdf](https://www.ilovepdf.com/pdf_to_excel) to convert the course list (pdf) to an Excel file.
 
 Then run a script to convert the Excel file to JSON.
 ```sh
 pnpm generate-data
 ```
+
+## Features
+
+- [X] Download calendar as an `.ics` file.
+- [X] Separate lecture and exam schedules
+- [ ] Support mid-sem/end-sem system.
+- [ ] View schedule as a table
+- [ ] Store and retrieve your course selection using cookies.
+- [ ] Templates based on recommendation made by Institute (First five semester)
