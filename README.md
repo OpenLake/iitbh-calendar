@@ -19,11 +19,17 @@ Visit https://openlake.github.io/iitbh-calendar/ to use.
 
 ## Deploying
 
-- Edit `deploy.sh` file and fill your options.
-- Deploy
- ```sh
- ./deploy.sh
- ```
+- Use `deploy.sh` script to deploy
+
+```
+usage: ./deploy.sh -u <USERNAME> [-r <REPO>] [-d <DOMAIN>] [-h] [-y]
+         -d Custom domain name
+         -h Display help
+         -r GitHub repo name
+         -u GitHub username [Required]
+         -v Be verbose
+         -y Do not ask confirmation
+```
 
 ## Course List
 
