@@ -13,7 +13,7 @@ const getValue = val => {
 };
 
 const run = async () => {
-	await workbook.xlsx.readFile('./courses2022-23W.xlsx');
+	await workbook.xlsx.readFile('./Course-list.xlsx');
 
 	const sheet = workbook.worksheets[0];
 
@@ -22,19 +22,25 @@ const run = async () => {
 	const data = [];
 
 	for (let row = START_ROW; table[row]; row++) {
-		const lecture = table[row][6]+table[row][5];
-		lecture &&
-			data.push({
-				code: table[row][2],
-				name: table[row][3],
-				credits: table[row][4],
-				link: `${table[row][7]}`,
-				lecture,
-				instructor:
-					(1
-						? ` ${table[row][8]}`
-						: ''),
-			});
+		const instructors = typeof table[row][8] === 'string' ? table[row][8].split(',').map(item => item.trim()) : [];
+		const newCredits = typeof table[row][4] === 'string' ? table[row][4].split('-') : [0, 0, 0];
+		
+		data.push({
+			code: table[row][2],
+			name: table[row][3],
+			credits: {
+				new: {
+					lecture: newCredits[0],
+					tutorial: newCredits[1],
+					practicle: newCredits[2]
+				},
+				old: String(table[row][5]),
+			},
+			location: table[row][7],
+			// Convert slots to the array format manually
+			slot: [table[row][6]],
+			instructor: instructors
+		});
 	}
 	await fs.writeFile('../src/data/courses.json', JSON.stringify(data, null, 2));
 	console.log('Written to data/courses.json');
