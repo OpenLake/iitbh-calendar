@@ -1,14 +1,28 @@
 import dayjs from 'dayjs';
 
 import { createEvents } from 'ics';
-import { slots, fractals, days, tierceDays, tierceSlots } from '../data/slots';
+import { slots, startEnd,days} from '../data/slots';
 
 const getSlotInfo = course => {
-	if (course.lecture === 'NA') return [];
-	const courseSlots = slots[course.lecture[0]],
-		startDate = fractals[course.lecture[1]].start,
-		endDate = fractals[course.lecture[2]].end;
-
+	if (course.slot.lecture.length === 0) return [];
+	const courseSlots = [],
+		startDate = startEnd.start,
+		endDate = startEnd.end;
+	if(course.slot.hasOwnProperty('lecture')){
+	for(const i of course.slot.lecture){
+		courseSlots.push(slots[i]);
+	}}
+	if(course.slot.hasOwnProperty('tutorial')){
+	for(const i of course.slot.tutorial){
+		courseSlots.push(slots[i]);
+	}
+	}
+	if(course.slot.hasOwnProperty('practicle')){
+	for(const i of course.slot.practicle){
+		courseSlots.push(slots[i]);
+	}
+	}
+	console.log(courseSlots);
 	return { slots: courseSlots, startDate, endDate };
 };
 
@@ -44,25 +58,24 @@ const generateIcal = (selectedCourses, calendarInclude) =>
 			.map(course => {
 				const classEntries = course.slots.map(slot => {
 					const isoDay = days.indexOf(slot.day),
-						fractalStart = dayjs(fractals[course.lecture[1]].start),
+						semStart = dayjs(startEnd.start),
 						[startHr, startMin] = slot.start.split(':'),
 						[endHr, endMin] = slot.end.split(':');
 
-					const startDate = nextWeekday(fractalStart, isoDay)
+					const startDate = nextWeekday(semStart, isoDay)
 							.hour(startHr)
 							.minute(startMin),
-						start = dateArray(startDate),
-						end = dateArray(startDate.hour(endHr).minute(endMin));
-
+							start = dateArray(startDate)
+							,end = dateArray(startDate.hour(endHr).minute(endMin));
 					const byDay = slot.day.slice(0, 2).toUpperCase(),
-						until = dayjs(fractals[course.lecture[2]].end)
+						until = dayjs(startEnd.end)
 							.hour(23)
 							.minute(59)
 							.format('YYYYMMDDTHHmmss');
 
 					return {
 						title: `${course.code} ${course.name}`,
-						location: course.link,
+						location: course.location,
 						start,
 						end,
 						recurrenceRule: `FREQ=WEEKLY;BYDAY=${byDay};INTERVAL=1;UNTIL=${until}`,
@@ -71,28 +84,7 @@ const generateIcal = (selectedCourses, calendarInclude) =>
 					};
 				});
 
-				const startFractal = parseInt(course.lecture[1], 10);
-				const endFractal = parseInt(course.lecture[2], 10);
-				const tierceEntries = [];
-				tierceDays.forEach((dates, tierceIndex) => {
-					const tierceFractal = (tierceIndex + 1) * 2;
-					if (tierceFractal < startFractal || tierceFractal > endFractal)
-						return;
-					const tierceSlot = tierceSlots[course.lecture[0]];
-					const tierceDate = dates[tierceSlot.day];
-					const [startHr, startMin] = tierceSlot.start.split(':');
-					const [endHr, endMin] = tierceSlot.end.split(':');
-					const startDate = dayjs(tierceDate).hour(startHr).minute(startMin);
-					const endDate = dayjs(tierceDate).hour(endHr).minute(endMin);
-					tierceEntries.push({
-						title: `Tierce ${tierceIndex + 1}: ${course.code} ${course.name}`,
-						start: dateArray(startDate),
-						end: dateArray(endDate),
-						description: `Instructor: ${course.instructor}`,
-						startOutputType: 'local',
-					});
-				});
-				return [...(calendarInclude.classEntries ? classEntries : []), ...(calendarInclude.tierceEntries ? tierceEntries : [])];
+				return (calendarInclude.classEntries ? classEntries : []);
 			})
 			.flat(),
 	);

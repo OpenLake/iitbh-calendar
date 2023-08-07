@@ -9,7 +9,7 @@
 	/** @type {HTMLDivElement} */
 	let topRightContainer;
 	let courses = [];
-	let calendarInclude = {classEntries : true, tierceEntries : true};
+	let calendarInclude = {classEntries : true};
 	export const reset = () => (courses = []);
 
 	function downloadCalendar() {
@@ -52,17 +52,13 @@
 		<input type="checkbox" bind:checked={calendarInclude.classEntries}/>
 			Class Shedule
 		</label>
-		<label>
-		<input type="checkbox" bind:checked={calendarInclude.tierceEntries}/>
-			Tierce Shedule
-		</label>
 	</div>
 	<div style="display: flex; justify-content: center; gap: 0.5rem;">
 		<button on:click={reset} class="outline"><RotateCCWIcon /> Reset</button>
 
 		<button
 			class="raised"
-			disabled={courses.length === 0 || (calendarInclude.classEntries == false && calendarInclude.tierceEntries == false)}
+			disabled={courses.length === 0 || (calendarInclude.classEntries == false)}
 			on:click={downloadCalendar}
 		>
 			Download Calendar

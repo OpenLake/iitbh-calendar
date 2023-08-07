@@ -11,7 +11,7 @@
 		.filter(course => !['NA', 'TBA'].includes(course.lecture))
 		.map(course => ({
 			...course,
-			label: `${course.code} ${course.name} ${course.link}`,
+			label: `${course.code} ${course.name} ${course.location}`,
 		}));
 
 	let selectedCourse;
@@ -41,7 +41,7 @@
 	>
 		<div slot="item" let:item let:label>
 			{@html label} <br />
-			by {item.instructor}, <span>{item.credits} Credits</span>
+			by {item.instructor}, <span>{item.credits.old} Credits</span>
 		</div>
 	</AutoComplete>
 </div>
