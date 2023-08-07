@@ -7,19 +7,23 @@ const getSlotInfo = course => {
 	const courseSlots = [],
 		startDate = startEnd.start,
 		endDate = startEnd.end;
-	if(course.slot.hasOwnProperty('lecture')){
-	for(const i of course.slot.lecture){
-		courseSlots.push(slots[i]);
-	}}
-	if(course.slot.hasOwnProperty('tutorial')){
-	for(const i of course.slot.tutorial){
-		courseSlots.push(slots[i]);
+	if (! course.hasOwnProperty('slot')){
+		return { slots: courseSlots, startDate, endDate };
 	}
+	if(course.slot.hasOwnProperty('lecture')){
+		for(const i of course.slot.lecture){
+			courseSlots.push(slots[i]);
+		}
+	}
+	if(course.slot.hasOwnProperty('tutorial')){
+		for(const i of course.slot.tutorial){
+			courseSlots.push(slots[i]);
+		}
 	}
 	if(course.slot.hasOwnProperty('practicle')){
-	for(const i of course.slot.practicle){
-		courseSlots.push(slots[i]);
-	}
+		for(const i of course.slot.practicle){
+			courseSlots.push(slots[i]);
+		}
 	}
 	console.log(courseSlots);
 	return { slots: courseSlots, startDate, endDate };

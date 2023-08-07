@@ -249,6 +249,7 @@
       "old": "6 to 12"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DUGC_CSE"
     ]
@@ -265,6 +266,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_CSE"
     ]
@@ -281,6 +283,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_CSE"
     ]
@@ -297,6 +300,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_CSE"
     ]
@@ -520,6 +524,7 @@
       "old": "6"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_CY"
     ]
@@ -536,6 +541,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_CY"
     ]
@@ -552,6 +558,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_CY"
     ]
@@ -842,6 +849,7 @@
       "old": "6 to 12"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DUGC_CSE"
     ]
@@ -858,6 +866,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_CSE"
     ]
@@ -874,6 +883,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_CSE"
     ]
@@ -890,6 +900,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_CSE"
     ]
@@ -1161,6 +1172,7 @@
       "old": "6 to 12"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DUGC_EE"
     ]
@@ -1177,6 +1189,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_EE"
     ]
@@ -1193,6 +1206,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_EE"
     ]
@@ -1209,6 +1223,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_EE"
     ]
@@ -1329,6 +1344,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_EVT"
     ]
@@ -1345,6 +1361,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_EVT"
     ]
@@ -1361,6 +1378,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_EVT"
     ]
@@ -1549,7 +1567,7 @@
       "old": "2"
     },
     "location": "L209",
-    "slot": {"lecture": [ "X1", "X2", "X3" ]},
+    "slot": {"lecture": [ "X" ]},
     "instructor": [
       "Dr. Anindita Ghosh"
     ]
@@ -1583,6 +1601,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "Dr. Anubhav Pradhan"
     ]
@@ -1599,6 +1618,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_LA"
     ]
@@ -1666,6 +1686,7 @@
       "old": "6"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_MA"
     ]
@@ -1682,6 +1703,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_MA"
     ]
@@ -1698,6 +1720,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_MA"
     ]
@@ -1971,6 +1994,7 @@
       "old": "6 to 12"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DUGC_ME"
     ]
@@ -1987,6 +2011,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_ME"
     ]
@@ -2003,6 +2028,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_ME"
     ]
@@ -2019,6 +2045,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_ME"
     ]
@@ -2308,6 +2335,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_MT"
     ]
@@ -2322,6 +2350,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_MT"
     ]
@@ -2336,6 +2365,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_MT"
     ]
@@ -2389,6 +2419,7 @@
       "old": "1 to 4"
     },
     "location": "TBA",
+    "slot": {},
     "instructor": [
       "Dr. Purnendu das"
     ]
@@ -2405,6 +2436,7 @@
       "old": "1 to 4"
     },
     "location": "TBA",
+    "slot": {},
     "instructor": [
       "Dr. Pawan Kumar Mishra"
     ]
@@ -2421,6 +2453,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "Dr. Purnendu Das"
     ]
@@ -2437,6 +2470,7 @@
       "old": "1 to 4"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "Dr. Pawan Kumar Mishra"
     ]
@@ -2453,6 +2487,7 @@
       "old": "1 to 4"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "Dr. Purnendu Das"
     ]
@@ -2486,6 +2521,7 @@
       "old": "18"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_PH"
     ]
@@ -2502,6 +2538,7 @@
       "old": "0"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_PH"
     ]
@@ -2518,6 +2555,7 @@
       "old": "0 to 30"
     },
     "location": "NA",
+    "slot": {},
     "instructor": [
       "DPGC_PH"
     ]
@@ -2534,6 +2572,7 @@
       "old": "4"
     },
     "location": "L209,(L103, L104, L203, L204, ED1 201/202 TUT)",
+    "slot": {},
     "instructor": [
       "Dr. Mahavir Sharma",
       "Dr. Praveen Kumar"
@@ -2602,6 +2641,7 @@
       "old": "3/6"
     },
     "location": "L209",
+    "slot": {},
     "instructor": [
       "Dr. Sabyasachi Ghosh"
     ]
@@ -2669,6 +2709,7 @@
       "old": "1.5"
     },
     "location": "PH LAB",
+    "slot": {},
     "instructor": [
       "Dr. Sesha Vempati"
     ]
@@ -2685,6 +2726,7 @@
       "old": "3"
     },
     "location": "PH LAB",
+    "slot": {},
     "instructor": [
       "Dr. Anjali Chaudhary"
     ]
