@@ -4,7 +4,6 @@ import { createEvents } from 'ics';
 import { slots, startEnd,days} from '../data/slots';
 
 const getSlotInfo = course => {
-	if (course.slot.lecture.length === 0) return [];
 	const courseSlots = [],
 		startDate = startEnd.start,
 		endDate = startEnd.end;
