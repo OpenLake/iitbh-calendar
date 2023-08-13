@@ -69,8 +69,13 @@ export const slots = {
 	W2: {day: 'Tuesday', start: '15:30', end: '16:30'},
 	W3: {day: 'Tuesday', start: '16:30', end: '17:30'},
 	X:  {day: 'Tuesday', start: '11:30', end: '12:25'},
-	X2: {day: 'Monday', start: '17:30', end: '19:30'},
-	X3: {day: 'Tuesday', start: '17:30', end: '18:30'},
+	// Add all the slots after 17:30 as Y slots if courses are conducted
+	Y1: {day: 'Monday', start: '17:30', end: '18:30'},
+	Y2: {day: 'Tuesday', start: '17:30', end: '18:30'},
+	Y3: {day: 'Wednesday', start: '17:30', end: '18:30'},
+	Y4: {day: 'Thursday', start: '17:30', end: '18:30'},
+	Y5: {day: 'Friday', start: '17:30', end: '18:30'},
+	Y6: {day: 'Monday', start: '18:30', end: '19:30'},
 };
 
 export const startEnd = {
