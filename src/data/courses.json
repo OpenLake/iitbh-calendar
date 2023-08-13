@@ -2641,7 +2641,7 @@
       "old": "3/6"
     },
     "location": "L209",
-    "slot": {},
+    "slot":{"lecture": [ "X2", "X3" ]},
     "instructor": [
       "Dr. Sabyasachi Ghosh"
     ]
