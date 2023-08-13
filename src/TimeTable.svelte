@@ -1,22 +1,49 @@
 <script>
-	import { fly } from 'svelte/transition';
-	import { flip } from 'svelte/animate';
-	import { quintOut } from 'svelte/easing';
-	import AutoComplete from 'simple-svelte-autocomplete';
-
-	import courseData from './data/courses.json';
-	import TrashIcon from './assets/icons/trash.svg';
-
-	let selectedCourse;
+	import { days } from './data/slots';
+import timetable from './data/timetable.json';
 	export let slotWiseCourses = [];
 </script>
 
-<ul>
-	{#each Object.keys(slotWiseCourses) as slot}
-		<script>console.log(slotWiseCourses[slot])</script>
-		<li> {slot} - {slotWiseCourses[slot][0].name} </li>
+<table>
+	<tr>
+		<th>Days</th>
+		{#each timetable.time as time}
+			<th class="time">{time}</th>
+		{/each}
+	</tr>
+	{#each Object.keys(timetable.schedule) as day}
+		<tr>
+			<th class="day">{day}</th>
+				{#each timetable.schedule[day] as slots}
+					<!-- slots is an array of slots -->
+					<td>
+						{#each slots as slot}
+							{#if slotWiseCourses[slot] !== undefined}
+								{#each slotWiseCourses[slot] as course}
+									{course.name}({course.location})
+								{/each}
+							{/if}
+						{/each}
+					</td>
+				{/each}
+		</tr>
 	{/each}
-</ul>
+</table>
 
 <style>
+	table {
+		background-color: white;
+		table-layout: fixed ;
+		width: 100% ;
+	}
+	th {
+    color: #282828;
+		background-color: #98971a;
+	}
+	td {
+		background-color: #282828;
+		height: 50px;
+		font-size: 10px;
+	}
+	
 </style>
