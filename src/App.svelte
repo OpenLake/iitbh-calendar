@@ -3,7 +3,6 @@
 
 	import CourseSelector from './CourseSelector.svelte';
 	import TimeTable from './TimeTable.svelte';
-	import { slots } from './data/slots.js'
 	import { makeCalendar, getSlotWise  } from './lib/createCalendar';
 	import { download } from './lib/util';
 	import RotateCCWIcon from './assets/icons/rotate-ccw.svg';
@@ -49,12 +48,12 @@
 	);
 </script>
 
-<main>
-	<div class="top-right" bind:this={topRightContainer} />
+{#if websiteState === States.Selecting}
+	<main>
+		<div class="top-right" bind:this={topRightContainer} />
 
-	<h1>Calendar Generator</h1>
+		<h1>Calendar Generator</h1>
 
-	{#if websiteState === States.Selecting}
 		<h2>Add your courses to generate ICS calendar file</h2>
 
 		<CourseSelector bind:courses />
@@ -76,10 +75,12 @@
 				Download Calendar
 			</button>
 		</div>
-	{:else if websiteState == States.TimeTable}
+	</main>
+{:else if websiteState == States.TimeTable}
+  <div class="table">
 		<TimeTable bind:slotWiseCourses />
-	{/if}
-</main>
+	</div>
+{/if}
 
 <style>
 	main {
@@ -108,5 +109,9 @@
 
 	h2 {
 		font-weight: normal;
+	}
+
+	.table {
+		margin: 25px 5px 0px 5px;
 	}
 </style>
