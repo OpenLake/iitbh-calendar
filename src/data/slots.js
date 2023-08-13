@@ -69,6 +69,8 @@ export const slots = {
 	W2: {day: 'Tuesday', start: '15:30', end: '16:30'},
 	W3: {day: 'Tuesday', start: '16:30', end: '17:30'},
 	X:  {day: 'Tuesday', start: '11:30', end: '12:25'},
+	X2: {day: 'Monday', start: '17:30', end: '19:30'},
+	x3: {day: 'Tuesday', start: '17:30', end: '18:30'},
 };
 
 export const startEnd = {
