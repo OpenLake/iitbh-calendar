@@ -2,17 +2,28 @@
 	import { render as renderGhButton } from 'github-buttons';
 
 	import CourseSelector from './CourseSelector.svelte';
-	import { makeCalendar } from './lib/createCalendar';
+	import TimeTable from './TimeTable.svelte';
+	import { slots } from './data/slots.js'
+	import { makeCalendar, getSlotWise  } from './lib/createCalendar';
 	import { download } from './lib/util';
 	import RotateCCWIcon from './assets/icons/rotate-ccw.svg';
 
 	/** @type {HTMLDivElement} */
 	let topRightContainer;
 	let courses = [];
+	let slotWiseCourses = {};
 	let calendarInclude = {classEntries : true};
 	export const reset = () => (courses = []);
+	const States = {
+		Selecting: 0,
+    TimeTable: 1,
+	}
+	let websiteState = States.Selecting
 
+	// initialize empty slotWiseCourses
 	function downloadCalendar() {
+		websiteState = States.TimeTable;
+		slotWiseCourses = getSlotWise(courses);
 		window.plausible('Download Calendar', {props: {courseCount: courses.length}});
 		download({
 			text: makeCalendar(courses, calendarInclude),
@@ -43,27 +54,31 @@
 
 	<h1>Calendar Generator</h1>
 
-	<h2>Add your courses to generate ICS calendar file</h2>
+	{#if websiteState === States.Selecting}
+		<h2>Add your courses to generate ICS calendar file</h2>
 
-	<CourseSelector bind:courses />
+		<CourseSelector bind:courses />
 
-	<div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-		<label>
-		<input type="checkbox" bind:checked={calendarInclude.classEntries}/>
-			Class Shedule
-		</label>
-	</div>
-	<div style="display: flex; justify-content: center; gap: 0.5rem;">
-		<button on:click={reset} class="outline"><RotateCCWIcon /> Reset</button>
+		<div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+			<label>
+				<input type="checkbox" bind:checked={calendarInclude.classEntries}/>
+				Class Shedule
+			</label>
+		</div>
+		<div style="display: flex; justify-content: center; gap: 0.5rem;">
+			<button on:click={reset} class="outline"><RotateCCWIcon /> Reset</button>
 
-		<button
-			class="raised"
-			disabled={courses.length === 0 || (calendarInclude.classEntries == false)}
-			on:click={downloadCalendar}
-		>
-			Download Calendar
-		</button>
-	</div>
+			<button
+				class="raised"
+				disabled={courses.length === 0 || (calendarInclude.classEntries == false)}
+				on:click={downloadCalendar}
+			>
+				Download Calendar
+			</button>
+		</div>
+	{:else if websiteState == States.TimeTable}
+		<TimeTable bind:slotWiseCourses />
+	{/if}
 </main>
 
 <style>
