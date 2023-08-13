@@ -25,7 +25,6 @@ const getSlotInfo = course => {
 			courseSlots.push(slots[i]);
 		}
 	}
-	console.log(courseSlots);
 	return { slots: courseSlots, startDate, endDate };
 };
 
@@ -96,4 +95,29 @@ export function makeCalendar(selectedCourses, calendarInclude) {
 	const { value, error } = generateIcal(selectedCourses, calendarInclude);
 	if (error) throw error;
 	return value;
+}
+
+export function getSlotWise(courses){
+	let slotWiseCourses = {};
+	for (const course of courses)
+	{
+		if (!course.hasOwnProperty('slot'))
+			continue;
+
+		let slots = [];
+		if (course.slot.hasOwnProperty('lecture'))
+			slots = [...slots, ...course.slot.lecture];
+		if (course['slot'].hasOwnProperty('tutorial'))
+			slots = [...slots, ...course['slot']['tutorial']];
+		if (course['slot'].hasOwnProperty('practicle'))
+			slots = [...slots, ...course['slot']['practicle']];
+
+		for(const slot of slots)
+		{
+			if(!slotWiseCourses.hasOwnProperty(slot))
+				slotWiseCourses[slot] = [];
+			slotWiseCourses[slot].push(course);
+		}
+	}
+	return slotWiseCourses;
 }
