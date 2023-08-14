@@ -1,7 +1,30 @@
 <script>
 	import { days } from './data/slots';
-import timetable from './data/timetable.json';
+	import timetable from './data/timetable.json';
 	export let slotWiseCourses = [];
+	var flag = false;
+	while (timetable.time.length > 1){
+		for (const day in timetable.schedule){
+			let lastslots = timetable.schedule[day][timetable.schedule[day].length - 1]
+			for (const slot of lastslots){
+				if (slotWiseCourses[slot] !== undefined){
+					flag = true;
+					break;
+				}
+			}
+			if (flag)
+				break;
+		}
+		if (flag)
+			break;
+		timetable.time.pop();
+		for (const day in timetable.schedule){
+			timetable.schedule[day].pop();
+		}
+	}
+
+	// timetable.time.reverse()
+
 </script>
 
 <table>
