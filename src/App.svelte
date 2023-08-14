@@ -11,7 +11,6 @@
 	let topRightContainer;
 	let courses = [];
 	let slotWiseCourses = {};
-	let calendarInclude = {classEntries : true};
 	export const reset = () => (courses = []);
 	const States = {
 		Selecting: 0,
@@ -21,16 +20,18 @@
 
 	// initialize empty slotWiseCourses
 	function downloadCalendar() {
-		websiteState = States.TimeTable;
-		slotWiseCourses = getSlotWise(courses);
 		window.plausible('Download Calendar', {props: {courseCount: courses.length}});
 		download({
-			text: makeCalendar(courses, calendarInclude),
+			text: makeCalendar(courses),
 			filename: 'course-calendar.ics',
 			filetype: 'text/calendar',
 		});
 	}
-
+	function viewTimeTable(){
+		websiteState = States.TimeTable;
+		slotWiseCourses = getSlotWise(courses);
+	
+	}
 	renderGhButton(
 		{
 			href: 'https://github.com/OpenLake/iitbh-calendar',
@@ -58,21 +59,22 @@
 
 		<CourseSelector bind:courses />
 
-		<div style="display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem;">
-			<label>
-				<input type="checkbox" bind:checked={calendarInclude.classEntries}/>
-				Class Shedule
-			</label>
-		</div>
 		<div style="display: flex; justify-content: center; gap: 0.5rem;">
 			<button on:click={reset} class="outline"><RotateCCWIcon /> Reset</button>
 
 			<button
 				class="raised"
-				disabled={courses.length === 0 || (calendarInclude.classEntries == false)}
+				disabled={courses.length === 0 }
 				on:click={downloadCalendar}
 			>
 				Download Calendar
+			</button>
+			<button
+				class="raised"
+				disabled={courses.length === 0}
+				on:click={viewTimeTable}
+			>
+				View Timetable
 			</button>
 		</div>
 	</main>

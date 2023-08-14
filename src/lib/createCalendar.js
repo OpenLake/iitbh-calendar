@@ -86,7 +86,7 @@ const generateIcal = (selectedCourses, calendarInclude) =>
 					};
 				});
 
-				return (calendarInclude.classEntries ? classEntries : []);
+				return (classEntries);
 			})
 			.flat(),
 	);
