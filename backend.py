@@ -1,8 +1,8 @@
 import streamlit as st
 import base64
 from fpdf import FPDF
-
-
+import pandas as pd
+import re
 def show_pdf(file_path):
     with open(file_path,"rb") as f:
         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
@@ -12,6 +12,8 @@ def show_pdf(file_path):
 
 
 def generate_pdf(input):
+    df = pd.read_csv("course_list/List_of_courses.csv")
+
     """
      31 = 3rd weekday (wednesday) ka 1st slot
 
@@ -19,7 +21,7 @@ def generate_pdf(input):
      """
 
     index = {11: "A1", 12: "B1", 13: "C1", 14: "E1", 15: "G1", 16: "K1", 17: "L1", 18: "I1",
-             21: "B2", 22: "D1", 23: "C2", 24: input, 25: "H1", 26: "L2", 27: "J1", 28: "M1",
+             21: "B2", 22: "D1", 23: "C2", 24: "  ", 25: "H1", 26: "L2", 27: "J1", 28: "M1",
              31: "E2", 32: "A2", 33: "D2", 34: "F1", 35: "G2", 36: "K2", 37: "M2", 38: "I2",
              41: "F2", 42: "B3", 43: "C3", 44: "E3", 45: "H2", 46: "L3", 47: "M3", 48: "J2",
              51: "G3", 52: "A3", 53: "D3", 54: "F3", 55: "H3", 56: "K3", 57: "J3", 58: "I3",
@@ -28,7 +30,67 @@ def generate_pdf(input):
 
     Day = {1: "Monday", 2: "Tuesday", 3: "Wednesday", 4: "Thrusday", 5: "Friday"}
 
-    
+    Slot_key = {"A1": 11, "B1": 12, "C1": 13, "E1": 14, "G1": 15, "K1": 16, "L1": 17, "I1": 18,
+             "B2": 21, "D1": 22, "C2": 23, "H1": 25, "L2": 26, "J1": 27, "M1": 28,
+             "E2": 31, "A2": 32, "D2": 33, "F1": 34, "G2": 35, "K2": 36, "M2": 37, "I2": 38,
+             "F2": 41, "B3": 42, "C3": 43, "E3": 44, "H2": 45, "L3": 46, "M3": 47, "J2": 48,
+             "G3": 51, "A3": 52, "D3": 53, "F3": 54, "H3": 55, "K3": 56, "J3": 57, "I3": 58,
+             "N": 1, "O": 2, "V": 3, "W": 4, "P": 5, "Q": 6, "R": 7, "S": 8, "T": 9, "U": 10}
+
+    # data frame me input = course code then output = A1 ...
+    # uss output ko dalenge slot dictionary me to get a number
+    # index[number] = course code
+    # modifying index dictionary wont matter but slot dictionary must be permanently hard coded
+
+    # agar ajeeb slot aaya for example E23 then usko hum slot dictionary use karke interpret karenge
+    # E23 => slot[E2] and slot[E3]
+
+    # current idea is to store all slot[] outputs in a list as the code input will prolly be a list
+
+    keys = []
+    slots=[]
+
+    pattern1 = re.compile("[A-Z][0-9]{2}")  # for D12 vaghera
+    pattern2 = re.compile("[A-Z][0-9]{1}")  # for D1
+
+
+    for course in input:
+        slots.append((df.loc[df['Code (New/Old)'] == f"{course}"]['Slot new'].squeeze()).strip().split(","))
+
+    for course_slot in slots:
+
+        add = []
+
+        for slot in course_slot:
+            slot = slot.strip()
+
+            if re.findall(pattern1, slot) == []:
+                if re.findall(pattern2, slot) == []:  # single alphabet
+                    alphabet = slot[0]
+                    add.append(Slot_key[f"{alphabet}1"])
+                    add.append(Slot_key[f"{alphabet}2"])
+                    add.append(Slot_key[f"{alphabet}3"])
+                else:
+                    add.append(Slot_key[slot])
+            else:
+                alphabet = slot[0]
+                dig_1 = slot[1]
+                dig_2 = slot[2]
+
+                add.append(Slot_key[f"{alphabet}{dig_1}"])
+                add.append(Slot_key[f"{alphabet}{dig_2}"])
+        keys.append(add)
+
+    i = 0
+    for list in keys:
+        for key in list:
+            print(key)
+            index[key] = input[i]
+        print(input[i])
+        i = i + 1
+
+
+    """ LOADING DATA IN PDF """
 
     pdf = FPDF(orientation="P", unit="mm", format="A4")
     pdf.add_page()
@@ -57,3 +119,16 @@ def generate_pdf(input):
                 pdf.cell(w=20, h=8, txt=index[(i * 10 + j)], border=1, ln=1)
 
     pdf.output(f"TT.pdf")
+
+
+if __name__ == "__main__":
+    courses=[]
+    while True:
+        course_code=input(" Enter course code . (break to stop) :").upper()
+        if(course_code=="BREAK"):
+            break
+        else:
+            courses.append(course_code)
+
+    print(courses)
+    generate_pdf(courses)
