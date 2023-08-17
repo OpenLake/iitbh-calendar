@@ -1,0 +1,171 @@
+﻿Code (New/Old),Name (New/Old),Slot new,Room Nubmer,Discipline,Instructor
+BML511,Physiology,Q,AIMS RAIPUR,BM,DPGC_BSBME
+BML512/BM512,Molecular Biology,B,L105,BM,Dr. Suchetan Pal
+BML513/BM513,Biochemistry,J12,L102,BM,Dr. Ramasamy Mayilmurugan
+BML611/BM611,Biomicrofluidics and Lab-on-Chip,D,ED1 201/202,BM,Dr. Nagesh Devidas Patil
+BML612/BM612,Bioinformatics,A12,ED1 201/202,BM,Dr. Rukmankesh
+BML613/CY618,Bionanotechnology,C3,ED1 212/213,BM,Dr. Suchetan Pal
+BMP581,Bioengineering Lab 1,O,AIMS RAIPUR,BM,DPGC_BSBME
+CS200,Software Tool and Technologies Lab-II,A12,L102,CS,Dr. Dhiman saha
+CS201,Discrete Structures II,A3,L105,CS,Dr. Barun Gorain
+CS202,Algorithms  I,F12,L205,CS,Dr. Rishi Ranjan Singh
+CS203,Theory of Computation I,"B1,B3",L101,CS,Dr. Amit Kumar Dhar
+CS204,Computer Organization & Architecture,D12,L206,CS,Prof. Santosh Biswas
+CS251,Introduction to Language Processing,E12,L205,CS,Dr. Vishwesh Jatala
+CS252,Algorithms-II,"G1, G3",ED1 201/202,CS,Dr. I Vinod Reddy
+CS301,Computer Networks,C,L101,CS,Dr. Anand Baswade
+CS499,Thesis (BTech),NA,NA,CS,DUGC_CSE
+CS599,Thesis (MTech),NA,NA,CS,DPGC_CSE
+CS795,PhD Candidacy,NA,NA,CS,DPGC_CSE
+CS799,Thesis (PhD),NA,NA,CS,DPGC_CSE
+CSL502,Foundation of Computer Science,I,L103,CS,Dr. Rishi Ranjan Singh
+CSL503,Computer Systems Engineering,"G12, R23 ","ED1 207/208, CSE LAB",CS,"Prof. Santosh Biswas, Dr. Vishwesh Jatala"
+CSL505/CS553,Cryptography,D,L101,CS,Dr. Dhiman saha
+CSL510/CS510,Approximation Algorithms,C,L203,CS,Dr. Barun Gorain
+CSL605,Computer Networks and Cyber Security,"L12, S23 ","L205, CSE LAB",CS,"Dr. Anand Baswade, Dr. Souradyuti Paul"
+CSL606,Advance Data Structures and Algorithms,C,L207,CS,Dr. I Vinod Reddy
+CSL511/CS511,Introduction to Formal Verification and Its Applications,I,L104,CS,Dr. Amit Kumar Dhar
+CSL100 & MAL400/IC100,Introduction to programming,"E1, E2, B3 ","L209,(L103, L104, L203, L204, ED1 201/202 TUT)",CS,Dr. SK Subidh Ali
+CA200,Professional Communication Lab III – Technical Literature Structure,K1,L209,CY,"Dr. Ganapathy D, Dr. Sonal Jha"
+IC201,Environmental Studies,"I3, H1 ","L209,(L204, L206, ED1 207/208, ED1 212/213 TUT)",CY,Dr. Raghavender Medishetty
+IC300,Materials Chemistry III,L2,L209,CY,Dr. Satyajit Gupta
+CY506,Inorganic Chemistry Practical,LAB,TBA,CY,"Dr. Arup Mukherjee, Dr. Raghavender Medishetty, Dr. 
+Ramasamy Mayilmurugan (IC)"
+CY604,Solid State Chemistry,E23,ED1 201/202,CY,Dr. Katchala Nanaji
+CY699,Thesis (MSc),NA,NA,CY,DPGC_CY
+CY795,PhD Candidacy,NA,NA,CY,DPGC_CY
+CY799,Thesis (PhD),NA,NA,CY,DPGC_CY
+CYL100,Applied Chemistry,C,L209,CY,"Dr. Sanjib Banerjee (IC), Dr. Ramasamy Mayilmurugan,
+Dr. Mehboob Alam"
+CYL101,Environmental Science,A3,L209,CY,Dr. Raghavender Medishetty
+CYL400,Chemical Kinetics and Surface Science,C,L208,CY,Dr. Satyajit Gupta
+CYL401,Coordination Chemistry,B,L205,CY,Dr. Raghavender Medishetty
+CYL500,Quantum Chemistry,A,L104,CY,Dr. Mehboob Alam
+CYL501,Stereochemistry and Reaction Mechanism,D,ED1 207/208,CY,Dr. Hemanta Kumar Kisan
+CYL600/CY605,Advanced Organic Chemistry,H,L202,CY,Dr. Ganapathy D
+CYL601/CY603,Organometallic Chemistry: Principles and Applications,L,L202,CY,Dr. Arup Mukherjee
+CYL602/CY607,Interpretative Molecular Spectroscopy,G,L205,CY,Dr. Suchetan Pal
+CYL605/CY650,EPR Spectroscopy and Its Applications,K,L103,CY,Dr. Ramasamy Mayilmurugan
+CYP102,Chemistry lab,LAB,CY LAB,CY,"Dr. Katchala Nanaji, Dr. Hemanta Kumar Kisan, Dr. 
+Suchetan Pal (IC)"
+CYP502,Organic and Inorganic Laboratory,LAB,CY LAB,CY,"Dr. Arup Mukherjee, Dr. Ramasamy Mayilmurugan (IC),  Dr. Sanjib Banerjee, Dr. Ganapathy D"
+CYP503,Physical and Computational Laboratory,LAB,CY LAB,CY,"Dr. Satyajit Gupta (IC), Dr. Suchetan Pal, Dr. Hemanta 
+Kumar Kisan, Dr. Rukmankesh"
+DS200,Architecture for Management of Large Datasets,D,L204,DS,Dr. Subhajit Sidhanta
+DS209,Information Security,E,L101,DS,Dr. Souradyuti Paul
+DS210,Data Analytics and Visualization Lab,U 12 ,CSE LAB,DS,Dr. Rajesh Kumar Mundotiya
+DS220,Big Data Analytics Lab,Q 23 ,CS LAB,DS,Dr. Subhajit Sidhanta
+DS250,Data Analytics and Visualization,D,L103,DS,Dr. Rajesh Kumar Mundotiya
+DS251,Artificial Intelligence,B,L209,DS,Dr. Soumyajit Pramanik
+DS499,Thesis (BTech),NA,NA,DS,DUGC_CSE
+DS599,Thesis (MTech),NA,NA,DS,DPGC_CSE
+DS795,PhD Candidacy,NA,NA,DS,DPGC_CSE
+DS799,Thesis (PhD),NA,NA,DS,DPGC_CSE
+DSL501/CS550,Machine Learning,"F, W23 ","L202, CSE LAB",DS,Dr. Gagan Raj Gupta
+DSL502,Basic Mathematics for Data Science and Artificial Intelligence,"B12, B3 ",L206,DS,Dr. Anil Kumar Sao
+DSL605/DS605,Deeplearning for Low resource NLP,E,L102,DS,Dr. Rajesh Kumar Mundotiya
+DSP505,Programming Lab for Data Science and Artificial Intelligence,S,"ED1 207/208, CSE LAB",DS,Dr. Soumyajit Pramanik
+ECL501/EC501,Computer Communications,"G12, S23 ","ED1 212/213, EC LAB",EC,Dr. Arzad Alam Kherani
+ECL502/EC502,Advanced Digital Communication,A,L203,EC,Dr. Sreejith T V
+ECL503/EC503,Digital IC Design,E,L103,EC,Dr. Rohit Chaurasia (IIIT NR)
+ECL504/EC504,Semiconductor Devices,F,L102,EC,Dr. Rohit Chaurasia (IIIT NR)
+EEL605/DS601,Digital Image Processing,A,L204,EE,Dr. Nitin Khanna
+EE201,Electronic Devices,A12,L101,EE,Dr. Nikhil Chander
+EE202,Control Systems - I,F,L101,EE,Dr. Shailendra Kumar
+EE203,Embedded Systems,C12,L206,EE,Prof. Santosh Biswas
+EE207,Engineering Electromagnetics,D12,L205,EE,Dr. Nikhil Chander
+EE301,Communication Systems,H23,ED1 201/202,EE,Dr. Sreejith T V
+EE351,Electrical Machines Lab,U ,EE LAB,EE,Dr. Shailendra Kumar
+EE499,Thesis (BTech),NA,NA,EE,DUGC_EE
+EE599,Thesis (MTech),NA,NA,EE,DPGC_EE
+EE795,PhD Candidacy,NA,NA,EE,DPGC_EE
+EE799,Thesis (PhD),NA,NA,EE,DPGC_EE
+EEL509/EE509,Power Electronics,M,L105,EE,"Dr. Prashant Agnihotri, Dr. Shailendra Kumar"
+EEL521/EE525,Renewable and Distributed Energy Systems,C,L102,EE,Dr. Shailendra Kumar
+EEL601/EE612,Advanced Control Theory,E,L204,EE,Dr. Avishek Adhikari
+EEL621/EE621,Advanced Power Electronics,D,L102,EE,Dr. Shashank Kurm
+EEP501,Control Systems Lab,O ,TBA,EE,Dr. Avishek Adhikari
+EEP502,Sensors and Instrumentation Lab,U ,EE LAB,EE,"Dr. Avishek Adhikari, Dr. Nitin Khanna"
+EV599,Thesis (MTech),NA,NA,EVT,DPGC_EVT
+EV795,PhD Candidacy,NA,NA,EVT,DPGC_EVT
+EV799,Thesis (PhD),NA,NA,EVT,DPGC_EVT
+EVL500/EV513,Electrochemical Energy Conversion and Storage Technologies,I,L203,EVT,Dr. Katchala Nanaji
+EVL501/EV512,Introduction of EV and HEV,H12,L103,EVT,Dr. Shashank Kurm
+EVL502/EV514,EV Policies and Regulations,H3,L103,EVT,Dr. Satyajit Gupta
+EVL504/EV515,Automobile technologies,G,L101,EVT,"Dr. Pravesh Shukla, Dr. Nagesh Debidas Patil"
+EVL505,Electrical Engineering for EV,M,ED1 212/213,EVT,"Dr. Nitin Khanna, Dr. Shashank Kurm"
+LA201,Chinese Beginner's 2 & 3,K12,ED1 201/202,LA,Ms. Hao Yu Lu
+LA202,Chinese Basic 3 & 4,K3,ED1 207/208,LA,Ms. Hao Yu Lu
+LA302,Indian Writing in English,L12,L102,LA,Dr. Sruthi Vinayan
+LA321,Macroeconomics,L3,L209,LA,Dr. Rekha Ravindran
+LA324,Leadership: An Organizational Behaviour Perspective,K3,L209,LA,Dr. Anindita Ghosh
+LA325,Concepts of Personality Psychology,X,L209,LA,Dr. Anindita Ghosh
+LA353,Experiencing the Indian University,L3,L206,LA,Dr. Sonal Jha
+LAN102,Speaking and Writing Skill,NA,NA,LA,Dr. Anubhav Pradhan
+LA799,Thesis (PhD),NA,NA,LA,DPGC_LA
+IC202/MA506,Calculus II,"M1,M3, G2 ","L209, (L103, L104, L203, L204 TUT)",MA,Dr. Raj Kumar Mistri
+MA605,Operations Research,L12,L101,MA,Dr. Arnab Patra
+MA609,Numerical Optimization Techniques,M3,L103,MA,Dr. Pawan Kumar Mishra
+MA699,Thesis (MSc),NA,NA,MA,DPGC_MA
+MA795,PhD Candidacy,NA,NA,MA,DPGC_MA
+MA799,Thesis (PhD),NA,NA,MA,DPGC_MA
+MAL100,Mathematics-I,"D23, E3, X ","L209 (L103, L104, L203, L204, ED1 201/202 TUT)",MA,Dr. Anurag Singh
+MAL401,Linear Algebra,L,L203,MA,Dr. Lakshmi Kanta Patra
+MAL402,Real Analysis,"D, H2 ","L108, (L203)",MA,Dr. Pawan Kumar Mishra
+MAL403/MA503/IC105,Probability and Statistics,"C, H3",ED1 201/202 (L203 TUT),MA,Dr. Kuldeep  Kumar Kataria
+MAL404,Modern Algebra,B,L202,MA,Dr. Avijit Pal
+MAL502/MA604,Functional Analysis,D,L207,MA,Dr. Avijit Pal
+MAL511/MA614,Additive Number Theory,A,L207,MA,Dr. Raj Kumar Mistri
+MAL600/MA618,Introduction to Spectral Theory,D,L208,MA,Dr. Arnab Patra
+MAL602/MA613,Operator Theory II,C,L105,MA,Dr. Avijit Pal
+MAL603/MA608,Martingale Theory,B,L102,MA,Dr. Kuldeep  Kumar Kataria
+ME212,Fluid Mechanics,C,L204,ME,Dr. Udayraj
+ME231,Solid Mechanics-I,D,L203,ME,Dr. Anshul Faye
+ME251,Manufacturing Science I,J,L103,ME,"Dr. Soumya Gangopadhyay, Dr. Rahul Jain"
+ME333,Theory of Machines and Mechanism,A,L103,ME,Dr. Ganesh Kolappan Geetha
+ME371,Mechanical Engineering Labs-I,Q ,ME LAB,ME,"Dr. Anshul Faye, Dr. Nagesh Devidas Patil"
+ME499,Thesis (BTech),NA,NA,ME,DUGC_ME
+ME599,Thesis (MTech),NA,NA,ME,DPGC_ME
+ME795,PhD Candidacy,NA,NA,ME,DPGC_ME
+ME799,Thesis (PhD),NA,NA,ME,DPGC_ME
+ME514,Internal Combustion Engines,D,L104,ME,Dr. Pravesh Chandra Shukla
+MEL501/ME502,Advanced Engineering Mathematics,C,L103,ME,Dr. Balkrishna Mehta
+MEL611/ME512,Advanced Fluid Mechanics,J,L104,ME,Dr. Nagesh Devidas Patil
+MEL612/ME612,Conduction and Radiation Heat Transfer,B,ED1 207/208,ME,Dr. Vijay S. Duryodhan
+MEL624/ME624,Energy conservation and Management,G,L102,ME,"Dr. Vijay S. Duryodhan, Dr. Udayraj"
+MEL631/ME631,Continuum Mechanics,A,ED1 207/208,ME,Dr. Anshul Faye
+MEL636/ME636,Structural Dynamics,G,L202,ME,Dr. Ganesh Kolappan Geetha
+MEL652/ME657,Advances in Metal Forming and Welding,F,L104,ME,"Dr. Kaushik Bandyopadhyay, Dr. Rahul Jain"
+MEL558/ME558,Surface Engineering,M,L205,ME,"Dr. Soumya Gangopadhyay, Dr. Purnendu Das"
+MEL659/ME659,Advanced Materials and Processing,E,L203,ME,Dr. Jose Immanuel R
+MML501/MM501,Characterization and Testing of Materials,G,L206,MSME,Dr. Jose Immanuel R
+MML551/MM551,Thermodynamics and Phase Diagram,H12,L104,MSME,Dr. Raghavender Medishetty
+MML552/MM552,Fundamentals of crystallography,H3,L104,MSME,Dr. Raghavender Medishetty
+MML553/MM553,Material synthesis and processing,I23,L204,MSME,Dr. Sanjib Banerjee
+MT201,Sensors and Instrumentation,C12,ED1 207/208,MT,Dr. Jose Immanuel R
+MT202,Mechatronics Lab - I,R 23 ,MT LAB,MT,Dr. Gagan Raj Gupta
+MT599,Thesis (MTech),NA,NA,MT,DPGC_MT
+MT795,PhD Candidacy,NA,NA,MT,DPGC_MT
+MT799,Thesis (PhD),NA,NA,MT,DPGC_MT
+MTL501/MT511,Fundamental of Mechatronics,"D12, O23 LAB",L202,MT,"Dr. Purnendu Das, Dr. Jose Immanuel R, Dr. Avishek
+Adhikari, Dr. Kaushik Bandyopadhyay"
+MTL603/MT512,Digital Manufacturing,H,L205,MT,Dr. Kaushik Bandyopadhyay
+AA102,National Sports Organization,NA,TBA,NA,Dr. Purnendu das
+AA103,National Service Scheme,NA,TBA,NA,Dr. Pawan Kumar Mishra
+NCN100,Practices for Comprehensive wellbeing,NA,NA,NA,Dr. Purnendu Das
+NCN101,National Service Scheme,NA,NA,NA,Dr. Pawan Kumar Mishra
+NCN102,National Sports Organization,NA,NA,NA,Dr. Purnendu Das
+IC200,Introduction to Astronomy and Astrophysics,"I12, H2 ","L209,(L204, L206, ED1 207/208, ED1 212/213 TUT)",PH,Dr. Mahavir Sharma
+PH699,Thesis (MSc),NA,NA,PH,DPGC_PH
+PH795,PhD Candidacy,NA,NA,PH,DPGC_PH
+Ph799,Thesis (PhD),NA,NA,PH,DPGC_PH
+PHL101,Physics for Engineers,"D1,F1,F3, B1 ","L209,(L103, L104, L203, L204, ED1 201/202 TUT)",PH,"Dr. Mahavir Sharma, Dr. Praveen Kumar"
+PHL403/PH503,Mathematical Physics,B,ED1 212/213,PH,Dr. Sudhanwa Patra
+PHL404/PH514,Electronics,D,L105,PH,Dr. Anjali Chaudhary
+PHL501/PH501,Classical Mechanics,A,L208,PH,Dr. Dhruv Pratap Singh
+PHL502/PH502,Quantum Mechanics,"MON,TUE,THU 5:30-6:30",L209,PH,Dr. Sabyasachi Ghosh
+PHL505/PH508,Electrodynamics,E,L206,PH,Dr. Praveen Kumar
+PHL607/PH513,Experimental and Measurement Techniques,J,L101,PH,Dr. Dhruv Pratap Singh
+PHL611/PH611,Applied Optics,M,L206,PH,Dr. Praveen Kumar
+PHP102,Physics lab,LAB,PH LAB,PH,Dr. Sesha Vempati
+PHP506,Electronics Laboratory,LAB,PH LAB,PH,Dr. Anjali Chaudhary
