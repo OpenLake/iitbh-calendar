@@ -2730,16 +2730,5 @@
     "instructor": [
       "Dr. Anjali Chaudhary"
     ]
-  },
-  {
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "undefined"
-    },
-    "instructor": []
   }
 ]
