@@ -132,10 +132,16 @@ def fetch_db_data(db_filepath, user_input):
 
             if re.findall(pattern1, slot) == []:
                 if re.findall(pattern2, slot) == []:  # single alphabet
+
                     alphabet = slot[0]
-                    add.append(Slot_key[f"{alphabet}1"])
-                    add.append(Slot_key[f"{alphabet}2"])
-                    add.append(Slot_key[f"{alphabet}3"])
+                    #( "N" or "O" or "V" or "W" or "P" or "Q" or "R" or "S" or "T" or "U")
+                    if slot != "R" : #todo R (LAB) ko B3 C3 E3 me implement
+                        add.append(Slot_key[f"{alphabet}1"])
+                        add.append(Slot_key[f"{alphabet}2"])
+                        add.append(Slot_key[f"{alphabet}3"])
+                    else:
+                        add.append(Slot_key[slot])
+
                 else:
                     add.append(Slot_key[slot])
             else:
@@ -156,6 +162,20 @@ def fetch_db_data(db_filepath, user_input):
         i = i + 1
 
     return index
+
+def fetch_course_info_db(db_filepath,code):
+    connection = sqlite3.connect(db_filepath)
+    cursor = connection.cursor()
+    keys = []
+    slots = []
+    # Query certain columns
+
+    cursor.execute(f"SELECT course_code,course_name,slot FROM TimeTable_Generator_coursedata WHERE course_code='{code}'")
+    rows = cursor.fetchall()
+
+
+    connection.close()
+    return list(rows[0])
 
 def generate_pdf(index):
     Day = {1: "Monday", 2: "Tuesday", 3: "Wednesday", 4: "Thrusday", 5: "Friday"}
