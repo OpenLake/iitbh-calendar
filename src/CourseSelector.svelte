@@ -6,6 +6,8 @@
 
 	import courseData from './data/courses.json';
 	import TrashIcon from './assets/icons/trash.svg';
+	import templateData from './data/templates.json'
+
 
 	const courseList = courseData
 		.filter(course => !['NA', 'TBA'].includes(course.lecture))
@@ -14,14 +16,47 @@
 			label: `${course.code} ${course.name} ${course.location}`,
 		}));
 
+
 	let selectedCourse;
 	export let courses = [];
+
+	function handleOptionClick(selectedSem){
+		let tempCoursesList;
+		for(let i = 0; i<templateData.length; i++){
+			if(templateData[i].name == selectedSem){
+				for (let j = 0; j < templateData[i].courses.length; j++) {
+					const tempCourseCode = templateData[i].courses[j];
+
+					let existInSelected = false;
+					for (let ind = 0; ind < courses.length; ind++) {
+						const existCourse = courses[ind];
+						if(existCourse.code.includes(tempCourseCode)){
+							existInSelected = true;
+							break;
+						}
+					}
+
+					if(!existInSelected){
+						tempCoursesList = courseList.filter(course => course.code.includes(tempCourseCode));
+						console.log(tempCoursesList.length);
+						if(tempCoursesList.length>0){
+							selectedCourse = tempCoursesList[0];
+							addCourse();
+							courseOptions = getRemainingOptions(courseList,courses);
+						}
+					}
+				}
+				break;
+			}
+		}
+	}
 
 	$: selectedCourse && addCourse();
 	$: courseOptions = getRemainingOptions(courseList, courses);
 
 	function getRemainingOptions(courses, selected) {
 		const selectedCodes = new Set(selected.map(course => course.code));
+		console.log(selectedCodes);
 		return courses.filter(course => !selectedCodes.has(course.code));
 	}
 
@@ -44,6 +79,27 @@
 			by {item.instructor}, <span>{item.credits.old} Credits</span>
 		</div>
 	</AutoComplete>
+	
+	<div class="dropdown">
+		<button class="dropbtn" >Recommended Courses</button>
+		<div class="dropdown-content" >
+		  <a href="#" on:click={() => handleOptionClick('Sem I')}>Sem I</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem II')}>Sem II</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem III CSE')}>Sem III CSE</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem III EE')}>Sem III EE</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem III DSAI')}>Sem III DSAI</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem III ME')}>Sem III ME</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem IV CSE')}>Sem IV CSE</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem IV EE')}>Sem IV EE</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem IV DSAI')}>Sem IV DSAI</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem IV ME')}>Sem IV ME</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem V CSE')}>Sem V CSE</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem V EE')}>Sem V EE</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem V DSAI')}>Sem V DSAI</a>
+		  <a href="#" on:click={() => handleOptionClick('Sem V ME')}>Sem V ME</a>
+
+		</div>
+	  </div>
 </div>
 
 <ul>
@@ -111,4 +167,42 @@
 	.course-name {
 		flex: 1;
 	}
+	
+
+	.dropbtn {
+	  	background-color: #4CAF50;
+	  	color: white;
+	  	padding: 16px;
+	  	font-size: 16px;
+	  	border: none;
+	  	cursor: pointer;
+	}
+	
+	.dropdown {
+	  	position: relative;
+	  	display: inline-block;
+	}
+	
+	.dropdown-content {
+	    display: none;
+	  	position: absolute;
+	  	background-color: #f9f9f9;
+	  	min-width: 100%;
+	  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		max-height: 200px;
+		overflow-y: auto;
+	  	z-index: 1;
+	}
+	
+	.dropdown-content a {
+	  	color: black;
+	  	padding: 12px 16px;
+	  	text-decoration: none;
+	  	display: block;
+	}
+	
+	.dropdown-content a:hover {background-color: #f1f1f1}
+	.dropdown:hover .dropdown-content {display: block;}
+	.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 </style>
