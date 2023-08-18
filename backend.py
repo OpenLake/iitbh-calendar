@@ -97,7 +97,7 @@ def fetch_db_data(db_filepath, user_input):
 
              1: "N", 2: "O", 3: "V", 4: "W", 5: "P", 6: "Q", 7: "R", 8: "S", 9: "T", 10: "U"}
 
-    Day = {1: "Monday", 2: "Tuesday", 3: "Wednesday", 4: "Thrusday", 5: "Friday"}
+
 
     Slot_key = {"A1": 11, "B1": 12, "C1": 13, "E1": 14, "G1": 15, "K1": 16, "L1": 17, "I1": 18,
                 "B2": 21, "D1": 22, "C2": 23, "H1": 25, "L2": 26, "J1": 27, "M1": 28,
@@ -205,7 +205,10 @@ if __name__ == "__main__":
         else:
             courses.append(course_code)
 
+    """ users must be given a drop down to choose their courses as courses like IC202 must be refereed
+    as IC202/MA506 to fetch data"""
+
     print(courses)
 
-    index=fetch_db_data(db_filepath="db.sqlite3",user_input=courses)
+    index=fetch_csv_data(user_input=courses)
     generate_pdf(index=index)
