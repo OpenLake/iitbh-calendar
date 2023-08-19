@@ -10,6 +10,6 @@ class CourseData(models.Model):
 
 
     def __str__(self):
-        return "instance string representation"
+        return self.course_code
         
 
