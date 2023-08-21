@@ -173,12 +173,20 @@
 
 
 
-
+<!--  -->
 
 <br><br><button type="submit">Submit</button>
+
+
 </form>
-
-
+<br>
+{% if messages %}
+    <div class="alert alert-success">
+        {% for message in messages %}
+            <a href="/view-pdf">{{ message }}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
 </body>
 
 </html>
