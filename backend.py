@@ -163,11 +163,34 @@ def fetch_db_data(db_filepath, user_input):
 
     return index
 
+def fetch_course_codes_db(db_filepath):
+    context={'BM':[],'CS':[],'CY':[],'DS':[],'EC':[],'EE':[],'EVT':[],'LA':[],'MA':[],'ME':[],'MSME':[],'MT':[],'NA':[],'PH':[] }
+    disciplines=['BM','CS','CY','DS','EC','EE','EVT','LA','MA','ME','MSME','MT','NA','PH']
+    connection = sqlite3.connect(db_filepath)
+    cursor = connection.cursor()
+
+    for discipline in disciplines:
+
+        cursor.execute(f"SELECT course_code FROM TimeTable_Generator_coursedata WHERE discipline='{discipline}'")
+        code_rows = cursor.fetchall()
+        for Tuple in code_rows:
+            for code in Tuple:
+
+                context[f'{discipline}'].append(code)
+
+
+
+
+
+    connection.close()
+    return context
+
+
+
 def fetch_course_info_db(db_filepath,code):
     connection = sqlite3.connect(db_filepath)
     cursor = connection.cursor()
-    keys = []
-    slots = []
+
     # Query certain columns
 
     cursor.execute(f"SELECT course_code,course_name,slot FROM TimeTable_Generator_coursedata WHERE course_code='{code}'")
@@ -217,18 +240,19 @@ def show_pdf(file_path):
 
 
 if __name__ == "__main__":
-    courses=[]
+    fetch_course_codes_db("db.sqlite3")
+    """courses=[]
     while True:
         course_code=input(" Enter course code . (break to stop) :").upper()
         if(course_code=="BREAK"):
             break
         else:
-            courses.append(course_code)
+            courses.append(course_code)"""
 
     """ users must be given a drop down to choose their courses as courses like IC202 must be refereed
     as IC202/MA506 to fetch data"""
 
-    print(courses)
+    """print(courses)
 
     index=fetch_csv_data(user_input=courses)
-    generate_pdf(index=index)
+    generate_pdf(index=index)"""

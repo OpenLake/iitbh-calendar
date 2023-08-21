@@ -4,3 +4,6 @@
 	(maybe write numpy NaN for NA or TBA fields)
 
 4) then you have to load the csv data to db.sqlite3 file (for django) , to do that execute function in csv_to_database.py
+
+
+NOTE : in fetch_course_codes_db( getting context) function the disciplines are hard coded
