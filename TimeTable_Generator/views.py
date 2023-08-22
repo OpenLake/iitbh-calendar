@@ -9,8 +9,8 @@ def index(request):
     if request.method == "POST":
         selected_options = request.POST.getlist('option')
         print(selected_options)
-        index = fetch_db_data(user_input=selected_options,db_filepath="db.sqlite3")
-        generate_pdf(index=index)
+        content = fetch_db_data(user_input=selected_options,db_filepath="db.sqlite3")
+        generate_pdf(content=content)
 
         messages.success(request, "View Pdf")
 
@@ -24,7 +24,7 @@ def index(request):
 def pdf_view(request):
     with open('TT.pdf', 'rb') as pdf:
         response = HttpResponse(pdf.read(), content_type='application/pdf')
-        response['Content-Disposition'] = 'inline;filename=mypdf.pdf'
+        response['Content-Disposition'] = 'inline;filename=TimeTable.pdf'
         return response
 
 
