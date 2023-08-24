@@ -3,32 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/script.js' %}" defer></script>
     <title>Homepage</title>
-    <style>
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    border: 1px solid #ccc;
-    padding: 5px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-</style>
 </head>
 <body>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 <h1>Time-Table Generator</h1>
 <h2>Select your courses:</h2>
 
@@ -37,142 +20,188 @@
 <form method="post">
     {% csrf_token %}
 
+    <div class="collapsible-container">
 
-<div class="dropdown" >
-<label>BM</label>
-
-  <div class="dropdown-content">
-      {% for code in BM %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>CS</label>
-
-  <div class="dropdown-content">
-      {% for code in CS %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>CY</label>
-
-  <div class="dropdown-content">
-      {% for code in CY %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>DS</label>
-
-  <div class="dropdown-content">
-      {% for code in DS %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>EC</label>
-
-  <div class="dropdown-content">
-      {% for code in EC %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>EE</label>
-
-  <div class="dropdown-content">
-      {% for code in EE %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>EVT</label>
-
-  <div class="dropdown-content">
-      {% for code in EVT %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>LA</label>
-
-  <div class="dropdown-content">
-      {% for code in LA %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>MA</label>
-
-  <div class="dropdown-content">
-      {% for code in MA %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>ME</label>
-
-  <div class="dropdown-content">
-      {% for code in ME %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>MSME</label>
-
-  <div class="dropdown-content">
-      {% for code in MSME %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>MT</label>
-
-  <div class="dropdown-content">
-      {% for code in MT %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
-</div>
-<div class="dropdown" >
-<label>PH</label>
-
-  <div class="dropdown-content">
-      {% for code in PH %}
-        <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
-      {% endfor %}
-  </div>
-
+ <div class="left-collapsible">
+    <label class="collapsible">BM</label>
+    <div class="content">
+        {% for code in BM %}
+                <br><label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+    </div>
+</div><br><br>
+<div class="right-collapsible">
+    <label class="collapsible">CS</label>
+    <div class="content">
+        {% for code in CS %}
+                <br><label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+    </div>
 </div>
 
 
+        </div>
+    <!--
+<div class="expander">
+        <div class="expander-header">
+            <h2>BM</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in BM %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
 
+<div class="expander">
+        <div class="expander-header">
+            <h2>CS</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in CS %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>CY</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in CY %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>DS</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in DS %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>EC</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in EC %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>EE</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in EE %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>EVT</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in EVT %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>LA</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in LA %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>MA</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in MA %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>ME</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in ME %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>MSME</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in MSME %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>MT</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in MT %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="expander">
+        <div class="expander-header">
+            <h2>PH</h2>
+            <span class="icon">▼</span>
+        </div>
+        <div class="expander-content">
+            {% for code in PH %}
+                <label><input type="checkbox" name="option" value={{code}}> {{ code }}</label><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
+-->
 <!--  -->
 
 <br><br><button type="submit">Submit</button>
