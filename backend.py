@@ -39,8 +39,8 @@ def fetch_csv_data(user_input):
     # index[number] = course code
     # modifying index dictionary wont matter but slot dictionary must be permanently hard coded
 
-    # agar ajeeb slot aaya for example E23 then usko hum slot dictionary use karke interpret karenge
-    # E23 => slot[E2] and slot[E3]
+    # agar ajeeb slot aaya for example E21 then usko hum slot dictionary use karke interpret karenge
+    # E21 => slot[E2] and slot[E3]
 
     # current idea is to store all slot[] outputs in a list as the code input will prolly be a list
 
@@ -282,44 +282,37 @@ def generate_pdf(content):
     pdf.set_font(family="Times", size=8, style="B")
     pdf.set_text_color(0, 0, 0)
     pdf.set_fill_color(148, 255, 255)  # 94FFFF(teal bluish)
-    pdf.cell(w=20, h=8, txt="Day", border=1)
+    pdf.cell(w=21, h=10, txt="Day", border=1)
 
-    pdf.cell(w=20, h=8, txt="8:30-9:25", border=1)
-    pdf.cell(w=20, h=8, txt="9:30-20:25", border=1)
-    pdf.cell(w=20, h=8, txt="20:30-11:25", border=1)
-    pdf.cell(w=20, h=8, txt="11:30-12:25", border=1)
-    pdf.cell(w=20, h=8, txt="12:30-1:25", border=1)
-    pdf.cell(w=20, h=8, txt="2:30-3:25", border=1)
-    pdf.cell(w=20, h=8, txt="3:30-4:25", border=1)
-    pdf.cell(w=20, h=8, txt="4:30-5:25", border=1, ln=1)
+    pdf.cell(w=21, h=10, txt="8:30-9:25", border=1)
+    pdf.cell(w=21, h=10, txt="9:30-20:25", border=1)
+    pdf.cell(w=21, h=10, txt="20:30-11:25", border=1)
+    pdf.cell(w=21, h=10, txt="11:30-12:25", border=1)
+    pdf.cell(w=21, h=10, txt="12:30-1:25", border=1)
+    pdf.cell(w=21, h=10, txt="2:30-3:25", border=1)
+    pdf.cell(w=21, h=10, txt="3:30-4:25", border=1)
+    pdf.cell(w=21, h=10, txt="4:30-5:25", border=1, ln=1)
 
     # Adding  courses  in table
     pattern = re.compile("[0-9]{3}") # course codes have 3 digits in the end
     for i in range(1, 6, 1):
-        pdf.cell(w=20, h=8, txt=Day[i], border=1)
+        pdf.cell(w=21, h=10, txt=Day[i], border=1)
         for j in range(1, 9, 1):
             if j != 8:
                 if re.findall(pattern, index[(i * 10 + j)]) != []:
-                    pdf.cell(w=20, h=8, txt=index[(i * 10 + j)], border=1,fill=True) # coloring cells which have courses
+                    pdf.cell(w=21, h=10, txt=index[(i * 10 + j)], border=1,fill=True) # coloring cells which have courses
                 else:
-                    pdf.cell(w=20, h=8, txt=index[(i * 10 + j)], border=1, fill=False)
+                    pdf.cell(w=21, h=10, txt=index[(i * 10 + j)], border=1, fill=False)
             else:
                 if re.findall(pattern, index[(i * 10 + j)]) != []:
-                    pdf.cell(w=20, h=8, txt=index[(i * 10 + j)], border=1,fill=True,ln=1) # coloring cells which have courses
+                    pdf.cell(w=21, h=10, txt=index[(i * 10 + j)], border=1,fill=True,ln=1) # coloring cells which have courses
                 else:
-                    pdf.cell(w=20, h=8, txt=index[(i * 10 + j)], border=1, fill=False,ln=1)
+                    pdf.cell(w=21, h=10, txt=index[(i * 10 + j)], border=1, fill=False,ln=1)
 
-    # adding message that course is LAB course / NA /TBA
+
+
+    # adding clash messages and additional messages
     pdf.ln(50)
-    pdf.set_font(family="Times", size=9)
-
-    for message in additional_messages:
-        pdf.cell(w=100, h=8, txt=message, ln=1)
-
-
-
-    # adding clash messages
-    pdf.ln(80)
     pdf.set_font(family="Times", size=13)
 
     pdf.cell(w=100, h=8, txt="Clash Detection:", ln=2)
@@ -331,6 +324,15 @@ def generate_pdf(content):
     else:
         for clash in clashes:
             pdf.cell(w=100, h=8, txt=clash,ln=1)
+
+    if additional_messages != []:
+        pdf.set_font(family="Times", size=13)
+        pdf.cell(w=100, h=8, txt="Additional Comments:", ln=2)
+        pdf.set_font(family="Times", size=9)
+
+        for message in additional_messages:
+            pdf.cell(w=100, h=8, txt=message, ln=1)
+
 
 
 
