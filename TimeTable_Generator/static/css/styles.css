@@ -1,0 +1,34 @@
+.collapsible-container {
+    display: flex;
+
+
+   /* justify-content: space-between;*/
+}
+.container-member {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.collapsible {
+
+    height: 15px;
+    width: 15px; /* Adjust the width as needed */
+    border: 3px solid #ccc;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+
+
+.content {
+    padding: 10px;
+    display: none;
+    background-color: white;
+}
+
+
+
+
+
