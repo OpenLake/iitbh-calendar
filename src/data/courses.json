@@ -832,7 +832,7 @@
       "old": "6"
     },
     "location": "L209",
-    "slot": {"lecture": [ "B1", "B2", "B3" ]},
+    "slot": {"lecture": [ "B1", "Y2", "B3" ]},
     "instructor": [
       "Dr. Soumyajit Pramanik"
     ]
@@ -2644,6 +2644,23 @@
     "slot":{"lecture": [ "Y1", "Y2", "Y6" ]},
     "instructor": [
       "Dr. Sabyasachi Ghosh"
+    ]
+  },
+   {
+    "code": "LA252",
+    "name": " INTRODUCTION TO STRESS AND COPING",
+    "credits": {
+      "new": {
+        "lecture": "2",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "4"
+    },
+    "location": "L209",
+    "slot":{"lecture": [ "Y4", "Y5" ]},
+    "instructor": [
+      "Dr. RajKumar"
     ]
   },
   {
