@@ -181,7 +181,7 @@
       "old": "4"
     },
     "location": "L206",
-    "slot": {"lecture": [ "D1", "D2" ]},
+    "slot": {"lecture": [ "D3", "D2" ]},
     "instructor": [
       "Prof. Santosh Biswas"
     ]
@@ -198,7 +198,7 @@
       "old": "4"
     },
     "location": "L205",
-    "slot": {"lecture": [ "E1", "E2" ]},
+    "slot": {"lecture": [ "E1", "E3" ]},
     "instructor": [
       "Dr. Vishwesh Jatala"
     ]
@@ -215,7 +215,7 @@
       "old": "4"
     },
     "location": "ED1 201/202",
-    "slot": { "lecture": [ "G1", "G3" ] },
+    "slot": { "lecture": [ "G1", "M2", "G3" ] },
     "instructor": [
       "Dr. I Vinod Reddy"
     ]
