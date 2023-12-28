@@ -14,9 +14,10 @@ const getValue = val => {
 
 /**
  * @param {string}  slot
+ * @param {string}  courseCode
  * @return {string[]}
  */
-function resolveSlot(slot){
+function resolveSlot(slot, courseCode){
 	if(typeof(slot) !== 'string') {
 		console.log(typeof(slot))
 		return;
@@ -33,7 +34,7 @@ function resolveSlot(slot){
 	else if(slot.length == 2) {
 		return {lecture: [slot]};
 	}
-	else {
+	else if(slot.length == 3){
 		var major = slot[0];
 		var minor = slot.slice(1).split('');
 		var slots = [];
@@ -41,6 +42,10 @@ function resolveSlot(slot){
 			slots.push(major + num);
 		}
 		return {lecture: slots};
+	}
+	else{
+		console.log("Failed to resolve slots for ", courseCode);
+		return;
 	}
 }
 
@@ -74,7 +79,7 @@ const run = async () => {
 			},
 			location: table[row][9],
 			// Convert slots to the array format manually
-			slot: resolveSlot(table[row][7]),
+			slot: resolveSlot(table[row][7], table[row][2]),
 			instructor: instructors
 		}
 

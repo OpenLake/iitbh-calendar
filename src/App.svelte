@@ -11,7 +11,7 @@
 	let topRightContainer;
 	let courses = [];
 	let slotWiseCourses = {};
-	export const reset = () => (courses = []);
+	export const reset = () => {courses = []; websiteState = States.Selecting};
 	const States = {
 		Selecting: 0,
     TimeTable: 1,
@@ -30,7 +30,9 @@
 	function viewTimeTable(){
 		websiteState = States.TimeTable;
 		slotWiseCourses = getSlotWise(courses);
-	
+	}
+	function editCourses(){
+		websiteState = States.Selecting;
 	}
 	renderGhButton(
 		{
@@ -81,6 +83,25 @@
 {:else if websiteState == States.TimeTable}
   <div class="table">
 		<TimeTable bind:slotWiseCourses />
+	</div>
+
+	<div style="display: flex; justify-content: center; gap: 0.5rem; margin: 1rem;">
+
+		<button on:click={reset} class="outline"><RotateCCWIcon /> Reset</button>
+
+		<button
+			class="raised"
+			disabled={courses.length === 0 }
+			on:click={downloadCalendar}
+		>
+			Download Calendar
+		</button>
+		<button
+			class="raised"
+			on:click={editCourses}
+		>
+			Change Courses
+		</button>
 	</div>
 {/if}
 
