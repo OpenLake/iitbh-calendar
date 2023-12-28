@@ -558,17 +558,10 @@
     "slot": {
       "lecture": [
         "I1",
-        "I2",
-        "I,",
-        "I ",
-        "IH",
-        "I1",
-        "I ",
-        "I(",
-        "IT",
-        "IU",
-        "IT",
-        "I)"
+        "I2"
+      ],
+      "tutorial": [
+        "H1"
       ]
     },
     "instructor": [
@@ -838,25 +831,9 @@
     "location": "L209",
     "slot": {
       "lecture": [
-        "B,",
-        "B ",
-        "B(",
-        "BO",
-        "B,",
-        "BW",
-        "B,",
-        "BQ",
-        "B,",
-        "BS",
-        "B,",
-        "BU",
-        "B ",
-        "B-",
-        "B ",
-        "BL",
-        "BA",
-        "BB",
-        "B)"
+        "B1",
+        "B2",
+        "B3"
       ]
     },
     "instructor": [
@@ -1012,27 +989,14 @@
       },
       "old": "4"
     },
-    "location": "L209",
     "slot": {
       "lecture": [
-        "E ",
-        "E(",
-        "EO",
-        "E ",
-        "EW",
-        "E ",
-        "EQ",
-        "E ",
-        "ES",
-        "E ",
-        "EM",
-        "E ",
-        "EL",
-        "Ea",
-        "Eb",
-        "E)"
+        "E1",
+        "E2",
+        "E3"
       ]
     },
+    "location": "L209",
     "instructor": [
       "Dr. Nitin Khanna"
     ]
@@ -1577,14 +1541,12 @@
     "location": "L209",
     "slot": {
       "lecture": [
-        "C,",
-        "C ",
-        "CH",
+        "C1",
         "C2",
-        "C ",
-        "CT",
-        "CU",
-        "CT"
+        "C3"
+      ],
+      "tutorial": [
+        "H2"
       ]
     },
     "instructor": [
@@ -1605,14 +1567,12 @@
     "location": "L207",
     "slot": {
       "lecture": [
-        "M,",
-        "M ",
-        "MH",
-        "M3",
-        "M ",
-        "MT",
-        "MU",
-        "MT"
+        "M1",
+        "M2",
+        "M3"
+      ],
+      "tutorial": [
+        "H3"
       ]
     },
     "instructor": [
@@ -1633,14 +1593,12 @@
     "location": "L207, (ED1 203/204)",
     "slot": {
       "lecture": [
-        "K,",
-        "K ",
-        "KH",
         "K1",
-        "K ",
-        "KT",
-        "KU",
-        "KT"
+        "K2",
+        "K3"
+      ],
+      "tutorial": [
+        "H1"
       ]
     },
     "instructor": [
@@ -1708,14 +1666,12 @@
     "location": "L208",
     "slot": {
       "lecture": [
-        "F,",
-        "F ",
-        "FE",
         "F1",
-        "F ",
-        "FT",
-        "FU",
-        "FT"
+        "F2",
+        "F3"
+      ],
+      "tutorial": [
+        "E1"
       ]
     },
     "instructor": [
@@ -1944,15 +1900,10 @@
     "slot": {
       "lecture": [
         "L1",
-        "L2",
-        "L,",
-        "L ",
-        "LL",
-        "L3",
-        "L ",
-        "LT",
-        "LU",
-        "LT"
+        "L2"
+      ],
+      "tutorial": [
+        "L3"
       ]
     },
     "instructor": [
@@ -1996,29 +1947,10 @@
     "location": "L209",
     "slot": {
       "lecture": [
-        "F1",
-        "F,",
-        "F ",
-        "FF",
-        "F2",
-        "F ",
-        "F-",
-        "F ",
-        "FT",
-        "FU",
-        "FT",
-        "F ",
-        "F,",
-        "FO",
-        "F,",
-        "FW",
-        "F,",
-        "FQ",
-        "F,",
-        "FS",
-        "F,",
-        "FU",
-        "F\n"
+        "F1"
+      ],
+      "tutorial": [
+        "F2"
       ]
     },
     "instructor": [
