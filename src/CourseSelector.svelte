@@ -10,7 +10,7 @@
 
 
 	const courseList = courseData
-		.filter(course => !['NA', 'TBA'].includes(course.lecture))
+		.filter(course => !['NA', 'TBA'].includes(course.location))
 		.map(course => ({
 			...course,
 			label: `${course.code} ${course.name} ${course.location}`,

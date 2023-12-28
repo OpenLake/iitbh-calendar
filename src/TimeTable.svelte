@@ -43,7 +43,7 @@
 						{#each slots as slot}
 							{#if slotWiseCourses[slot] !== undefined}
 								{#each slotWiseCourses[slot] as course}
-									{course.name}({course.location})
+									{course.name} ({course.location})
 								{/each}
 							{/if}
 						{/each}

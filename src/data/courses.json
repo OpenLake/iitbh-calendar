@@ -1,7 +1,53 @@
 [
   {
-    "code": "BML512/BM512",
-    "name": "Molecular Biology",
+    "code": "BML101",
+    "name": "Biology for Engineers",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L209",
+    "slot": {
+      "lecture": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    "instructor": [
+      "Dr. Suchetan Pal and Dr. Rukmankesh"
+    ]
+  },
+  {
+    "code": "BML551",
+    "name": "Instrumentation in Biomedical Engineering",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L103",
+    "slot": {
+      "lecture": [
+        "O1",
+        "O2",
+        "O3"
+      ]
+    },
+    "instructor": [
+      "IIMS Raipur faculty"
+    ]
+  },
+  {
+    "code": "TPL601/TP601",
+    "name": "Bioanalytical Methods",
     "credits": {
       "new": {
         "lecture": "3",
@@ -10,32 +56,21 @@
       },
       "old": "3/6"
     },
-    "location": "L105",
-    "slot": {"lecture": [ "B1", "B2", "B3" ]},
-    "instructor": [
-      "Dr. Suchetan Pal"
-    ]
-  },
-  {
-    "code": "BML513/BM513",
-    "name": "Biochemistry",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2/4"
+    "location": "L203",
+    "slot": {
+      "lecture": [
+        "J1",
+        "J2",
+        "J3"
+      ]
     },
-    "location": "L102",
-    "slot": {"lecture": [ "J1", "J2" ]},
     "instructor": [
-      "Dr. Ramasamy Mayilmurugan"
+      "Dr. Suchetan Pal and Dr. Mayil Murugan"
     ]
   },
   {
-    "code": "BML611/BM611",
-    "name": "Biomicrofluidics and Lab-on-Chip",
+    "code": "TPL602/TP602",
+    "name": "BIoMEMS and Biosensor",
     "credits": {
       "new": {
         "lecture": "3",
@@ -44,117 +79,90 @@
       },
       "old": "3/6"
     },
-    "location": "ED1 201/202",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
+    "location": "L204",
+    "slot": {
+      "lecture": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
     "instructor": [
-      "Dr. Nagesh Devidas Patil"
+      "Dr. Nagesh Debidas Patil"
     ]
   },
   {
-    "code": "BML612/BM612",
-    "name": "Bioinformatics",
+    "code": "CYL504",
+    "name": "Thermodynamics and Statistical Mechanics",
     "credits": {
       "new": {
-        "lecture": "2",
+        "lecture": "3",
         "tutorial": "0",
         "practicle": "0"
       },
-      "old": "2/4"
+      "old": "3"
     },
-    "location": "ED1 201/202",
-    "slot": {"lecture": [ "A1", "A2" ]},
+    "location": "L104",
+    "slot": {
+      "lecture": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
     "instructor": [
       "Dr. Rukmankesh"
     ]
   },
   {
-    "code": "BML613/CY618",
-    "name": "Bionanotechnology",
+    "code": "CYL506/CY509",
+    "name": "Bioinorganic Chemistry",
     "credits": {
       "new": {
-        "lecture": "1",
+        "lecture": "3",
         "tutorial": "0",
         "practicle": "0"
       },
-      "old": "1/2"
+      "old": "3/6"
+    },
+    "location": "SD1 208/209",
+    "slot": {
+      "lecture": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
+    "instructor": [
+      "Dr. Mayilmurugan"
+    ]
+  },
+  {
+    "code": "TPL605/TP605",
+    "name": "Biomaterials Science and Engineering",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
     },
     "location": "ED1 212/213",
-    "slot": { "lecture": [ "C3" ] },
+    "slot": {
+      "lecture": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
     "instructor": [
       "Dr. Suchetan Pal"
     ]
   },
   {
-    "code": "BMP581",
-    "name": "Bioengineering Lab 1",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "2"
-      },
-      "old": "1"
-    },
-    "location": "AIMS RAIPUR",
-    "slot": {"lecture": [ "O1", "O2", "O3" ]},
-    "instructor": [
-      "DPGC_BSBME"
-    ]
-  },
-  {
-    "code": "CS200",
-    "name": "Software Tool and Technologies Lab-II",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L102",
-    "slot": {"lecture": [ "A1", "A2" ]},
-    "instructor": [
-      "Dr. Dhiman saha"
-    ]
-  },
-  {
-    "code": "CS201",
-    "name": "Discrete Structures II",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2"
-    },
-    "location": "L105",
-    "slot": { "lecture": [ "A3" ] },
-    "instructor": [
-      "Dr. Barun Gorain"
-    ]
-  },
-  {
-    "code": "CS202",
-    "name": "Algorithms I",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L205",
-    "slot": {"lecture": [ "F1", "F2" ]},
-    "instructor": [
-      "Dr. Rishi Ranjan Singh"
-    ]
-  },
-  {
-    "code": "CS203",
-    "name": "Theory of Computation I",
+    "code": "CS250",
+    "name": "Operating Systems",
     "credits": {
       "new": {
         "lecture": "2",
@@ -164,26 +172,14 @@
       "old": "4"
     },
     "location": "L101",
-    "slot": { "lecture": [ "B1", "B3" ] },
-    "instructor": [
-      "Dr. Amit Kumar Dhar"
-    ]
-  },
-  {
-    "code": "CS204",
-    "name": "Computer Organization & Architecture",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
+    "slot": {
+      "lecture": [
+        "C1",
+        "C2"
+      ]
     },
-    "location": "L206",
-    "slot": {"lecture": [ "D3", "D2" ]},
     "instructor": [
-      "Prof. Santosh Biswas"
+      "Dr. Dhiman Saha"
     ]
   },
   {
@@ -197,15 +193,20 @@
       },
       "old": "4"
     },
-    "location": "L205",
-    "slot": {"lecture": [ "E1", "E3" ]},
+    "location": "L101",
+    "slot": {
+      "lecture": [
+        "D2",
+        "D3"
+      ]
+    },
     "instructor": [
       "Dr. Vishwesh Jatala"
     ]
   },
   {
     "code": "CS252",
-    "name": "Algorithms-II",
+    "name": "Algorithms II",
     "credits": {
       "new": {
         "lecture": "2",
@@ -214,15 +215,63 @@
       },
       "old": "4"
     },
-    "location": "ED1 201/202",
-    "slot": { "lecture": [ "G1", "M2", "G3" ] },
+    "location": "L101",
+    "slot": {
+      "lecture": [
+        "E1",
+        "E2"
+      ]
+    },
     "instructor": [
-      "Dr. I Vinod Reddy"
+      "Dr. I. Vinod Kumar Reddy"
     ]
   },
   {
-    "code": "CS301",
-    "name": "Computer Networks",
+    "code": "CS253",
+    "name": "Theory of Computation II",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "2"
+    },
+    "location": "L102",
+    "slot": {
+      "lecture": [
+        "C3"
+      ]
+    },
+    "instructor": [
+      "Dr. Barun Gorain"
+    ]
+  },
+  {
+    "code": "CS254",
+    "name": "Database Management Systems",
+    "credits": {
+      "new": {
+        "lecture": "2",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "4"
+    },
+    "location": "L206",
+    "slot": {
+      "lecture": [
+        "A2",
+        "A3"
+      ]
+    },
+    "instructor": [
+      "Dr. Souradyuti Paul"
+    ]
+  },
+  {
+    "code": "CS300",
+    "name": "Principles of Programming Languages",
     "credits": {
       "new": {
         "lecture": "3",
@@ -231,118 +280,159 @@
       },
       "old": "6"
     },
-    "location": "L101",
-    "slot": {"lecture": [ "C1", "C2", "C3" ]},
-    "instructor": [
-      "Dr. Anand Baswade"
-    ]
-  },
-  {
-    "code": "CS499",
-    "name": "Thesis (BTech)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "6 to 12"
+    "location": "L105",
+    "slot": {
+      "lecture": [
+        "F1",
+        "F2",
+        "F3"
+      ]
     },
-    "location": "NA",
-    "slot": {},
     "instructor": [
-      "DUGC_CSE"
+      "Dr. Amit Kumar Dhar"
     ]
   },
   {
-    "code": "CS599",
-    "name": "Thesis (MTech)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_CSE"
-    ]
-  },
-  {
-    "code": "CS795",
-    "name": "PhD Candidacy",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_CSE"
-    ]
-  },
-  {
-    "code": "CS799",
-    "name": "Thesis (PhD)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_CSE"
-    ]
-  },
-  {
-    "code": "CSL502",
-    "name": "Foundation of Computer Science",
+    "code": "CS559",
+    "name": "Computer System Design",
     "credits": {
       "new": {
         "lecture": "3",
         "tutorial": "0",
         "practicle": "0"
       },
-      "old": "3"
+      "old": "6"
+    },
+    "location": "L102",
+    "slot": {
+      "lecture": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    "instructor": [
+      "Dr. Gaganraj Gupta"
+    ]
+  },
+  {
+    "code": "CS502",
+    "name": "Graph theory and applications",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "6"
+    },
+    "location": "L205",
+    "slot": {
+      "lecture": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    "instructor": [
+      "Dr. I. Vinod Kumar Reddy"
+    ]
+  },
+  {
+    "code": "TPL607/CS516",
+    "name": "Parallelization of Programs",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "ED1 203/204",
+    "slot": {
+      "lecture": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    "instructor": [
+      "Dr. Vishwesh Jatala"
+    ]
+  },
+  {
+    "code": "TPL608/CS552",
+    "name": "Network Science",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
     },
     "location": "L103",
-    "slot": {"lecture": [ "I1", "I2", "I3" ]},
+    "slot": {
+      "lecture": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
     "instructor": [
       "Dr. Rishi Ranjan Singh"
     ]
   },
   {
-    "code": "CSL503",
-    "name": "Computer Systems Engineering",
+    "code": "TPL609/CS554",
+    "name": "Block Chain Technologies",
     "credits": {
       "new": {
-        "lecture": "2",
+        "lecture": "3",
         "tutorial": "0",
-        "practicle": "2"
+        "practicle": "0"
       },
-      "old": "3"
+      "old": "3/6"
     },
-    "location": "ED1 207/208, CSE LAB",
-    "slot": { "lecture" : [ "G1", "G2" ], "practicle": [ "R2", "R3" ] },
+    "location": "ED1 203/204",
+    "slot": {
+      "lecture": [
+        "M1",
+        "M2",
+        "M3"
+      ]
+    },
     "instructor": [
-      "Prof. Santosh Biswas",
-      "Dr. Vishwesh Jatala"
+      "Dr. Souradyuti Paul"
     ]
   },
   {
-    "code": "CSL505/CS553",
-    "name": "Cryptography",
+    "code": "TPL610/CS607",
+    "name": "Adversarial Machine Learning: Security and Privacy of ML",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "ED1 207/208",
+    "slot": {
+      "lecture": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    "instructor": [
+      "Dr. Sk Subidh Ali"
+    ]
+  },
+  {
+    "code": "TPL611/CS621",
+    "name": "Quantum Computing and Reversible Logic Design",
     "credits": {
       "new": {
         "lecture": "3",
@@ -352,14 +442,20 @@
       "old": "3/6"
     },
     "location": "L101",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
+    "slot": {
+      "lecture": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
     "instructor": [
-      "Dr. Dhiman saha"
+      "Dr. Dhiman Saha"
     ]
   },
   {
-    "code": "CSL510/CS510",
-    "name": "Approximation Algorithms",
+    "code": "TPL612/CS620",
+    "name": "Mobile and Wireless Networks",
     "credits": {
       "new": {
         "lecture": "3",
@@ -368,33 +464,143 @@
       },
       "old": "3/6"
     },
-    "location": "L203",
-    "slot": {"lecture": [ "C1", "C2", "C3" ]},
+    "location": "L103",
+    "slot": {
+      "lecture": [
+        "L1",
+        "L2",
+        "L3"
+      ]
+    },
+    "instructor": [
+      "Dr. Anand M. Baswade"
+    ]
+  },
+  {
+    "code": "TPL639/TP639",
+    "name": "lower bound and Impossibilities",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "ED1 207/208",
+    "slot": {
+      "lecture": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
     "instructor": [
       "Dr. Barun Gorain"
     ]
   },
   {
-    "code": "CSL605",
-    "name": "Computer Networks and Cyber Security",
+    "code": "CYL505",
+    "name": "Organic Reactions and Reagents",
     "credits": {
       "new": {
-        "lecture": "2",
+        "lecture": "3",
         "tutorial": "0",
-        "practicle": "2"
+        "practicle": "0"
       },
       "old": "3"
     },
-    "location": "L205, CSE LAB",
-    "slot": { "lecture" : [ "L1", "L2" ], "practicle": [ "S2", "S3" ] },
+    "location": "SD1 110/111",
+    "slot": {
+      "lecture": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
     "instructor": [
-      "Dr. Anand Baswade",
-      "Dr. Souradyuti Paul"
+      "Dr. Sanjib Banerjee"
     ]
   },
   {
-    "code": "CSL606",
-    "name": "Advance Data Structures and Algorithms",
+    "code": "IC250",
+    "name": "Materials Chemistry II",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "2"
+    },
+    "location": "L209",
+    "slot": {
+      "lecture": [
+        "I3"
+      ]
+    },
+    "instructor": [
+      "Dr. Arup Mukhurjee"
+    ]
+  },
+  {
+    "code": "IC251",
+    "name": "Basics of Bioinformatics",
+    "credits": {
+      "new": {
+        "lecture": "2",
+        "tutorial": "1",
+        "practicle": "0"
+      },
+      "old": "4"
+    },
+    "location": "L209, (TUT-L207, L208, L203, L204",
+    "slot": {
+      "lecture": [
+        "I1",
+        "I2",
+        "I,",
+        "I ",
+        "IH",
+        "I1",
+        "I ",
+        "I(",
+        "IT",
+        "IU",
+        "IT",
+        "I)"
+      ]
+    },
+    "instructor": [
+      "Dr. Rukmankesh"
+    ]
+  },
+  {
+    "code": "TPL613",
+    "name": "Physical Organic Chemistry",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "SD1 110/111",
+    "slot": {
+      "lecture": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    "instructor": [
+      "Dr. Hemanta Kumar Kisan"
+    ]
+  },
+  {
+    "code": "TPL614",
+    "name": "Chemistry of Main Group Elements",
     "credits": {
       "new": {
         "lecture": "3",
@@ -404,306 +610,20 @@
       "old": "3"
     },
     "location": "L207",
-    "slot": {"lecture": [ "C1", "C2", "C3" ]},
-    "instructor": [
-      "Dr. I Vinod Reddy"
-    ]
-  },
-  {
-    "code": "CSL511/CS511",
-    "name": "Introduction to Formal Verification and Its Applications",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
+    "slot": {
+      "lecture": [
+        "G1",
+        "G2",
+        "G3"
+      ]
     },
-    "location": "L104",
-    "slot": {"lecture": [ "I1", "I2", "I3" ]},
-    "instructor": [
-      "Dr. Amit Kumar Dhar"
-    ]
-  },
-  {
-    "code": "CSL100 & MAL400/IC100",
-    "name": "Introduction to programming",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "1",
-        "practicle": "3"
-      },
-      "old": "4.5/6"
-    },
-    "location": "L209,(L103, L104, L203, L204, ED1 201/202 TUT)",
-    "slot": { "lecture": [ "E1, E2 " ], "tutorial": [ "B3" ] },
-    "instructor": [
-      "Dr. SK Subidh Ali"
-    ]
-  },
-  {
-    "code": "CA200",
-    "name": "Professional Communication Lab III – Technical Literature Structure",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "1"
-    },
-    "location": "L209",
-    "slot": { "lecture": [ "K1" ] },
-    "instructor": [
-      "Dr. Ganapathy D",
-      "Dr. Sonal Jha"
-    ]
-  },
-  {
-    "code": "IC201",
-    "name": "Environmental Studies",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2"
-    },
-    "location": "L209,(L204, L206, ED1 207/208, ED1 212/213 TUT)",
-    "slot": { "lecture": [ "I3" ], "tutorial": [ "H1" ] },
-    "instructor": [
-      "Dr. Raghavender Medishetty"
-    ]
-  },
-  {
-    "code": "IC300",
-    "name": "Materials Chemistry III",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2"
-    },
-    "location": "L209",
-    "slot": { "lecture": [ "L2" ] },
-    "instructor": [
-      "Dr. Satyajit Gupta"
-    ]
-  },
-  {
-    "code": "CY604",
-    "name": "Solid State Chemistry",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "ED1 201/202",
-    "slot": {"lecture": [ "E2", "E3" ]},
-    "instructor": [
-      "Dr. Katchala Nanaji"
-    ]
-  },
-  {
-    "code": "CY699",
-    "name": "Thesis (MSc)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "6"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_CY"
-    ]
-  },
-  {
-    "code": "CY795",
-    "name": "PhD Candidacy",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_CY"
-    ]
-  },
-  {
-    "code": "CY799",
-    "name": "Thesis (PhD)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_CY"
-    ]
-  },
-  {
-    "code": "CYL100",
-    "name": "Applied Chemistry",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "L209",
-    "slot": {"lecture": [ "C1", "C2", "C3" ]},
-    "instructor": [
-      "Dr. Sanjib Banerjee (IC)",
-      "Dr. Ramasamy Mayilmurugan",
-      "Dr. Mehboob Alam"
-    ]
-  },
-  {
-    "code": "CYL101",
-    "name": "Environmental Science",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "1"
-    },
-    "location": "L209",
-    "slot": { "lecture": [ "A3" ] },
-    "instructor": [
-      "Dr. Raghavender Medishetty"
-    ]
-  },
-  {
-    "code": "CYL400",
-    "name": "Chemical Kinetics and Surface Science",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "L208",
-    "slot": {"lecture": [ "C1", "C2", "C3" ]},
-    "instructor": [
-      "Dr. Satyajit Gupta"
-    ]
-  },
-  {
-    "code": "CYL401",
-    "name": "Coordination Chemistry",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "L205",
-    "slot": {"lecture": [ "B1", "B2", "B3" ]},
-    "instructor": [
-      "Dr. Raghavender Medishetty"
-    ]
-  },
-  {
-    "code": "CYL500",
-    "name": "Quantum Chemistry",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "L104",
-    "slot": {"lecture": [ "A1", "A2", "A3" ]},
-    "instructor": [
-      "Dr. Mehboob Alam"
-    ]
-  },
-  {
-    "code": "CYL501",
-    "name": "Stereochemistry and Reaction Mechanism",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "ED1 207/208",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
-    "instructor": [
-      "Dr. Hemanta Kumar Kisan"
-    ]
-  },
-  {
-    "code": "CYL600/CY605",
-    "name": "Advanced Organic Chemistry",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "6"
-    },
-    "location": "L202",
-    "slot": {"lecture": [ "H1", "H2", "H3" ]},
-    "instructor": [
-      "Dr. Ganapathy D"
-    ]
-  },
-  {
-    "code": "CYL601/CY603",
-    "name": "Organometallic Chemistry: Principles and Applications",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "6"
-    },
-    "location": "L202",
-    "slot": {"lecture": [ "L1", "L2", "L3" ]},
     "instructor": [
       "Dr. Arup Mukherjee"
     ]
   },
   {
-    "code": "CYL602/CY607",
-    "name": "Interpretative Molecular Spectroscopy",
+    "code": "TPL615/CY624",
+    "name": "Chemistry of Heterocyclic Compounds and Natural Products",
     "credits": {
       "new": {
         "lecture": "3",
@@ -712,27 +632,85 @@
       },
       "old": "3/6"
     },
-    "location": "L205",
-    "slot": {"lecture": [ "G1", "G2", "G3" ]},
+    "location": "SD1 208/209",
+    "slot": {
+      "lecture": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
     "instructor": [
-      "Dr. Suchetan Pal"
+      "Dr. Ganapathy D"
     ]
   },
   {
-    "code": "CYL605/CY650",
-    "name": "EPR Spectroscopy and Its Applications",
+    "code": "TPL616",
+    "name": "Organic Photochemistry and Pericyclic reactions",
     "credits": {
       "new": {
-        "lecture": "2",
+        "lecture": "3",
         "tutorial": "0",
         "practicle": "0"
       },
-      "old": "2/4"
+      "old": "3"
     },
-    "location": "L103",
-    "slot": {"lecture": [ "K1", "K2", "K3" ]},
+    "location": "L206",
+    "slot": {
+      "lecture": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
     "instructor": [
-      "Dr. Ramasamy Mayilmurugan"
+      "Dr. Raghavender Medishetty"
+    ]
+  },
+  {
+    "code": "TPL617/TP617",
+    "name": "Solar Energy Harvesting Materials",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L202",
+    "slot": {
+      "lecture": [
+        "F1",
+        "F2",
+        "F3"
+      ]
+    },
+    "instructor": [
+      "Dr. Satyajit Gupta"
+    ]
+  },
+  {
+    "code": "CS550",
+    "name": "Machine Learning",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "6"
+    },
+    "location": "L105",
+    "slot": {
+      "lecture": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
+    "instructor": [
+      "Dr. Rajesh Kumar Mundotiya"
     ]
   },
   {
@@ -746,78 +724,38 @@
       },
       "old": "6"
     },
-    "location": "L204",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
+    "location": "L205",
+    "slot": {
+      "lecture": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
     "instructor": [
       "Dr. Subhajit Sidhanta"
     ]
   },
   {
-    "code": "DS209",
-    "name": "Information Security",
+    "code": "DS201",
+    "name": "Statistical Programming",
     "credits": {
       "new": {
-        "lecture": "3",
+        "lecture": "2",
         "tutorial": "0",
         "practicle": "0"
       },
-      "old": "6"
+      "old": "4"
     },
-    "location": "L101",
-    "slot": {"lecture": [ "E1", "E2", "E3" ]},
-    "instructor": [
-      "Dr. Souradyuti Paul"
-    ]
-  },
-  {
-    "code": "DS210",
-    "name": "Data Analytics and Visualization Lab",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "2"
-      },
-      "old": "2"
+    "location": "ED1 212/213",
+    "slot": {
+      "lecture": [
+        "D2",
+        "D3"
+      ]
     },
-    "location": "CSE LAB",
-    "slot": { "practicle": [ "U1", "U2" ] },
     "instructor": [
-      "Dr. Rajesh Kumar Mundotiya"
-    ]
-  },
-  {
-    "code": "DS220",
-    "name": "Big Data Analytics Lab",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "2"
-      },
-      "old": "2"
-    },
-    "location": "CS LAB",
-    "slot": { "practicle": [ "Q2", "Q3" ] },
-    "instructor": [
-      "Dr. Subhajit Sidhanta"
-    ]
-  },
-  {
-    "code": "DS250",
-    "name": "Data Analytics and Visualization",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "6"
-    },
-    "location": "L103",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
-    "instructor": [
-      "Dr. Rajesh Kumar Mundotiya"
+      "Dr. Anil Kumar Sao"
     ]
   },
   {
@@ -831,988 +769,128 @@
       },
       "old": "6"
     },
-    "location": "L209",
-    "slot": {"lecture": [ "B1", "Y2", "B3" ]},
-    "instructor": [
-      "Dr. Soumyajit Pramanik"
-    ]
-  },
-  {
-    "code": "DS499",
-    "name": "Thesis (BTech)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "6 to 12"
+    "location": "L204",
+    "slot": {
+      "lecture": [
+        "A1",
+        "A2",
+        "A3"
+      ]
     },
-    "location": "NA",
-    "slot": {},
     "instructor": [
-      "DUGC_CSE"
+      "Dr. Soumajit Pramanik"
     ]
   },
   {
-    "code": "DS599",
-    "name": "Thesis (MTech)",
+    "code": "DS252",
+    "name": "Big Data Lab",
     "credits": {
       "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_CSE"
-    ]
-  },
-  {
-    "code": "DS795",
-    "name": "PhD Candidacy",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_CSE"
-    ]
-  },
-  {
-    "code": "DS799",
-    "name": "Thesis (PhD)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_CSE"
-    ]
-  },
-  {
-    "code": "DSL501/CS550",
-    "name": "Machine Learning",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "2"
-      },
-      "old": "4/6"
-    },
-    "location": "L202, CSE LAB",
-    "slot": { "lecture": [ "F1", "F2", "F3" ], "practicle": [ "W2", "W3" ] },
-    "instructor": [
-      "Dr. Gagan Raj Gupta"
-    ]
-  },
-  {
-    "code": "DSL502",
-    "name": "Basic Mathematics for Data Science and Artificial Intelligence",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "1",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "L206",
-    "slot": { "lecture": [ "B1, B2, B3" ] },
-    "instructor": [
-      "Dr. Anil Kumar Sao"
-    ]
-  },
-  {
-    "code": "DSL605/DS605",
-    "name": "Deeplearning for Low resource NLP",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L102",
-    "slot": {"lecture": [ "E1", "E2", "E3" ]},
-    "instructor": [
-      "Dr. Rajesh Kumar Mundotiya"
-    ]
-  },
-  {
-    "code": "DSP505",
-    "name": "Programming Lab for Data Science and Artificial Intelligence",
-    "credits": {
-      "new": {
-        "lecture": "1",
+        "lecture": "0",
         "tutorial": "0",
         "practicle": "2"
       },
       "old": "2"
     },
-    "location": "ED1 207/208, CSE LAB",
-    "slot": { "practicle": [ "S1", "S2", "S3" ] },
+    "location": "L101",
+    "slot": {
+      "lecture": [
+        "D1"
+      ]
+    },
     "instructor": [
-      "Dr. Soumyajit Pramanik"
+      "Dr. Subhajit Sidhanta"
     ]
   },
   {
-    "code": "ECL501/EC501",
-    "name": "Computer Communications",
+    "code": "DS510",
+    "name": "AI/ML Lab",
     "credits": {
       "new": {
-        "lecture": "2",
+        "lecture": "0",
         "tutorial": "0",
         "practicle": "2"
       },
+      "old": "2"
+    },
+    "location": "L206",
+    "slot": {
+      "lecture": [
+        "O1",
+        "O2"
+      ]
+    },
+    "instructor": [
+      "Dr. Soumajit Pramanik"
+    ]
+  },
+  {
+    "code": "ECL101",
+    "name": "Basic Electronics Engineering",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "2"
+      },
+      "old": "4"
+    },
+    "location": "L209",
+    "slot": {
+      "lecture": [
+        "B,",
+        "B ",
+        "B(",
+        "BO",
+        "B,",
+        "BW",
+        "B,",
+        "BQ",
+        "B,",
+        "BS",
+        "B,",
+        "BU",
+        "B ",
+        "B-",
+        "B ",
+        "BL",
+        "BA",
+        "BB",
+        "B)"
+      ]
+    },
+    "instructor": [
+      "Dr. Arzad Alam Kherani",
+      "Dr. Sreejith T. V",
+      "Dr. Anjali"
+    ]
+  },
+  {
+    "code": "TPL619/EE522",
+    "name": "Machine Learning Applications for Wireless Communications",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
       "old": "3/6"
     },
-    "location": "ED1 212/213, EC LAB",
-    "slot": { "lecture" : [ "G1", "G2" ], "practicle": [ "S2", "S3" ] },
+    "location": "ED1 201/202",
+    "slot": {
+      "lecture": [
+        "F1",
+        "F2",
+        "F3"
+      ]
+    },
     "instructor": [
       "Dr. Arzad Alam Kherani"
     ]
   },
   {
-    "code": "ECL502/EC502",
-    "name": "Advanced Digital Communication",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L203",
-    "slot": {"lecture": [ "A1", "A2", "A3" ]},
-    "instructor": [
-      "Dr. Sreejith T V"
-    ]
-  },
-  {
-    "code": "ECL503/EC503",
-    "name": "Digital IC Design",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L103",
-    "slot": {"lecture": [ "E1", "E2", "E3" ]},
-    "instructor": [
-      "Dr. Rohit Chaurasia (IIIT NR)"
-    ]
-  },
-  {
-    "code": "ECL504/EC504",
-    "name": "Semiconductor Devices",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L102",
-    "slot": {"lecture": [ "F1", "F2", "F3" ]},
-    "instructor": [
-      "Dr. Rohit Chaurasia (IIIT NR)"
-    ]
-  },
-  {
-    "code": "EEL605/DS601",
-    "name": "Digital Image Processing",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L204",
-    "slot": {"lecture": [ "A1", "A2", "A3" ]},
-    "instructor": [
-      "Dr. Nitin Khanna"
-    ]
-  },
-  {
-    "code": "EE201",
-    "name": "Electronic Devices",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L101",
-    "slot": {"lecture": [ "A1", "A2" ]},
-    "instructor": [
-      "Dr. Nikhil Chander"
-    ]
-  },
-  {
-    "code": "EE202",
-    "name": "Control Systems - I",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "6"
-    },
-    "location": "L101",
-    "slot": {"lecture": [ "F1", "F2", "F3" ]},
-    "instructor": [
-      "Dr. Shailendra Kumar"
-    ]
-  },
-  {
-    "code": "EE203",
-    "name": "Embedded Systems",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L206",
-    "slot": {"lecture": [ "C1", "C2" ]},
-    "instructor": [
-      "Prof. Santosh Biswas"
-    ]
-  },
-  {
-    "code": "EE207",
-    "name": "Engineering Electromagnetics",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L205",
-    "slot": {"lecture": [ "D1", "D2" ]},
-    "instructor": [
-      "Dr. Nikhil Chander"
-    ]
-  },
-  {
-    "code": "EE301",
-    "name": "Communication Systems",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "ED1 201/202",
-    "slot": {"lecture": [ "H2", "H3" ]},
-    "instructor": [
-      "Dr. Sreejith T V"
-    ]
-  },
-  {
-    "code": "EE351",
-    "name": "Electrical Machines Lab",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "2"
-      },
-      "old": "2"
-    },
-    "location": "EE LAB",
-    "slot": { "practicle": [ "U1", "U2", "U3" ] },
-    "instructor": [
-      "Dr. Shailendra Kumar"
-    ]
-  },
-  {
-    "code": "EE499",
-    "name": "Thesis (BTech)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "6 to 12"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DUGC_EE"
-    ]
-  },
-  {
-    "code": "EE599",
-    "name": "Thesis (MTech)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_EE"
-    ]
-  },
-  {
-    "code": "EE795",
-    "name": "PhD Candidacy",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_EE"
-    ]
-  },
-  {
-    "code": "EE799",
-    "name": "Thesis (PhD)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_EE"
-    ]
-  },
-  {
-    "code": "EEL509/EE509",
-    "name": "Power Electronics",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "L105",
-    "slot": {"lecture": [ "M1", "M2", "M3" ]},
-    "instructor": [
-      "Dr. Prashant Agnihotri",
-      "Dr. Shailendra Kumar"
-    ]
-  },
-  {
-    "code": "EEL521/EE525",
-    "name": "Renewable and Distributed Energy Systems",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L102",
-    "slot": {"lecture": [ "C1", "C2", "C3" ]},
-    "instructor": [
-      "Dr. Shailendra Kumar"
-    ]
-  },
-  {
-    "code": "EEL601/EE612",
-    "name": "Advanced Control Theory",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L204",
-    "slot": {"lecture": [ "E1", "E2", "E3" ]},
-    "instructor": [
-      "Dr. Avishek Adhikari"
-    ]
-  },
-  {
-    "code": "EEL621/EE621",
-    "name": "Advanced Power Electronics",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L102",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
-    "instructor": [
-      "Dr. Shashank Kurm"
-    ]
-  },
-  {
-    "code": "EEP501",
-    "name": "Control Systems Lab",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "3"
-      },
-      "old": "1.5"
-    },
-    "location": "TBA",
-    "slot": { "practicle": [ "O1", "O2", "O3" ] },
-    "instructor": [
-      "Dr. Avishek Adhikari"
-    ]
-  },
-  {
-    "code": "EEP502",
-    "name": "Sensors and Instrumentation Lab",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "3"
-      },
-      "old": "1.5"
-    },
-    "location": "EE LAB",
-    "slot": { "practicle": [ "U1", "U2", "U3" ] },
-    "instructor": [
-      "Dr. Avishek Adhikari",
-      "Dr. Nitin Khanna"
-    ]
-  },
-  {
-    "code": "EV599",
-    "name": "Thesis (MTech)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_EVT"
-    ]
-  },
-  {
-    "code": "EV795",
-    "name": "PhD Candidacy",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_EVT"
-    ]
-  },
-  {
-    "code": "EV799",
-    "name": "Thesis (PhD)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_EVT"
-    ]
-  },
-  {
-    "code": "EVL500/EV513",
-    "name": "Electrochemical Energy Conversion and Storage Technologies",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L203",
-    "slot": {"lecture": [ "I1", "I2", "I3" ]},
-    "instructor": [
-      "Dr. Katchala Nanaji"
-    ]
-  },
-  {
-    "code": "EVL501/EV512",
-    "name": "Introduction of EV and HEV",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2/4"
-    },
-    "location": "L103",
-    "slot": {"lecture": [ "H1", "H2" ]},
-    "instructor": [
-      "Dr. Shashank Kurm"
-    ]
-  },
-  {
-    "code": "EVL502/EV514",
-    "name": "EV Policies and Regulations",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "1/2"
-    },
-    "location": "L103",
-    "slot": { "lecture": [ "H3" ] },
-    "instructor": [
-      "Dr. Satyajit Gupta"
-    ]
-  },
-  {
-    "code": "EVL504/EV515",
-    "name": "Automobile technologies",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L101",
-    "slot": {"lecture": [ "G1", "G2", "G3" ]},
-    "instructor": [
-      "Dr. Pravesh Shukla",
-      "Dr. Nagesh Debidas Patil"
-    ]
-  },
-  {
-    "code": "EVL505",
-    "name": "Electrical Engineering for EV",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "ED1 212/213",
-    "slot": {"lecture": [ "M1", "M2", "M3" ]},
-    "instructor": [
-      "Dr. Nitin Khanna",
-      "Dr. Shashank Kurm"
-    ]
-  },
-  {
-    "code": "LA201",
-    "name": "Chinese Beginner's 2 & 3",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "ED1 201/202",
-    "slot": {"lecture": [ "K1", "K2" ]},
-    "instructor": [
-      "Ms. Hao Yu Lu"
-    ]
-  },
-  {
-    "code": "LA202",
-    "name": "Chinese Basic 3 & 4",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2"
-    },
-    "location": "ED1 207/208",
-    "slot": { "lecture": [ "K3" ] },
-    "instructor": [
-      "Ms. Hao Yu Lu"
-    ]
-  },
-  {
-    "code": "LA302",
-    "name": "Indian Writing in English",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L102",
-    "slot": {"lecture": [ "L1", "L2" ]},
-    "instructor": [
-      "Dr. Sruthi Vinayan"
-    ]
-  },
-  {
-    "code": "LA321",
-    "name": "Macroeconomics",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2"
-    },
-    "location": "L209",
-    "slot": { "lecture": [ "L3" ] },
-    "instructor": [
-      "Dr. Rekha Ravindran"
-    ]
-  },
-  {
-    "code": "LA324",
-    "name": "Leadership: An Organizational Behaviour Perspective",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2"
-    },
-    "location": "L209",
-    "slot": { "lecture": [ "K3" ] },
-    "instructor": [
-      "Dr. Anindita Ghosh"
-    ]
-  },
-  {
-    "code": "LA325",
-    "name": "Concepts of Personality Psychology",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2"
-    },
-    "location": "L209",
-    "slot": {"lecture": [ "X" ]},
-    "instructor": [
-      "Dr. Anindita Ghosh"
-    ]
-  },
-  {
-    "code": "LA353",
-    "name": "Experiencing the Indian University",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2"
-    },
-    "location": "L206",
-    "slot": { "lecture": [ "L3" ] },
-    "instructor": [
-      "Dr. Sonal Jha"
-    ]
-  },
-  {
-    "code": "LAN102",
-    "name": "Speaking and Writing Skill",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "1"
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "Dr. Anubhav Pradhan"
-    ]
-  },
-  {
-    "code": "LA799",
-    "name": "Thesis (PhD)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_LA"
-    ]
-  },
-  {
-    "code": "IC202/MA506",
-    "name": "Calculus II",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "L209, (L103, L104, L203, L204 TUT)",
-    "slot": { "lecture": [ "M1", "M3" ], "tutorial": [ "G2" ] },
-    "instructor": [
-      "Dr. Raj Kumar Mistri"
-    ]
-  },
-  {
-    "code": "MA605",
-    "name": "Operations Research",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L101",
-    "slot": {"lecture": [ "L1", "L2" ]},
-    "instructor": [
-      "Dr. Arnab Patra"
-    ]
-  },
-  {
-    "code": "MA609",
-    "name": "Numerical Optimization Techniques",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2"
-    },
-    "location": "L103",
-    "slot": { "lecture": [ "M3" ] },
-    "instructor": [
-      "Dr. Pawan Kumar Mishra"
-    ]
-  },
-  {
-    "code": "MA699",
-    "name": "Thesis (MSc)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "6"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_MA"
-    ]
-  },
-  {
-    "code": "MA795",
-    "name": "PhD Candidacy",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_MA"
-    ]
-  },
-  {
-    "code": "MA799",
-    "name": "Thesis (PhD)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_MA"
-    ]
-  },
-  {
-    "code": "MAL100",
-    "name": "Mathematics-I",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "1",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L209 (L103, L104, L203, L204, ED1 201/202 TUT)",
-    "slot": { "lecture": [ "D2", "D3", "E3" ], "tutorial": [ "X" ] },
-    "instructor": [
-      "Dr. Anurag Singh"
-    ]
-  },
-  {
-    "code": "MAL401",
-    "name": "Linear Algebra",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "L203",
-    "slot": {"lecture": [ "L1", "L2", "L3" ]},
-    "instructor": [
-      "Dr. Lakshmi Kanta Patra"
-    ]
-  },
-  {
-    "code": "MAL402",
-    "name": "Real Analysis",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0.5",
-        "practicle": "0"
-      },
-      "old": "3.5"
-    },
-    "location": "L108, (L203)",
-    "slot": { "lecture": [ "D" ], "tutorial": [ "H2" ] },
-    "instructor": [
-      "Dr. Pawan Kumar Mishra"
-    ]
-  },
-  {
-    "code": "MAL403/MA503/IC105",
-    "name": "Probability and Statistics",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "1",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "ED1 201/202 (L203 TUT)",
-    "slot": { "lecture": [ "C, H3 (L203)" ] },
-    "instructor": [
-      "Dr. Kuldeep Kumar Kataria"
-    ]
-  },
-  {
-    "code": "MAL404",
-    "name": "Modern Algebra",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "L202",
-    "slot": {"lecture": [ "B1", "B2", "B3" ]},
-    "instructor": [
-      "Dr. Avijit Pal"
-    ]
-  },
-  {
-    "code": "MAL502/MA604",
-    "name": "Functional Analysis",
+    "code": "TPL620/TP620",
+    "name": "Wireless Communication Security with SDRs",
     "credits": {
       "new": {
         "lecture": "3",
@@ -1822,9 +900,826 @@
       "old": "3/6"
     },
     "location": "L207",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
+    "slot": {
+      "lecture": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
     "instructor": [
-      "Dr. Avijit Pal"
+      "Dr. Arzad Alam Kherani"
+    ]
+  },
+  {
+    "code": "EE204",
+    "name": "Analog Circuits",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "6"
+    },
+    "location": "L102",
+    "slot": {
+      "lecture": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
+    "instructor": [
+      "Dr. Nikhil Chander"
+    ]
+  },
+  {
+    "code": "EE205",
+    "name": "Power Engineering - I",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "6"
+    },
+    "location": "L102",
+    "slot": {
+      "lecture": [
+        "F1",
+        "F2",
+        "F3"
+      ]
+    },
+    "instructor": [
+      "Dr. Shashank Kurm"
+    ]
+  },
+  {
+    "code": "EE208",
+    "name": "Electrical Machines",
+    "credits": {
+      "new": {
+        "lecture": "2",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "4"
+    },
+    "location": "L105",
+    "slot": {
+      "lecture": [
+        "D2",
+        "D3"
+      ]
+    },
+    "instructor": [
+      "Dr. Arzad Alam Kherani"
+    ]
+  },
+  {
+    "code": "EE353",
+    "name": "Devices and Circuits lab",
+    "credits": {
+      "new": {
+        "lecture": "0",
+        "tutorial": "0",
+        "practicle": "2"
+      },
+      "old": "2"
+    },
+    "location": "NR",
+    "slot": {
+      "lecture": [
+        "R2",
+        "R3"
+      ]
+    },
+    "instructor": [
+      "Dr. Nikhil Chander"
+    ]
+  },
+  {
+    "code": "EEL101",
+    "name": "Basic Electrical Engineering",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "2"
+      },
+      "old": "4"
+    },
+    "location": "L209",
+    "slot": {
+      "lecture": [
+        "E ",
+        "E(",
+        "EO",
+        "E ",
+        "EW",
+        "E ",
+        "EQ",
+        "E ",
+        "ES",
+        "E ",
+        "EM",
+        "E ",
+        "EL",
+        "Ea",
+        "Eb",
+        "E)"
+      ]
+    },
+    "instructor": [
+      "Dr. Nitin Khanna"
+    ]
+  },
+  {
+    "code": "EVL503/EE575",
+    "name": "Motor Drives for EV",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "ED1 207/208",
+    "slot": {
+      "lecture": [
+        "F1",
+        "F2",
+        "F3"
+      ]
+    },
+    "instructor": [
+      "Dr.Shashank Kurm/Dr. Sachin Jain"
+    ]
+  },
+  {
+    "code": "TPL621/EE604",
+    "name": "Signal Processing Algorithms to DSP Architectures",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "ED1 201/202",
+    "slot": {
+      "lecture": [
+        "G1",
+        "G2",
+        "G3"
+      ]
+    },
+    "instructor": [
+      "Dr. Sreejith T. V"
+    ]
+  },
+  {
+    "code": "EEL622/EE574",
+    "name": "Power Quality",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "L103",
+    "slot": {
+      "lecture": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    "instructor": [
+      "Dr. Shailendra Kumar"
+    ]
+  },
+  {
+    "code": "EEL602/EE572",
+    "name": "Advance Sensing Technique",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "ED1 201/202",
+    "slot": {
+      "lecture": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    "instructor": [
+      "Dr. Avishek Adhikary"
+    ]
+  },
+  {
+    "code": "EEL603/EE573",
+    "name": "Optimal Control",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "L101",
+    "slot": {
+      "lecture": [
+        "H1",
+        "H2",
+        "H3"
+      ]
+    },
+    "instructor": [
+      "Dr. Avishek Adhikary"
+    ]
+  },
+  {
+    "code": "EVL600/EV639",
+    "name": "Battery Chemistry- Components and Manufacturing",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L102",
+    "slot": {
+      "lecture": [
+        "I1",
+        "I2",
+        "I3"
+      ]
+    },
+    "instructor": [
+      "Dr. Katchala Nanaji"
+    ]
+  },
+  {
+    "code": "CA250/LAN103",
+    "name": "Professional Ethics",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "2/0"
+    },
+    "location": "L209",
+    "slot": {
+      "lecture": [
+        "G1"
+      ]
+    },
+    "instructor": [
+      "Dr. Anindita Ghosh (Dr Rajkumar Eslavath - Tutor)"
+    ]
+  },
+  {
+    "code": "LA303",
+    "name": "Chinese Beginner 1",
+    "credits": {
+      "new": {
+        "lecture": "0.5",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "1"
+    },
+    "location": "SD1 110/111",
+    "slot": {
+      "lecture": [
+        "K1"
+      ]
+    },
+    "instructor": [
+      "Ms. Hao Yu Lu"
+    ]
+  },
+  {
+    "code": "LA305",
+    "name": "City in Literature",
+    "credits": {
+      "new": {
+        "lecture": "2",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "4"
+    },
+    "location": "L101",
+    "slot": {
+      "lecture": [
+        "K1",
+        "K2"
+      ]
+    },
+    "instructor": [
+      "Dr. Anubhav Pradhan"
+    ]
+  },
+  {
+    "code": "LA312",
+    "name": "Chinese Beginner 4",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "2"
+    },
+    "location": "SD1 110/111",
+    "slot": {
+      "lecture": [
+        "G2"
+      ]
+    },
+    "instructor": [
+      "Ms. Hao Yu Lu"
+    ]
+  },
+  {
+    "code": "LA315",
+    "name": "Chinese Beginner 2",
+    "credits": {
+      "new": {
+        "lecture": "0.5",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "1"
+    },
+    "location": "SD1 208/209",
+    "slot": {
+      "lecture": [
+        "K1"
+      ]
+    },
+    "instructor": [
+      "Ms. Hao Yu Lu"
+    ]
+  },
+  {
+    "code": "LA327",
+    "name": "Introduction to Partition Literature",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "2"
+    },
+    "location": "SD1 110/111",
+    "slot": {
+      "lecture": [
+        "K2"
+      ]
+    },
+    "instructor": [
+      "Dr. Sruthi Vinayan"
+    ]
+  },
+  {
+    "code": "LA346",
+    "name": "Microeconomics",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "2"
+    },
+    "location": "L103",
+    "slot": {
+      "lecture": [
+        "J3"
+      ]
+    },
+    "instructor": [
+      "Dr. Rekha Ravindran"
+    ]
+  },
+  {
+    "code": "LA349",
+    "name": "Contemporary Indian Cinema: Beyond Bollywood",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "2"
+    },
+    "location": "L102",
+    "slot": {
+      "lecture": [
+        "J1"
+      ]
+    },
+    "instructor": [
+      "Dr. Sonal Jha"
+    ]
+  },
+  {
+    "code": "LA351",
+    "name": "Elements of World Literature",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "2"
+    },
+    "location": "L101",
+    "slot": {
+      "lecture": [
+        "J2"
+      ]
+    },
+    "instructor": [
+      "Dr. Sruthi Vinayan"
+    ]
+  },
+  {
+    "code": "LA354",
+    "name": "Introduction to Postcolonial Literature",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "2"
+    },
+    "location": "SD1 208/209",
+    "slot": {
+      "lecture": [
+        "K3"
+      ]
+    },
+    "instructor": [
+      "Dr. Sonal Jha"
+    ]
+  },
+  {
+    "code": "LA356",
+    "name": "Chinese Basic 5",
+    "credits": {
+      "new": {
+        "lecture": "0.5",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "1"
+    },
+    "location": "SD1 110/111",
+    "slot": {
+      "lecture": [
+        "G3"
+      ]
+    },
+    "instructor": [
+      "Ms. Hao Yu Lu"
+    ]
+  },
+  {
+    "code": "LA357",
+    "name": "Chinese Basic 6",
+    "credits": {
+      "new": {
+        "lecture": "0.5",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "1"
+    },
+    "location": "SD1 208/209",
+    "slot": {
+      "lecture": [
+        "G3"
+      ]
+    },
+    "instructor": [
+      "Ms. Hao Yu Lu"
+    ]
+  },
+  {
+    "code": "LA365",
+    "name": "Applied Positive Psychology",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "2"
+    },
+    "location": "L209",
+    "slot": {
+      "lecture": [
+        "K3"
+      ]
+    },
+    "instructor": [
+      "Dr. Anindita Ghosh"
+    ]
+  },
+  {
+    "code": "TP624",
+    "name": "Introduction to Understanding Psychological Disorders",
+    "credits": {
+      "new": {
+        "lecture": "2",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "4"
+    },
+    "location": "L209",
+    "slot": {
+      "lecture": [
+        "J2",
+        "J3"
+      ]
+    },
+    "instructor": [
+      "Dr. Rajkumar Eslavath"
+    ]
+  },
+  {
+    "code": "TPL622",
+    "name": "Culture and the Study of Human Strengths",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L205",
+    "slot": {
+      "lecture": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    "instructor": [
+      "Dr. Rajkumar Eslavath"
+    ]
+  },
+  {
+    "code": "TPL623",
+    "name": "Advanced Positive Psychology",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L205",
+    "slot": {
+      "lecture": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
+    "instructor": [
+      "Dr. Anindita Ghosh"
+    ]
+  },
+  {
+    "code": "TPL625",
+    "name": "Allied Health Studies",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L205",
+    "slot": {
+      "lecture": [
+        "F1",
+        "F2",
+        "F3"
+      ]
+    },
+    "instructor": [
+      "Dr. Rajkumar Eslavath"
+    ]
+  },
+  {
+    "code": "TPL626",
+    "name": "Statistical Analysis",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L105",
+    "slot": {
+      "lecture": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "instructor": [
+      "Dr. Rajkumar Eslavath"
+    ]
+  },
+  {
+    "code": "MAL101/IC104/IC152",
+    "name": "Mathematics-II",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "1",
+        "practicle": "0"
+      },
+      "old": "4"
+    },
+    "location": "L209",
+    "slot": {
+      "lecture": [
+        "C,",
+        "C ",
+        "CH",
+        "C2",
+        "C ",
+        "CT",
+        "CU",
+        "CT"
+      ]
+    },
+    "instructor": [
+      "Dr. Pawan Kumar Mishra"
+    ]
+  },
+  {
+    "code": "MAL405/MA504",
+    "name": "Differential Equations",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "1",
+        "practicle": "0"
+      },
+      "old": "4"
+    },
+    "location": "L207",
+    "slot": {
+      "lecture": [
+        "M,",
+        "M ",
+        "MH",
+        "M3",
+        "M ",
+        "MT",
+        "MU",
+        "MT"
+      ]
+    },
+    "instructor": [
+      "Dr. Raj Kumar Mistri"
+    ]
+  },
+  {
+    "code": "MAL406",
+    "name": "Numerical Analysis",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "1",
+        "practicle": "0"
+      },
+      "old": "4"
+    },
+    "location": "L207, (ED1 203/204)",
+    "slot": {
+      "lecture": [
+        "K,",
+        "K ",
+        "KH",
+        "K1",
+        "K ",
+        "KT",
+        "KU",
+        "KT"
+      ]
+    },
+    "instructor": [
+      "Dr. Avijit Pal",
+      "Dr. Kuldeep Kumar Kataria"
+    ]
+  },
+  {
+    "code": "MAL500/MA508",
+    "name": "Topology",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L104",
+    "slot": {
+      "lecture": [
+        "L1",
+        "L2",
+        "L3"
+      ]
+    },
+    "instructor": [
+      "Dr. Anurag Singh"
+    ]
+  },
+  {
+    "code": "MAL501",
+    "name": "Complex Analysis",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L203",
+    "slot": {
+      "lecture": [
+        "I1",
+        "I2",
+        "I3"
+      ]
+    },
+    "instructor": [
+      "Dr. Lakshmi Kanta Patra"
+    ]
+  },
+  {
+    "code": "MAL502",
+    "name": "Functional Analysis",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "1",
+        "practicle": "0"
+      },
+      "old": "4"
+    },
+    "location": "L208",
+    "slot": {
+      "lecture": [
+        "F,",
+        "F ",
+        "FE",
+        "F1",
+        "F ",
+        "FT",
+        "FU",
+        "FT"
+      ]
+    },
+    "instructor": [
+      "Dr. Arnab Patra"
     ]
   },
   {
@@ -1838,15 +1733,44 @@
       },
       "old": "3/6"
     },
-    "location": "L207",
-    "slot": {"lecture": [ "A1", "A2", "A3" ]},
+    "location": "L103",
+    "slot": {
+      "lecture": [
+        "G1",
+        "G2",
+        "G3"
+      ]
+    },
     "instructor": [
       "Dr. Raj Kumar Mistri"
     ]
   },
   {
-    "code": "MAL600/MA618",
-    "name": "Introduction to Spectral Theory",
+    "code": "TPL627/MA509",
+    "name": "Statistical Inference",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "L104",
+    "slot": {
+      "lecture": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
+    "instructor": [
+      "Dr. Lakshmi Kanta Patra"
+    ]
+  },
+  {
+    "code": "TPL628/MA611",
+    "name": "Stochastic Processes",
     "credits": {
       "new": {
         "lecture": "3",
@@ -1856,48 +1780,20 @@
       "old": "3/6"
     },
     "location": "L208",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
-    "instructor": [
-      "Dr. Arnab Patra"
-    ]
-  },
-  {
-    "code": "MAL602/MA613",
-    "name": "Operator Theory II",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
+    "slot": {
+      "lecture": [
+        "D1",
+        "D2",
+        "D3"
+      ]
     },
-    "location": "L105",
-    "slot": {"lecture": [ "C1", "C2", "C3" ]},
-    "instructor": [
-      "Dr. Avijit Pal"
-    ]
-  },
-  {
-    "code": "MAL603/MA608",
-    "name": "Martingale Theory",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L102",
-    "slot": {"lecture": [ "B1", "B2", "B3" ]},
     "instructor": [
       "Dr. Kuldeep Kumar Kataria"
     ]
   },
   {
-    "code": "ME212",
-    "name": "Fluid Mechanics",
+    "code": "ME213",
+    "name": "Heat and Mass Transfer",
     "credits": {
       "new": {
         "lecture": "3",
@@ -1906,15 +1802,44 @@
       },
       "old": "6"
     },
-    "location": "L204",
-    "slot": {"lecture": [ "C1", "C2", "C3" ]},
+    "location": "ED1 203/204",
+    "slot": {
+      "lecture": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
     "instructor": [
-      "Dr. Udayraj"
+      "Dr. Pravesh Chandra Shukla"
     ]
   },
   {
-    "code": "ME231",
-    "name": "Solid Mechanics-I",
+    "code": "ME232",
+    "name": "Dynamics",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "6"
+    },
+    "location": "L201",
+    "slot": {
+      "lecture": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    "instructor": [
+      "Dr. Ganesh Kolappan Geetha"
+    ]
+  },
+  {
+    "code": "ME334",
+    "name": "Design of Machine Elements",
     "credits": {
       "new": {
         "lecture": "3",
@@ -1924,14 +1849,43 @@
       "old": "6"
     },
     "location": "L203",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
+    "slot": {
+      "lecture": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
     "instructor": [
-      "Dr. Anshul Faye"
+      "Dr. Anshul faye"
     ]
   },
   {
-    "code": "ME251",
-    "name": "Manufacturing Science I",
+    "code": "ME352",
+    "name": "Manufacturing Science II",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "6"
+    },
+    "location": "L204",
+    "slot": {
+      "lecture": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "instructor": [
+      "Dr. Purnendu das"
+    ]
+  },
+  {
+    "code": "ME413",
+    "name": "Refrigeration and Air-Conditioning",
     "credits": {
       "new": {
         "lecture": "3",
@@ -1941,152 +1895,73 @@
       "old": "6"
     },
     "location": "L103",
-    "slot": {"lecture": [ "J1", "J2", "J3" ]},
+    "slot": {
+      "lecture": [
+        "M1",
+        "M2",
+        "M3"
+      ]
+    },
     "instructor": [
-      "Dr. Soumya Gangopadhyay",
-      "Dr. Rahul Jain"
+      "Dr. Udayraj"
     ]
   },
   {
-    "code": "ME333",
-    "name": "Theory of Machines and Mechanism",
+    "code": "MEL613/ME513",
+    "name": "Convective Heat Transfer",
     "credits": {
       "new": {
         "lecture": "3",
         "tutorial": "0",
         "practicle": "0"
-      },
-      "old": "6"
-    },
-    "location": "L103",
-    "slot": {"lecture": [ "A1", "A2", "A3" ]},
-    "instructor": [
-      "Dr. Ganesh Kolappan Geetha"
-    ]
-  },
-  {
-    "code": "ME371",
-    "name": "Mechanical Engineering Labs-I",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "3"
       },
       "old": "3"
     },
-    "location": "ME LAB",
-    "slot": { "practicle": [ "Q1", "Q2", "Q3" ] },
-    "instructor": [
-      "Dr. Anshul Faye",
-      "Dr. Nagesh Devidas Patil"
-    ]
-  },
-  {
-    "code": "ME499",
-    "name": "Thesis (BTech)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "6 to 12"
+    "location": "L101",
+    "slot": {
+      "lecture": [
+        "G1",
+        "G2",
+        "G3"
+      ]
     },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DUGC_ME"
-    ]
-  },
-  {
-    "code": "ME599",
-    "name": "Thesis (MTech)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_ME"
-    ]
-  },
-  {
-    "code": "ME795",
-    "name": "PhD Candidacy",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_ME"
-    ]
-  },
-  {
-    "code": "ME799",
-    "name": "Thesis (PhD)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_ME"
-    ]
-  },
-  {
-    "code": "ME514",
-    "name": "Internal Combustion Engines",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L104",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
-    "instructor": [
-      "Dr. Pravesh Chandra Shukla"
-    ]
-  },
-  {
-    "code": "MEL501/ME502",
-    "name": "Advanced Engineering Mathematics",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L103",
-    "slot": {"lecture": [ "C1", "C2", "C3" ]},
     "instructor": [
       "Dr. Balkrishna Mehta"
     ]
   },
   {
-    "code": "MEL611/ME512",
-    "name": "Advanced Fluid Mechanics",
+    "code": "MEL633/ME633",
+    "name": "Finite Element Method",
+    "credits": {
+      "new": {
+        "lecture": "2",
+        "tutorial": "1",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L101",
+    "slot": {
+      "lecture": [
+        "L1",
+        "L2",
+        "L,",
+        "L ",
+        "LL",
+        "L3",
+        "L ",
+        "LT",
+        "LU",
+        "LT"
+      ]
+    },
+    "instructor": [
+      "Dr. Anshul faye"
+    ]
+  },
+  {
+    "code": "MEL655/ME652",
+    "name": "Automation in Production Systems",
     "credits": {
       "new": {
         "lecture": "3",
@@ -2095,15 +1970,65 @@
       },
       "old": "3/6"
     },
-    "location": "L104",
-    "slot": {"lecture": [ "J1", "J2", "J3" ]},
+    "location": "L202",
+    "slot": {
+      "lecture": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
     "instructor": [
-      "Dr. Nagesh Devidas Patil"
+      "Dr. Soumya Gangopadhyay"
     ]
   },
   {
-    "code": "MEL612/ME612",
-    "name": "Conduction and Radiation Heat Transfer",
+    "code": "MEP102/IC101",
+    "name": "Digital fabrication",
+    "credits": {
+      "new": {
+        "lecture": "1",
+        "tutorial": "0.5",
+        "practicle": "3"
+      },
+      "old": "3/6"
+    },
+    "location": "L209",
+    "slot": {
+      "lecture": [
+        "F1",
+        "F,",
+        "F ",
+        "FF",
+        "F2",
+        "F ",
+        "F-",
+        "F ",
+        "FT",
+        "FU",
+        "FT",
+        "F ",
+        "F,",
+        "FO",
+        "F,",
+        "FW",
+        "F,",
+        "FQ",
+        "F,",
+        "FS",
+        "F,",
+        "FU",
+        "F\n"
+      ]
+    },
+    "instructor": [
+      "Dr. Purnendu Das",
+      "Dr. Kaushik Bandhopadhyay"
+    ]
+  },
+  {
+    "code": "TPL629/ME515",
+    "name": "Engine management system and Alternative Fuels",
     "credits": {
       "new": {
         "lecture": "3",
@@ -2112,15 +2037,136 @@
       },
       "old": "3/6"
     },
-    "location": "ED1 207/208",
-    "slot": {"lecture": [ "B1", "B2", "B3" ]},
+    "location": "L207",
+    "slot": {
+      "lecture": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
     "instructor": [
-      "Dr. Vijay S. Duryodhan"
+      "Dr. Pravesh Chandra Shukla"
     ]
   },
   {
-    "code": "MEL624/ME624",
-    "name": "Energy conservation and Management",
+    "code": "TPL630/ME637",
+    "name": "Wave Propagation in Structures",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L206",
+    "slot": {
+      "lecture": [
+        "J1",
+        "J2",
+        "J3"
+      ]
+    },
+    "instructor": [
+      "Dr. Ganesh Kolappan Geetha"
+    ]
+  },
+  {
+    "code": "TPL633/ME653",
+    "name": "Experimental Methods in Fluids and Thermal Science",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "L204",
+    "slot": {
+      "lecture": [
+        "I1",
+        "I2",
+        "I3"
+      ]
+    },
+    "instructor": [
+      "Dr. Vijay Shantaram Duryodhan"
+    ]
+  },
+  {
+    "code": "TPL632/ME615",
+    "name": "Computational Fluid Dynamics",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "L204",
+    "slot": {
+      "lecture": [
+        "L1",
+        "L2",
+        "L3"
+      ]
+    },
+    "instructor": [
+      "Dr. Nagesh Debidas Patil"
+    ]
+  },
+  {
+    "code": "MEL651/ME560",
+    "name": "Additive Manufacturing",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L204",
+    "slot": {
+      "lecture": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
+    "instructor": [
+      "Dr. Rahul Jain"
+    ]
+  },
+  {
+    "code": "TPL634",
+    "name": "Mechanical Behaviour and testing of materials",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L103",
+    "slot": {
+      "lecture": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    "instructor": [
+      "Dr. Jose Immanuel R"
+    ]
+  },
+  {
+    "code": "TPL635/ME557",
+    "name": "Laser Materials Processing",
     "credits": {
       "new": {
         "lecture": "3",
@@ -2130,457 +2176,20 @@
       "old": "3/6"
     },
     "location": "L102",
-    "slot": {"lecture": [ "G1", "G2", "G3" ]},
-    "instructor": [
-      "Dr. Vijay S. Duryodhan",
-      "Dr. Udayraj"
-    ]
-  },
-  {
-    "code": "MEL631/ME631",
-    "name": "Continuum Mechanics",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
+    "slot": {
+      "lecture": [
+        "E1",
+        "E2",
+        "E3"
+      ]
     },
-    "location": "ED1 207/208",
-    "slot": {"lecture": [ "A1", "A2", "A3" ]},
     "instructor": [
-      "Dr. Anshul Faye"
+      "Dr. Kaushik Bandhopadhyay"
     ]
   },
   {
-    "code": "MEL636/ME636",
-    "name": "Structural Dynamics",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L202",
-    "slot": {"lecture": [ "G1", "G2", "G3" ]},
-    "instructor": [
-      "Dr. Ganesh Kolappan Geetha"
-    ]
-  },
-  {
-    "code": "MEL652/ME657",
-    "name": "Advances in Metal Forming and Welding",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L104",
-    "slot": {"lecture": [ "F1", "F2", "F3" ]},
-    "instructor": [
-      "Dr. Kaushik Bandyopadhyay",
-      "Dr. Rahul Jain"
-    ]
-  },
-  {
-    "code": "MEL558/ME558",
-    "name": "Surface Engineering",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L205",
-    "slot": {"lecture": [ "M1", "M2", "M3" ]},
-    "instructor": [
-      "Dr. Soumya Gangopadhyay",
-      "Dr. Purnendu Das"
-    ]
-  },
-  {
-    "code": "MEL659/ME659",
-    "name": "Advanced Materials and Processing",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L203",
-    "slot": {"lecture": [ "E1", "E2", "E3" ]},
-    "instructor": [
-      "Dr. Jose Immanuel R"
-    ]
-  },
-  {
-    "code": "MML501/MM501",
-    "name": "Characterization and Testing of Materials",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L206",
-    "slot": {"lecture": [ "G1", "G2", "G3" ]},
-    "instructor": [
-      "Dr. Jose Immanuel R"
-    ]
-  },
-  {
-    "code": "MML551/MM551",
-    "name": "Thermodynamics and Phase Diagram",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2/4"
-    },
-    "location": "L104",
-    "slot": {"lecture": [ "H1", "H2" ]},
-    "instructor": [
-      "Dr. Raghavender Medishetty"
-    ]
-  },
-  {
-    "code": "MML552/MM552",
-    "name": "Fundamentals of crystallography",
-    "credits": {
-      "new": {
-        "lecture": "1",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "1/2"
-    },
-    "location": "L104",
-    "slot": { "lecture": [ "H3" ] },
-    "instructor": [
-      "Dr. Raghavender Medishetty"
-    ]
-  },
-  {
-    "code": "MML553/MM553",
-    "name": "Material synthesis and processing",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "2/4"
-    },
-    "location": "L204",
-    "slot": {"lecture": [ "I2", "I3" ]},
-    "instructor": [
-      "Dr. Sanjib Banerjee"
-    ]
-  },
-  {
-    "code": "MT201",
-    "name": "Sensors and Instrumentation",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "ED1 207/208",
-    "slot": {"lecture": [ "C1", "C2" ]},
-    "instructor": [
-      "Dr. Jose Immanuel R"
-    ]
-  },
-  {
-    "code": "MT202",
-    "name": "Mechatronics Lab - I",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "2"
-      },
-      "old": "2"
-    },
-    "location": "MT LAB",
-    "slot": { "practicle": [ "R2", "R3" ] },
-    "instructor": [
-      "Dr. Gagan Raj Gupta"
-    ]
-  },
-  {
-    "code": "MT599",
-    "name": "Thesis (MTech)",
-    "credits": {
-      "new": {
-        "lecture": "NA"
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_MT"
-    ]
-  },
-  {
-    "code": "MT795",
-    "name": "PhD Candidacy",
-    "credits": {
-      "new": {
-        "lecture": "NA"
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_MT"
-    ]
-  },
-  {
-    "code": "MT799",
-    "name": "Thesis (PhD)",
-    "credits": {
-      "new": {
-        "lecture": "NA"
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_MT"
-    ]
-  },
-  {
-    "code": "MTL501/MT511",
-    "name": "Fundamental of Mechatronics",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "2"
-      },
-      "old": "3/6"
-    },
-    "location": "L202",
-    "slot": { "lecture": [ "D1", "D2" ], "practicle": [ "O2", "O3" ] },
-    "instructor": [
-      "Dr. Purnendu Das",
-      "Dr. Jose Immanuel R",
-      "Dr. Avishek\nAdhikari",
-      "Dr. Kaushik Bandyopadhyay"
-    ]
-  },
-  {
-    "code": "MTL603/MT512",
-    "name": "Digital Manufacturing",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L205",
-    "slot": {"lecture": [ "H1", "H2", "H3" ]},
-    "instructor": [
-      "Dr. Kaushik Bandyopadhyay"
-    ]
-  },
-  {
-    "code": "AA102",
-    "name": "National Sports Organization",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "1 to 4"
-    },
-    "location": "TBA",
-    "slot": {},
-    "instructor": [
-      "Dr. Purnendu das"
-    ]
-  },
-  {
-    "code": "AA103",
-    "name": "National Service Scheme",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "1 to 4"
-    },
-    "location": "TBA",
-    "slot": {},
-    "instructor": [
-      "Dr. Pawan Kumar Mishra"
-    ]
-  },
-  {
-    "code": "NCN100",
-    "name": "Practices for Comprehensive wellbeing",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "Dr. Purnendu Das"
-    ]
-  },
-  {
-    "code": "NCN101",
-    "name": "National Service Scheme",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "1 to 4"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "Dr. Pawan Kumar Mishra"
-    ]
-  },
-  {
-    "code": "NCN102",
-    "name": "National Sports Organization",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "1 to 4"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "Dr. Purnendu Das"
-    ]
-  },
-  {
-    "code": "IC200",
-    "name": "Introduction to Astronomy and Astrophysics",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L209,(L204, L206, ED1 207/208, ED1 212/213 TUT)",
-    "slot": { "lecture": [ "I1", "I2" ], "tutorial": [ "H2" ] },
-    "instructor": [
-      "Dr. Mahavir Sharma"
-    ]
-  },
-  {
-    "code": "PH699",
-    "name": "Thesis (MSc)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "18"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_PH"
-    ]
-  },
-  {
-    "code": "PH795",
-    "name": "PhD Candidacy",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_PH"
-    ]
-  },
-  {
-    "code": "Ph799",
-    "name": "Thesis (PhD)",
-    "credits": {
-      "new": {
-        "lecture": 0,
-        "tutorial": 0,
-        "practicle": 0
-      },
-      "old": "0 to 30"
-    },
-    "location": "NA",
-    "slot": {},
-    "instructor": [
-      "DPGC_PH"
-    ]
-  },
-  {
-    "code": "PHL101",
-    "name": "Physics for Engineers",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "1",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L209,(L103, L104, L203, L204, ED1 201/202 TUT)",
-    "slot": {},
-    "instructor": [
-      "Dr. Mahavir Sharma",
-      "Dr. Praveen Kumar"
-    ]
-  },
-  {
-    "code": "PHL403/PH503",
-    "name": "Mathematical Physics",
+    "code": "MML554",
+    "name": "Computational Methods in Materials Science",
     "credits": {
       "new": {
         "lecture": "3",
@@ -2589,32 +2198,207 @@
       },
       "old": "3"
     },
-    "location": "ED1 212/213",
-    "slot": {"lecture": [ "B1", "B2", "B3" ]},
+    "location": "L203",
+    "slot": {
+      "lecture": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
+    "instructor": [
+      "Dr. Md Mehboob Alam"
+    ]
+  },
+  {
+    "code": "MT251",
+    "name": "Embedded System for Mechanical Controls",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "6"
+    },
+    "location": "L207",
+    "slot": {
+      "lecture": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
+    "instructor": [
+      "Prof. Santosh Biswas"
+    ]
+  },
+  {
+    "code": "MT252",
+    "name": "Fundamental of Robotics",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "6"
+    },
+    "location": "L202",
+    "slot": {
+      "lecture": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    "instructor": [
+      "Dr. Kaushik Bandhopadhyay",
+      "Dr. Purnendu Das"
+    ]
+  },
+  {
+    "code": "MT253",
+    "name": "Hydraulics and Pneumatics Systems",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "6"
+    },
+    "location": "L207",
+    "slot": {
+      "lecture": [
+        "F1",
+        "F2",
+        "F3"
+      ]
+    },
+    "instructor": [
+      "Dr. Jose Immanuel R"
+    ]
+  },
+  {
+    "code": "MTL602/MT551",
+    "name": "Design and Analysis of Robotic System",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L204",
+    "slot": {
+      "lecture": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    "instructor": [
+      "Dr. Kaushik Bandhopadhyay",
+      "Dr. Purnendu Das"
+    ]
+  },
+  {
+    "code": "MTL655",
+    "name": "Automation in Production Systems",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L103",
+    "slot": {
+      "lecture": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
+    "instructor": [
+      "Dr. Soumya Gangopadhyay"
+    ]
+  },
+  {
+    "code": "PHL507/PH506",
+    "name": "Statistical Mechanics",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L102",
+    "slot": {
+      "lecture": [
+        "D1",
+        "D2",
+        "D3"
+      ]
+    },
+    "instructor": [
+      "Dr. Sabyasachi Ghosh"
+    ]
+  },
+  {
+    "code": "PHL508/PH512",
+    "name": "Solid State Physics",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "L104",
+    "slot": {
+      "lecture": [
+        "M1",
+        "M2",
+        "M3"
+      ]
+    },
+    "instructor": [
+      "Dr. Sesha Vempati"
+    ]
+  },
+  {
+    "code": "PHL509/PH509",
+    "name": "Nuclear and Particle Physics",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3"
+    },
+    "location": "L203",
+    "slot": {
+      "lecture": [
+        "A1",
+        "A2",
+        "A3"
+      ]
+    },
     "instructor": [
       "Dr. Sudhanwa Patra"
     ]
   },
   {
-    "code": "PHL404/PH514",
-    "name": "Electronics",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3"
-    },
-    "location": "L105",
-    "slot": {"lecture": [ "D1", "D2", "D3" ]},
-    "instructor": [
-      "Dr. Anjali Chaudhary"
-    ]
-  },
-  {
-    "code": "PHL501/PH501",
-    "name": "Classical Mechanics",
+    "code": "PHL510/PH511",
+    "name": "Atomic and Molecular Physics",
     "credits": {
       "new": {
         "lecture": "3",
@@ -2623,66 +2407,44 @@
       },
       "old": "3/6"
     },
-    "location": "L208",
-    "slot": {"lecture": [ "A1", "A2", "A3" ]},
+    "location": "L204",
+    "slot": {
+      "lecture": [
+        "G1",
+        "G2",
+        "G3"
+      ]
+    },
+    "instructor": [
+      "Dr. Mahavir Sharma"
+    ]
+  },
+  {
+    "code": "PHL607/PH513",
+    "name": "Experimental and Measurement techniques",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "ED1 203/204",
+    "slot": {
+      "lecture": [
+        "B1",
+        "B2",
+        "B3"
+      ]
+    },
     "instructor": [
       "Dr. Dhruv Pratap Singh"
     ]
   },
   {
-    "code": "PHL502/PH502",
-    "name": "Quantum Mechanics",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L209",
-    "slot":{"lecture": [ "Y1", "Y2", "Y6" ]},
-    "instructor": [
-      "Dr. Sabyasachi Ghosh"
-    ]
-  },
-   {
-    "code": "LA252",
-    "name": " INTRODUCTION TO STRESS AND COPING",
-    "credits": {
-      "new": {
-        "lecture": "2",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "4"
-    },
-    "location": "L209",
-    "slot":{"lecture": [ "Y4", "Y5" ]},
-    "instructor": [
-      "Dr. RajKumar"
-    ]
-  },
-  {
-    "code": "PHL505/PH508",
-    "name": "Electrodynamics",
-    "credits": {
-      "new": {
-        "lecture": "3",
-        "tutorial": "0",
-        "practicle": "0"
-      },
-      "old": "3/6"
-    },
-    "location": "L206",
-    "slot": {"lecture": [ "E1", "E2", "E3" ]},
-    "instructor": [
-      "Dr. Praveen Kumar"
-    ]
-  },
-  {
-    "code": "PHL607/PH513",
-    "name": "Experimental and Measurement Techniques",
+    "code": "TPL637/PH517",
+    "name": "Astrophysics and cosmology",
     "credits": {
       "new": {
         "lecture": "3",
@@ -2692,14 +2454,66 @@
       "old": "3/6"
     },
     "location": "L101",
-    "slot": {"lecture": [ "J1", "J2", "J3" ]},
+    "slot": {
+      "lecture": [
+        "I1",
+        "I2",
+        "I3"
+      ]
+    },
     "instructor": [
-      "Dr. Dhruv Pratap Singh"
+      "Dr. Mahavir Sharma"
+    ]
+  },
+  {
+    "code": "TPL638/PH606",
+    "name": "Particle Physics",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "L203",
+    "slot": {
+      "lecture": [
+        "F1",
+        "F2",
+        "F3"
+      ]
+    },
+    "instructor": [
+      "Dr. Sudhanwa Patra"
+    ]
+  },
+  {
+    "code": "PHL610/PH610",
+    "name": "Science and Technology in Thin Films",
+    "credits": {
+      "new": {
+        "lecture": "3",
+        "tutorial": "0",
+        "practicle": "0"
+      },
+      "old": "3/6"
+    },
+    "location": "L103",
+    "slot": {
+      "lecture": [
+        "H1",
+        "H2",
+        "H3"
+      ]
+    },
+    "instructor": [
+      "Dr. Anjali Chaudhary"
     ]
   },
   {
     "code": "PHL611/PH611",
-    "name": "Applied Optics",
+    "name": "Applied optics",
     "credits": {
       "new": {
         "lecture": "3",
@@ -2709,43 +2523,15 @@
       "old": "3/6"
     },
     "location": "L206",
-    "slot": {"lecture": [ "M1", "M2", "M3" ]},
+    "slot": {
+      "lecture": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    },
     "instructor": [
       "Dr. Praveen Kumar"
-    ]
-  },
-  {
-    "code": "PHP102",
-    "name": "Physics lab",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "3"
-      },
-      "old": "1.5"
-    },
-    "location": "PH LAB",
-    "slot": {},
-    "instructor": [
-      "Dr. Sesha Vempati"
-    ]
-  },
-  {
-    "code": "PHP506",
-    "name": "Electronics Laboratory",
-    "credits": {
-      "new": {
-        "lecture": "0",
-        "tutorial": "0",
-        "practicle": "6"
-      },
-      "old": "3"
-    },
-    "location": "PH LAB",
-    "slot": {},
-    "instructor": [
-      "Dr. Anjali Chaudhary"
     ]
   }
 ]

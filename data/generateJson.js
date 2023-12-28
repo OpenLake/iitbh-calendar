@@ -12,6 +12,38 @@ const getValue = val => {
 	return val;
 };
 
+/**
+ * @param {string}  slot
+ * @return {string[]}
+ */
+function resolveSlot(slot){
+	if(typeof(slot) !== 'string') {
+		console.log(typeof(slot))
+		return;
+	}
+	// solo slots are the one's that do not have number with them
+	const soloSlot = ['X'];
+
+	if(slot in soloSlot){	
+		return {lecture: [slot]};
+	}
+	else if(slot.length == 1) {
+		return {lecture: [slot+'1', slot+'2', slot+'3']};
+	}
+	else if(slot.length == 2) {
+		return {lecture: [slot]};
+	}
+	else {
+		var major = slot[0];
+		var minor = slot.slice(1).split('');
+		var slots = [];
+		for(const num of minor){
+			slots.push(major + num);
+		}
+		return {lecture: slots};
+	}
+}
+
 const run = async () => {
 	await workbook.xlsx.readFile('./Course-list.xlsx');
 
@@ -22,10 +54,14 @@ const run = async () => {
 	const data = [];
 
 	for (let row = START_ROW; table[row]; row++) {
+
+		if(table[row][1] == undefined)
+			continue;
+
 		const instructors = typeof table[row][8] === 'string' ? table[row][8].split(',').map(item => item.trim()) : [];
 		const newCredits = typeof table[row][4] === 'string' ? table[row][4].split('-') : [0, 0, 0];
-		
-		data.push({
+
+		var entry = {
 			code: table[row][2],
 			name: table[row][3],
 			credits: {
@@ -36,11 +72,16 @@ const run = async () => {
 				},
 				old: String(table[row][5]),
 			},
-			location: table[row][7],
+			location: table[row][9],
 			// Convert slots to the array format manually
-			slot: [table[row][6]],
+			slot: resolveSlot(table[row][7]),
 			instructor: instructors
-		});
+		}
+
+		if(entry.location == "NA")
+			continue;
+		
+		data.push(entry);
 	}
 	await fs.writeFile('../src/data/courses.json', JSON.stringify(data, null, 2));
 	console.log('Written to data/courses.json');
