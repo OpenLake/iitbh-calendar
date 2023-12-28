@@ -33,18 +33,22 @@ usage: ./deploy.sh -u <USERNAME> [-r <REPO>] [-d <DOMAIN>] [-h] [-y]
 
 ## Course List
 
-I use [ilovepdf](https://www.ilovepdf.com/pdf_to_excel) to convert the course list (pdf) to an Excel file.
+Convert the pdf to excel using website like [ilovepdf](https://www.ilovepdf.com/pdf_to_excel)
+Verify that the order of the fields in data/generateJson.js and your excel file is same, if not, update either of the file.
 
 Then run a script to convert the Excel file to JSON.
 ```sh
 pnpm generate-data
 ```
 
+It will try to resolve course slots automatically and give you a list of
+courses which needs to be edited manually.
+
 ## Features
 
 - [X] Download calendar as an `.ics` file.
 - [X] Separate lecture and exam schedules
-- [ ] Support mid-sem/end-sem system.
-- [ ] View schedule as a table
+- [X] Support mid-sem/end-sem system.
+- [X] View schedule as a table
 - [ ] Store and retrieve your course selection using cookies.
-- [ ] Templates based on recommendation made by Institute (First five semester)
+- [X] Templates based on recommendation made by Institute (First five semester)
