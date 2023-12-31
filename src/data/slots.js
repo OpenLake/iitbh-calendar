@@ -79,8 +79,8 @@ export const slots = {
 };
 
 export const startEnd = {
-	start: '7 Aug 2023',
-	end: '4 Dec 2023' ,
+	start: '29 Dec 2023',
+	end: '23 Apr 2024',
 };
 
 export const days = [
