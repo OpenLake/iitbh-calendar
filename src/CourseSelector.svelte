@@ -174,7 +174,7 @@
 	.dropdown-content {
 	    display: none;
 	  	position: absolute;
-	  	background-color: #f9f9f9;
+	  	background-color: var(--bg-2);
 	  	min-width: 100%;
 	  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		max-height: 200px;
@@ -183,13 +183,16 @@
 	}
 	
 	.dropdown-content a {
-	  	color: black;
+	  	color: var(--off-white);
 	  	padding: 12px 16px;
 	  	text-decoration: none;
 	  	display: block;
 	}
 	
-	.dropdown-content a:hover {background-color: #f1f1f1}
+	.dropdown-content a:hover {
+		background-color: lightblue;
+		color: black;
+	}
 	.dropdown:hover .dropdown-content {display: block;}
 	.dropdown:hover .dropbtn {background-color: #3e8e41;}
 

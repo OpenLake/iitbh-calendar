@@ -1,11 +1,14 @@
 <script>
 	import { render as renderGhButton } from 'github-buttons';
+	import { fly } from 'svelte/transition';
 
 	import CourseSelector from './CourseSelector.svelte';
 	import TimeTable from './TimeTable.svelte';
+	import Settings from './Settings.svelte';
 	import { makeCalendar, getSlotWise  } from './lib/createCalendar';
 	import { download } from './lib/util';
 	import RotateCCWIcon from './assets/icons/rotate-ccw.svg';
+	import GearIcon from './assets/icons/gear.svg';
 
 	/** @type {HTMLDivElement} */
 	let topRightContainer;
@@ -15,8 +18,22 @@
 	const States = {
 		Selecting: 0,
     TimeTable: 1,
+		Settings: 2,
 	}
 	let websiteState = States.Selecting
+
+	let closeSettings = function(){
+		websiteState = States.TimeTable;
+	}
+
+	let settingsObject = {
+		close:       closeSettings,
+		headerFg:    "#ffffff",
+		headerBg:    "#173653",
+		contentFg:   "#010101",
+		contentBg:   "#28a9e2",
+		borderColor: "#173653",
+	}
 
 	// initialize empty slotWiseCourses
 	function downloadCalendar() {
@@ -33,6 +50,9 @@
 	}
 	function editCourses(){
 		websiteState = States.Selecting;
+	}
+	function editSettings(){
+		websiteState = States.Settings;
 	}
 	renderGhButton(
 		{
@@ -52,7 +72,10 @@
 </script>
 
 {#if websiteState === States.Selecting}
-	<main>
+	<main
+		in:fly={{ y: -50, delay: 500 }}
+		out:fly={{ y: -50 }}
+	>
 		<div class="top-right" bind:this={topRightContainer} />
 
 		<h1>Calendar Generator</h1>
@@ -80,7 +103,11 @@
 			</button>
 		</div>
 	</main>
-{:else if websiteState == States.TimeTable}
+{:else if websiteState == States.TimeTable || websiteState == States.Settings}
+<div
+	in:fly={{ y: -50, delay: 500 }}
+	out:fly={{ y: -50 }}
+>
   <div class="table">
 		<TimeTable bind:slotWiseCourses />
 	</div>
@@ -102,10 +129,23 @@
 		>
 			Change Courses
 		</button>
+		<button on:click={editSettings} class="outline"><GearIcon />Settings</button>
 	</div>
+</div>
+
+	{#if websiteState == States.Settings}
+		<Settings bind:settingsObject/>
+	{/if}
 {/if}
 
 <style>
+	:root{
+		--header-fg:    #ffffff;
+		--header-bg:    #173653;
+		--content-fg:   #010101;
+		--content-bg:   #28a9e2;
+		--border-color: #173653;
+	}
 	main {
 		display: flex;
 		flex-direction: column;

@@ -1,7 +1,9 @@
 <script>
 	import { days } from './data/slots';
 	import timetable from './data/timetable.json';
+
 	export let slotWiseCourses = [];
+
 	var flag = false;
 	while (timetable.time.length > 1){
 		for (const day in timetable.schedule){
@@ -22,8 +24,6 @@
 			timetable.schedule[day].pop();
 		}
 	}
-
-	// timetable.time.reverse()
 
 </script>
 
@@ -55,16 +55,17 @@
 
 <style>
 	table {
-		background-color: white;
+		background-color: var(--border-color);
 		table-layout: fixed ;
 		width: 100% ;
 	}
 	th {
-    color: #282828;
-		background-color: #98971a;
+    color: var(--header-fg);
+		background-color: var(--header-bg);
 	}
 	td {
-		background-color: #282828;
+		color: var(--content-fg);
+		background-color: var(--content-bg);
 		height: 50px;
 		font-size: 10px;
 	}
