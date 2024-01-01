@@ -283,9 +283,9 @@
     "location": "L105",
     "slot": {
       "lecture": [
-        "F1",
-        "F2",
-        "F3"
+        "I1",
+        "I2",
+        "I3"
       ]
     },
     "instructor": [
@@ -432,7 +432,7 @@
   },
   {
     "code": "TPL611/CS621",
-    "name": "Quantum Computing and Reversible Logic Design",
+    "name": "Quantum Computing for Computer Scientists",
     "credits": {
       "new": {
         "lecture": "3",
@@ -445,8 +445,10 @@
     "slot": {
       "lecture": [
         "B1",
-        "B2",
-        "B3"
+        "B2"
+      ],
+      "practicle": [
+
       ]
     },
     "instructor": [
@@ -954,6 +956,28 @@
     },
     "instructor": [
       "Dr. Arzad Alam Kherani"
+    ]
+  },
+  {
+    "code": "EE352",
+    "name": "Communication Lab",
+    "credits": {
+      "new": {
+        "lecture": "0",
+        "tutorial": "0",
+        "practicle": "2"
+      },
+      "old": "2"
+    },
+    "location": "NR",
+    "slot": {
+      "lecture": [
+        "V2",
+        "V3"
+      ]
+    },
+    "instructor": [
+      "Dr. Sreejith T. V"
     ]
   },
   {
