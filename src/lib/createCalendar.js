@@ -77,7 +77,7 @@ const generateIcal = (selectedCourses, calendarInclude) =>
 
 					return {
 						title: `${course.code} ${course.name}`,
-						location: course.location,
+						location: course.location ? course.location : 'NA',
 						start,
 						end,
 						recurrenceRule: `FREQ=WEEKLY;BYDAY=${byDay};INTERVAL=1;UNTIL=${until}`,

@@ -38,7 +38,6 @@
 
 					if(!existInSelected){
 						tempCoursesList = courseList.filter(course => course.code.includes(tempCourseCode));
-						console.log(tempCoursesList.length);
 						if(tempCoursesList.length>0){
 							selectedCourse = tempCoursesList[0];
 							addCourse();
@@ -56,7 +55,6 @@
 
 	function getRemainingOptions(courses, selected) {
 		const selectedCodes = new Set(selected.map(course => course.code));
-		console.log(selectedCodes);
 		return courses.filter(course => !selectedCodes.has(course.code));
 	}
 
@@ -99,7 +97,7 @@
 		>
 			<div class="course-name">
 				<div>{course.label}</div>
-				<div style="color: red;">{(course.link=="NA")?"Slots not avialable":""}</div>
+				<div style="color: red;">{(course.slot===undefined)?"Slots not avialable":""}</div>
 				
 			</div>
 			<button

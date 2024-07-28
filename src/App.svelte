@@ -12,9 +12,11 @@
 
 	/** @type {HTMLDivElement} */
 	let topRightContainer;
-	let courses = [];
+	let courses = JSON.parse(localStorage.getItem("courses"));
 	let slotWiseCourses = {};
+	
 	export const reset = () => {courses = []; websiteState = States.Selecting};
+
 	const States = {
 		Selecting: 0,
     TimeTable: 1,
@@ -22,12 +24,9 @@
 	}
 	let websiteState = States.Selecting
 
-	let closeSettings = function(){
-		websiteState = States.TimeTable;
-	}
-
 	let settingsObject = {
 		close:       closeSettings,
+		apply:       applyStyles,
 		headerFg:    "#ffffff",
 		headerBg:    "#173653",
 		contentFg:   "#010101",
@@ -44,6 +43,25 @@
 			filetype: 'text/calendar',
 		});
 	}
+  function applyStyles() {
+		if(typeof(settingsObject.headerFg) !== 'string' ||
+			 typeof(settingsObject.headerBg) !== 'string' ||
+			 typeof(settingsObject.contentFg) !== 'string'||
+			 typeof(settingsObject.contentBg) !== 'string'||
+			 typeof(settingsObject.borderColor) !== 'string')
+		{
+			console.error("Type error in settings object, expected type for colors is string", settingsObject);
+		}
+    document.documentElement.style.setProperty('--header-fg', settingsObject.headerFg);
+    document.documentElement.style.setProperty('--header-bg', settingsObject.headerBg);
+    document.documentElement.style.setProperty('--content-fg', settingsObject.contentFg);
+    document.documentElement.style.setProperty('--content-bg', settingsObject.contentBg);
+    document.documentElement.style.setProperty('--border-color', settingsObject.borderColor);
+  }
+	function closeSettings(){
+		websiteState = States.TimeTable;
+	}
+
 	function viewTimeTable(){
 		websiteState = States.TimeTable;
 		slotWiseCourses = getSlotWise(courses);
@@ -54,6 +72,13 @@
 	function editSettings(){
 		websiteState = States.Settings;
 	}
+
+	function storeInStorage(){
+
+	}
+	function retriveFromStorage(){
+	}
+
 	renderGhButton(
 		{
 			href: 'https://github.com/OpenLake/iitbh-calendar',
@@ -69,6 +94,13 @@
 			topRightContainer.appendChild(el);
 		},
 	);
+	$: {
+		storeInStorage();
+		localStorage.setItem("courses", JSON.stringify(courses))
+	}
+
+	applyStyles();
+	retriveFromStorage();
 </script>
 
 {#if websiteState === States.Selecting}

@@ -3,6 +3,7 @@
 
 	/**
 	 * @typedef {Object} SettingsObject
+	 * @property {function} apply
 	 * @property {function} close
 	 * @property {string} headerFg
 	 * @property {string} headerBg
@@ -14,23 +15,6 @@
 	/** @type {SettingsObject} */
 	export let settingsObject;
 
-  function applyStyles() {
-		if(typeof(settingsObject.headerFg) !== 'string' ||
-			 typeof(settingsObject.headerBg) !== 'string' ||
-			 typeof(settingsObject.contentFg) !== 'string'||
-			 typeof(settingsObject.contentBg) !== 'string'||
-			 typeof(settingsObject.borderColor) !== 'string')
-		{
-			console.error("Type error in settings object, expected type for colors is string", settingsObject);
-		}
-    document.documentElement.style.setProperty('--header-fg', settingsObject.headerFg);
-    document.documentElement.style.setProperty('--header-bg', settingsObject.headerBg);
-    document.documentElement.style.setProperty('--content-fg', settingsObject.contentFg);
-    document.documentElement.style.setProperty('--content-bg', settingsObject.contentBg);
-    document.documentElement.style.setProperty('--border-color', settingsObject.borderColor);
-  }
-
-	applyStyles();
 </script>
 
 <div class="settings"
@@ -46,7 +30,7 @@
 				<label for="headerFg">Header Text Color:</label>
 			</td>
 			<td>
-				<input type="color" id="headerFg" bind:value={settingsObject.headerFg} on:change={applyStyles}/>
+				<input type="color" id="headerFg" bind:value={settingsObject.headerFg} on:change={settingsObject.apply}/>
 			</td>
 		</tr>
 		<tr>
@@ -54,7 +38,7 @@
 				<label for="headerBg">Header Background Color:</label>
 			</td>
 			<td>
-				<input type="color" id="headerBg" bind:value={settingsObject.headerBg} on:change={applyStyles}/>
+				<input type="color" id="headerBg" bind:value={settingsObject.headerBg} on:change={settingsObject.apply}/>
 			</td>
 		</tr>
 		<tr>
@@ -62,7 +46,7 @@
 				<label for="contentFg">Content Text Color:</label>
 			</td>
 			<td>
-				<input type="color" id="contentFg" bind:value={settingsObject.contentFg} on:change={applyStyles}/>
+				<input type="color" id="contentFg" bind:value={settingsObject.contentFg} on:change={settingsObject.apply}/>
 			</td>
 		</tr>
 		<tr>
@@ -70,7 +54,7 @@
 				<label for="contentBg">Content Background Color:</label>
 			</td>
 			<td>
-				<input type="color" id="contentBg" bind:value={settingsObject.contentBg} on:change={applyStyles}/>
+				<input type="color" id="contentBg" bind:value={settingsObject.contentBg} on:change={settingsObject.apply}/>
 			</td>
 		</tr>
 		<tr>
@@ -78,7 +62,7 @@
 				<label for="borderColor">Border Color:</label>
 			</td>
 			<td>
-				<input type="color" id="borderColor" bind:value={settingsObject.borderColor} on:change={applyStyles}/>
+				<input type="color" id="borderColor" bind:value={settingsObject.borderColor} on:change={settingsObject.apply}/>
 			</td>
 		</tr>
 	</table>
