@@ -13,7 +13,7 @@
 		.filter(course => !['NA', 'TBA'].includes(course.location))
 		.map(course => ({
 			...course,
-			label: `${course.code} ${course.name} ${course.location}`,
+			label: `${course.code} ${course.name} ${course.location || ''}`,
 		}));
 
 
