@@ -12,7 +12,7 @@
 
 	/** @type {HTMLDivElement} */
 	let topRightContainer;
-	let courses = JSON.parse(localStorage.getItem("courses"));
+	let courses = JSON.parse(localStorage.getItem("courses")) || [];
 	let slotWiseCourses = {};
 	
 	export const reset = () => {courses = []; websiteState = States.Selecting};
@@ -24,9 +24,7 @@
 	}
 	let websiteState = States.Selecting
 
-	let settingsObject = {
-		close:       closeSettings,
-		apply:       applyStyles,
+	let settingsObject = JSON.parse(localStorage.getItem("settings")) || {
 		headerFg:    "#ffffff",
 		headerBg:    "#173653",
 		contentFg:   "#010101",
@@ -43,7 +41,7 @@
 			filetype: 'text/calendar',
 		});
 	}
-  function applyStyles() {
+    let applyStyles = () => {
 		if(typeof(settingsObject.headerFg) !== 'string' ||
 			 typeof(settingsObject.headerBg) !== 'string' ||
 			 typeof(settingsObject.contentFg) !== 'string'||
@@ -57,8 +55,9 @@
     document.documentElement.style.setProperty('--content-fg', settingsObject.contentFg);
     document.documentElement.style.setProperty('--content-bg', settingsObject.contentBg);
     document.documentElement.style.setProperty('--border-color', settingsObject.borderColor);
+    storeInStorage();
   }
-	function closeSettings(){
+    let closeSettings = () => {
 		websiteState = States.TimeTable;
 	}
 
@@ -74,9 +73,12 @@
 	}
 
 	function storeInStorage(){
-
+		localStorage.setItem("settings", JSON.stringify(settingsObject))
 	}
 	function retriveFromStorage(){
+        settingsObject = JSON.parse(localStorage.getItem("settings"));
+		settingsObject.close = closeSettings;
+		settingsObject.apply = applyStyles;
 	}
 
 	renderGhButton(
@@ -166,7 +168,7 @@
 </div>
 
 	{#if websiteState == States.Settings}
-		<Settings bind:settingsObject/>
+		<Settings bind:settingsObject={settingsObject} bind:applySettings={applyStyles} bind:closeSettings={closeSettings}  />
 	{/if}
 {/if}
 

@@ -3,8 +3,6 @@
 
 	/**
 	 * @typedef {Object} SettingsObject
-	 * @property {function} apply
-	 * @property {function} close
 	 * @property {string} headerFg
 	 * @property {string} headerBg
 	 * @property {string} contentFg
@@ -14,6 +12,8 @@
 
 	/** @type {SettingsObject} */
 	export let settingsObject;
+    export let applySettings;
+    export let closeSettings;
 
 </script>
 
@@ -30,7 +30,7 @@
 				<label for="headerFg">Header Text Color:</label>
 			</td>
 			<td>
-				<input type="color" id="headerFg" bind:value={settingsObject.headerFg} on:change={settingsObject.apply}/>
+				<input type="color" id="headerFg" bind:value={settingsObject.headerFg} on:change={applySettings}/>
 			</td>
 		</tr>
 		<tr>
@@ -38,7 +38,7 @@
 				<label for="headerBg">Header Background Color:</label>
 			</td>
 			<td>
-				<input type="color" id="headerBg" bind:value={settingsObject.headerBg} on:change={settingsObject.apply}/>
+				<input type="color" id="headerBg" bind:value={settingsObject.headerBg} on:change={applySettings}/>
 			</td>
 		</tr>
 		<tr>
@@ -46,7 +46,7 @@
 				<label for="contentFg">Content Text Color:</label>
 			</td>
 			<td>
-				<input type="color" id="contentFg" bind:value={settingsObject.contentFg} on:change={settingsObject.apply}/>
+				<input type="color" id="contentFg" bind:value={settingsObject.contentFg} on:change={applySettings}/>
 			</td>
 		</tr>
 		<tr>
@@ -54,7 +54,7 @@
 				<label for="contentBg">Content Background Color:</label>
 			</td>
 			<td>
-				<input type="color" id="contentBg" bind:value={settingsObject.contentBg} on:change={settingsObject.apply}/>
+				<input type="color" id="contentBg" bind:value={settingsObject.contentBg} on:change={applySettings}/>
 			</td>
 		</tr>
 		<tr>
@@ -62,14 +62,14 @@
 				<label for="borderColor">Border Color:</label>
 			</td>
 			<td>
-				<input type="color" id="borderColor" bind:value={settingsObject.borderColor} on:change={settingsObject.apply}/>
+				<input type="color" id="borderColor" bind:value={settingsObject.borderColor} on:change={applySettings}/>
 			</td>
 		</tr>
 	</table>
 	<div class="setting-buttons">
 		<button
 			class="raised"
-			on:click={settingsObject.close}
+			on:click={closeSettings}
 		>
 			Close
 		</button>
