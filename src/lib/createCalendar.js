@@ -1,27 +1,27 @@
 import dayjs from 'dayjs';
 
 import { createEvents } from 'ics';
-import { slots, startEnd,days} from '../data/slots';
+import { slots, startEnd, days } from '../data/slots';
 
 const getSlotInfo = course => {
 	const courseSlots = [],
 		startDate = startEnd.start,
 		endDate = startEnd.end;
-	if (! course.hasOwnProperty('slot')){
+	if (!course.hasOwnProperty('slot')) {
 		return { slots: courseSlots, startDate, endDate };
 	}
-	if(course.slot.hasOwnProperty('lecture')){
-		for(const i of course.slot.lecture){
+	if (course.slot.hasOwnProperty('lecture')) {
+		for (const i of course.slot.lecture) {
 			courseSlots.push(slots[i]);
 		}
 	}
-	if(course.slot.hasOwnProperty('tutorial')){
-		for(const i of course.slot.tutorial){
+	if (course.slot.hasOwnProperty('tutorial')) {
+		for (const i of course.slot.tutorial) {
 			courseSlots.push(slots[i]);
 		}
 	}
-	if(course.slot.hasOwnProperty('practicle')){
-		for(const i of course.slot.practicle){
+	if (course.slot.hasOwnProperty('practicle')) {
+		for (const i of course.slot.practicle) {
 			courseSlots.push(slots[i]);
 		}
 	}
@@ -67,8 +67,8 @@ const generateIcal = (selectedCourses, calendarInclude) =>
 					const startDate = nextWeekday(semStart, isoDay)
 							.hour(startHr)
 							.minute(startMin),
-							start = dateArray(startDate)
-							,end = dateArray(startDate.hour(endHr).minute(endMin));
+						start = dateArray(startDate),
+						end = dateArray(startDate.hour(endHr).minute(endMin));
 					const byDay = slot.day.slice(0, 2).toUpperCase(),
 						until = dayjs(startEnd.end)
 							.hour(23)
@@ -86,7 +86,7 @@ const generateIcal = (selectedCourses, calendarInclude) =>
 					};
 				});
 
-				return (classEntries);
+				return classEntries;
 			})
 			.flat(),
 	);
@@ -97,12 +97,10 @@ export function makeCalendar(selectedCourses, calendarInclude) {
 	return value;
 }
 
-export function getSlotWise(courses){
+export function getSlotWise(courses) {
 	let slotWiseCourses = {};
-	for (const course of courses)
-	{
-		if (!course.hasOwnProperty('slot'))
-			continue;
+	for (const course of courses) {
+		if (!course.hasOwnProperty('slot')) continue;
 
 		let slots = [];
 		if (course.slot.hasOwnProperty('lecture'))
@@ -112,10 +110,8 @@ export function getSlotWise(courses){
 		if (course['slot'].hasOwnProperty('practicle'))
 			slots = [...slots, ...course['slot']['practicle']];
 
-		for(const slot of slots)
-		{
-			if(!slotWiseCourses.hasOwnProperty(slot))
-				slotWiseCourses[slot] = [];
+		for (const slot of slots) {
+			if (!slotWiseCourses.hasOwnProperty(slot)) slotWiseCourses[slot] = [];
 			slotWiseCourses[slot].push(course);
 		}
 	}

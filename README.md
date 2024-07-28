@@ -37,6 +37,7 @@ Convert the pdf to excel using website like [ilovepdf](https://www.ilovepdf.com/
 Verify that the order of the fields in data/generateJson.js and your excel file is same, if not, update either of the file.
 
 Then run a script to convert the Excel file to JSON.
+
 ```sh
 pnpm generate-data
 ```
@@ -46,9 +47,9 @@ courses which needs to be edited manually.
 
 ## Features
 
-- [X] Download calendar as an `.ics` file.
-- [X] Separate lecture and exam schedules
-- [X] Support mid-sem/end-sem system.
-- [X] View schedule as a table
+- [x] Download calendar as an `.ics` file.
+- [x] Separate lecture and exam schedules
+- [x] Support mid-sem/end-sem system.
+- [x] View schedule as a table
 - [ ] Store and retrieve your course selection using cookies.
-- [X] Templates based on recommendation made by Institute (First five semester)
+- [x] Templates based on recommendation made by Institute (First five semester)

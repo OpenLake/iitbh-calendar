@@ -1,62 +1,115 @@
 [
-    {
-        "name": "Sem I",
-        "courses": [ "CSL100","CYP102","MAL100","CYL100","PHL101","CYL101","NCN100"]
-    },
-    {
-        "name": "Sem II",
-        "courses": [ "MEP102","EEL101","PHP102","MAL101","ECL101","BML101","LAN103"]
-    },
+	{
+		"name": "Sem I",
+		"courses": [
+			"CSL100",
+			"CYP102",
+			"MAL100",
+			"CYL100",
+			"PHL101",
+			"CYL101",
+			"NCN100"
+		]
+	},
+	{
+		"name": "Sem II",
+		"courses": [
+			"MEP102",
+			"EEL101",
+			"PHP102",
+			"MAL101",
+			"ECL101",
+			"BML101",
+			"LAN103"
+		]
+	},
 
-    {
-        "name": "Sem III CSE",
-        "courses": [ "IC200","IC201","IC202","CS200","CS201","CS202","CS203","CS204","CA200"]
-    },
-    {
-        "name": "Sem IV CSE",
-        "courses": [ "IC250","IC251","CS250","CS251","CS252","CS253","CS254","CA250"]
-    },
-    {
-        "name": "Sem V CSE",
-        "courses": [ "IC300","CS300","CS301"]
-    },
+	{
+		"name": "Sem III CSE",
+		"courses": [
+			"IC200",
+			"IC201",
+			"IC202",
+			"CS200",
+			"CS201",
+			"CS202",
+			"CS203",
+			"CS204",
+			"CA200"
+		]
+	},
+	{
+		"name": "Sem IV CSE",
+		"courses": [
+			"IC250",
+			"IC251",
+			"CS250",
+			"CS251",
+			"CS252",
+			"CS253",
+			"CS254",
+			"CA250"
+		]
+	},
+	{
+		"name": "Sem V CSE",
+		"courses": ["IC300", "CS300", "CS301"]
+	},
 
-    {
-        "name": "Sem III EE",
-        "courses": [ "IC200","IC201","IC202","EE201","EE202","EE203","EE207","CA200" ]
-    },
-    {
-        "name": "Sem IV EE",
-        "courses": [ "IC250","IC251","EE204","EE205","EE208","EE251","CA250" ]
-    },
-    {
-        "name": "Sem V EE",
-        "courses": [ "IC300","EE301","EE351"]
-    },
+	{
+		"name": "Sem III EE",
+		"courses": [
+			"IC200",
+			"IC201",
+			"IC202",
+			"EE201",
+			"EE202",
+			"EE203",
+			"EE207",
+			"CA200"
+		]
+	},
+	{
+		"name": "Sem IV EE",
+		"courses": ["IC250", "IC251", "EE204", "EE205", "EE208", "EE251", "CA250"]
+	},
+	{
+		"name": "Sem V EE",
+		"courses": ["IC300", "EE301", "EE351"]
+	},
 
-    {
-        "name": "Sem III DSAI",
-        "courses": [ "IC200","IC201","IC202","MA605","CS202","DS250","DS210","CA200" ]
-    },
-    {
-        "name": "Sem IV DSAI",
-        "courses": [ "IC250","IC251","DS200","DS201","DS251","DS252","CA250"]
-    },
-    {
-        "name": "Sem V DSAI",
-        "courses": [ "IC300","DS209","CS550"]
-    },
+	{
+		"name": "Sem III DSAI",
+		"courses": [
+			"IC200",
+			"IC201",
+			"IC202",
+			"MA605",
+			"CS202",
+			"DS250",
+			"DS210",
+			"CA200"
+		]
+	},
+	{
+		"name": "Sem IV DSAI",
+		"courses": ["IC250", "IC251", "DS200", "DS201", "DS251", "DS252", "CA250"]
+	},
+	{
+		"name": "Sem V DSAI",
+		"courses": ["IC300", "DS209", "CS550"]
+	},
 
-    {
-        "name": "Sem III ME",
-        "courses": [ "IC200","IC201","IC202","ME231","ME251","ME212","CA200" ]
-    },
-    {
-        "name": "Sem IV ME",
-        "courses": [ "IC250","IC251","ME213","ME232","ME352","CA250" ]
-    },
-    {
-        "name": "Sem V ME",
-        "courses": [ "IC300","ME333","ME371"]
-    }
+	{
+		"name": "Sem III ME",
+		"courses": ["IC200", "IC201", "IC202", "ME231", "ME251", "ME212", "CA200"]
+	},
+	{
+		"name": "Sem IV ME",
+		"courses": ["IC250", "IC251", "ME213", "ME232", "ME352", "CA250"]
+	},
+	{
+		"name": "Sem V ME",
+		"courses": ["IC300", "ME333", "ME371"]
+	}
 ]
