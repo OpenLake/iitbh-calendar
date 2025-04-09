@@ -4,3 +4,5 @@ venv
 /course_list/.ipynb_checkpoints/
 TT.pdf
 db.sqlite3
+__pycache__/
+*.pyc
