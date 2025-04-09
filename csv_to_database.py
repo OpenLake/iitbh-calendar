@@ -1,8 +1,7 @@
 import csv
 import sqlite3
 import re
-csv_filepath="course_list/List_of_courses.csv"
-db_filepath="db.sqlite3"
+
 def csv_to_db(csv_filepath,db_filepath):
     data=[]
     with open(csv_filepath) as file:
@@ -29,4 +28,6 @@ def csv_to_db(csv_filepath,db_filepath):
 
 
 if __name__ == "__main__":
-    pass
+    csv_filepath = "course_list/sem4.csv"
+    db_filepath = "db.sqlite3"
+    csv_to_db(csv_filepath, db_filepath)

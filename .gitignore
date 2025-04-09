@@ -1,5 +1,6 @@
 venv
 .idea
-/data_analysis.ipynb
 /.ipynb_checkpoints/
 /course_list/.ipynb_checkpoints/
+TT.pdf
+db.sqlite3

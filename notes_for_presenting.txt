@@ -1,0 +1,7 @@
+ME333 (A)  clashing with CS200 in A1,A2
+
+ME333 clashing with CS201 in A3
+ME333 clashing with CS204 in B
+
+for demo show that clash and then go to admin and change ME333 slot from A to B/ I and repeat
+admin login = shubham (lapt_pass)
