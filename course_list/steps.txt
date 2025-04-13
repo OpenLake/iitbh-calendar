@@ -1,9 +1,0 @@
-1)convert pdf to excel using ilovepdf.com
-2)save excel file as csv UTF-8 file
-3)then modify the csv file to make data handling easier, for example in slot section remove (LAB) and (TUT) keywords
-	(maybe write numpy NaN for NA or TBA fields)
-
-4) then you have to load the csv data to db.sqlite3 file (for django) , to do that execute function in csv_to_database.py
-
-
-NOTE : in fetch_course_codes_db( getting context) function the disciplines are hard coded
