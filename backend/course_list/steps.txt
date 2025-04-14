@@ -1,0 +1,8 @@
+1)convert pdf to excel
+2)then modify the excel file to make data handling easier, for example in slot section remove (LAB) and (TUT) keywords
+     Ensure that columns of excel are in following order -
+     Course Code,Course Name,Discipline,Slot,Instructor,Room Allotted
+
+3)save excel file as csv UTF-8 file with the name "courses.csv"
+4)Then run data_prep.py to create a supabase importable file, the csv created will have name "import_courses.csv"
+5)Go to supabase project and populate api_coursedata table by importing the "import_courses.csv" file
