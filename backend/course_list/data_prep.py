@@ -1,14 +1,11 @@
 import os
 import csv
 import django
-
 # Set up Django settings
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "mysite.settings")
 django.setup()
 
 from api.models import CourseData
-
-
 def backup_courses(path="Backup/db_courses.csv"):
     with open(path, "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
