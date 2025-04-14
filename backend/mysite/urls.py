@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from api.views import *
+from api.root import api_root
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #root API (only for testing)
+    path('', api_root, name='api_root'),  # Root page
+
+    path('get_all_courses/', get_all_courses, name='get_all_courses'),
 ]
