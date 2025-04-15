@@ -1,18 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ChevronDown, ChevronUp } from "lucide-react";
-
-interface Course {
-  id: number;
-  course_code: string;
-  course_name: string;
-  slot: string;
-  room: string;
-  discipline: string;
-  instructor: string;
-}
+import { backendDomain } from "../lib/types";
+import { Course } from "../lib/types";
 
 export default function Home() {
   const [courses, setCourses] = useState<Course[]>([]);
@@ -21,12 +13,29 @@ export default function Home() {
   const router = useRouter();
 
   // Fetch courses when component mounts
-  useState(() => {
-    fetch("YOUR_API_ENDPOINT")
-      .then((res) => res.json())
-      .then((data) => setCourses(data))
-      .catch((error) => console.error("Error fetching courses:", error));
-  });
+  useEffect(() => {
+    const fetchCourses = async () => {
+      try {
+        const response = await fetch(`${backendDomain}/get_all_courses/`, {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+        if (!response.ok) {
+          console.log("Get All Courses API could not be triggered properly");
+          throw new Error(
+            "Get All Courses API could not be triggered properly"
+          );
+        }
+        const data = await response.json();
+        setCourses(data);
+      } catch (error) {
+        console.log("Error fetching the courses", error);
+      }
+    };
+    fetchCourses();
+  }, []);
 
   const disciplines = Array.from(
     new Set(courses.map((course) => course.discipline))
@@ -50,7 +59,7 @@ export default function Home() {
 
   const handleGenerateTimetable = async () => {
     try {
-      const response = await fetch("YOUR_TIMETABLE_API_ENDPOINT", {
+      const response = await fetch(`${backendDomain}/submit/`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -58,12 +67,13 @@ export default function Home() {
         body: JSON.stringify({ course_id_list: selectedCourses }),
       });
 
-      if (response.ok) {
-        const data = await response.json();
-        // Store the timetable data in localStorage for the next page
-        localStorage.setItem("timetableData", JSON.stringify(data));
-        router.push("/timetable");
+      if (!response.ok) {
+        console.log("Submit the selections API could not be triggered");
+        throw new Error("Submit the selections API could not be triggered");
       }
+      const data = await response.json();
+      //redux
+      router.push("/timetable");
     } catch (error) {
       console.error("Error generating timetable:", error);
     }
