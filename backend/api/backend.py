@@ -32,6 +32,20 @@ def process_submission(user_input):
 
                 "MSG":0}
 
+    lab_alphabets =["N","O","V","W","P","Q","R","S","T","U"]
+    lab_to_normal ={"N1":"B1","N2":"C1","N3":"E1",
+                    "V1": "D1", "V2": "C2", "V3": "BLANK",
+                    "P1": "A2", "P2": "D2", "P3": "F1",
+                    "R1": "B3", "R2": "C3", "R3": "E3",
+                    "T1": "A3", "T2": "D3", "T3": "F3",
+                    "O1": "K1", "O2": "L1", "O3": "I1",
+                    "W1": "L2", "W2": "J1", "W3": "M1",
+                    "Q1": "K2", "Q2": "M2", "Q3": "I2",
+                    "S1": "L3", "S2": "M3", "S3": "J2",
+                    "U1": "K3", "U2": "J3", "U3": "I3",
+
+                    }
+
     keys = []
     slots = []
     course_codes=[]
@@ -115,14 +129,22 @@ def process_submission(user_input):
 
 
                 else:
-                    add.append(Slot_key[slot])
+                    alphabet = slot[0]
+                    if alphabet not in lab_alphabets:
+                        add.append(Slot_key[slot])
+                    else:
+                        add.append(Slot_key[lab_to_normal[slot]])
             else:
                 alphabet = slot[0]
                 dig_1 = slot[1]
                 dig_2 = slot[2]
+                if alphabet not in lab_alphabets:
+                    add.append(Slot_key[f"{alphabet}{dig_1}"])
+                    add.append(Slot_key[f"{alphabet}{dig_2}"])
+                else:
+                    add.append(Slot_key[lab_to_normal[f"{alphabet}{dig_1}"]])
+                    add.append(Slot_key[lab_to_normal[f"{alphabet}{dig_2}"]])
 
-                add.append(Slot_key[f"{alphabet}{dig_1}"])
-                add.append(Slot_key[f"{alphabet}{dig_2}"])
         keys.append(add)
 
 
@@ -145,6 +167,9 @@ def process_submission(user_input):
         i = i + 1
     for NA_courses in index[0]:
         additional_messages.append(f"Course {NA_courses} has no slot defined")
+
+    index.pop(0)
+
     content=[index,clashes,additional_messages]
 
     return content
