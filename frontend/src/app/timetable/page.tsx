@@ -105,14 +105,13 @@ export default function Timetable() {
             </table>
           </div>
         </div>
-
-        {(clashes.length > 0 || additional_messages.length > 0) && (
+        {
           <div className="bg-white rounded-lg shadow-lg p-6">
-            {clashes.length > 0 && (
-              <div className="mb-6">
-                <h3 className="text-xl font-bold text-red-600 mb-3">
-                  Clash Detections
-                </h3>
+            <div className="mb-6">
+              <h3 className="text-xl font-bold text-red-600 mb-3">
+                Clash Detections
+              </h3>
+              {clashes.length > 0 ? (
                 <ul className="list-disc pl-5 space-y-2">
                   {clashes.map((message, index) => (
                     <li key={index} className="text-red-600">
@@ -120,14 +119,16 @@ export default function Timetable() {
                     </li>
                   ))}
                 </ul>
-              </div>
-            )}
+              ) : (
+                <p className="text-gray-600">No clashes detected.</p>
+              )}
+            </div>
 
-            {additional_messages.length > 0 && (
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
-                  Additional Information
-                </h3>
+            <div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                Additional Information
+              </h3>
+              {additional_messages.length > 0 ? (
                 <ul className="list-disc pl-5 space-y-2">
                   {additional_messages.map((message, index) => (
                     <li key={index} className="text-gray-700">
@@ -135,10 +136,12 @@ export default function Timetable() {
                     </li>
                   ))}
                 </ul>
-              </div>
-            )}
+              ) : (
+                <p className="text-gray-600">No additional information.</p>
+              )}
+            </div>
           </div>
-        )}
+        }
       </div>
     </div>
   );
