@@ -1,18 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, Search } from "lucide-react";
 import { backendDomain } from "../lib/types";
 import { Course } from "../lib/types";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../redux/store";
 import { setTimetable } from "../redux/slices/timetableSlice";
+import { arraysEqual } from "../lib/utils";
 
 export default function Home() {
   const [courses, setCourses] = useState<Course[]>([]);
   const [selectedCourses, setSelectedCourses] = useState<number[]>([]);
   const [expandedDisciplines, setExpandedDisciplines] = useState<string[]>([]);
+  const [userExpandedDisciplines, setUserExpandedDisciplines] = useState<
+    string[]
+  >([]);
+  const [searchQuery, setSearchQuery] = useState<string>("");
   const router = useRouter();
 
   // Fetch courses when component mounts
@@ -40,24 +43,84 @@ export default function Home() {
     fetchCourses();
   }, []);
 
+  // Filter courses based on search query
+  const filteredCourses = useMemo(() => {
+    if (searchQuery.trim() === "") return courses;
+    return courses.filter(
+      (course) =>
+        course.course_code.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        course.course_name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  }, [searchQuery, courses]);
+
+  // Get unique disciplines from filtered courses
   const disciplines = Array.from(
-    new Set(courses.map((course) => course.discipline))
+    new Set(filteredCourses.map((course) => course.discipline))
   );
 
+  // Calculate disciplines with selected courses - fixed Set iteration issue
+  const disciplinesWithSelectedCourses = useMemo(() => {
+    return courses
+      .filter((course) => selectedCourses.includes(course.id))
+      .map((course) => course.discipline)
+      .filter(
+        (discipline, index, array) => array.indexOf(discipline) === index
+      );
+  }, [courses, selectedCourses]);
+
+  // Manage expanded disciplines based on search and selection
+  useEffect(() => {
+    if (searchQuery.trim() !== "") {
+      const matchingDisciplines = Array.from(
+        new Set(filteredCourses.map((course) => course.discipline))
+      );
+      if (!arraysEqual(matchingDisciplines, expandedDisciplines)) {
+        setExpandedDisciplines(matchingDisciplines);
+      }
+    } else {
+      const combined = [...userExpandedDisciplines];
+      disciplinesWithSelectedCourses.forEach((discipline) => {
+        if (!combined.includes(discipline)) {
+          combined.push(discipline);
+        }
+      });
+      if (!arraysEqual(combined, expandedDisciplines)) {
+        setExpandedDisciplines(combined);
+      }
+    }
+  }, [
+    searchQuery,
+    filteredCourses,
+    userExpandedDisciplines,
+    disciplinesWithSelectedCourses,
+  ]);
+
+  // Toggle discipline expansion by user action
   const toggleDiscipline = (discipline: string) => {
-    setExpandedDisciplines((prev) =>
-      prev.includes(discipline)
-        ? prev.filter((d) => d !== discipline)
-        : [...prev, discipline]
-    );
+    // Update user preference for expanded disciplines
+    setUserExpandedDisciplines((prev) => {
+      if (prev.includes(discipline)) {
+        return prev.filter((d) => d !== discipline);
+      } else {
+        return [...prev, discipline];
+      }
+    });
   };
 
+  // Toggle course selection
   const toggleCourseSelection = (courseId: number) => {
-    setSelectedCourses((prev) =>
-      prev.includes(courseId)
+    setSelectedCourses((prev) => {
+      const newSelection = prev.includes(courseId)
         ? prev.filter((id) => id !== courseId)
-        : [...prev, courseId]
-    );
+        : [...prev, courseId];
+
+      return newSelection;
+    });
+  };
+
+  // Handle clearing search
+  const clearSearch = () => {
+    setSearchQuery("");
   };
 
   const handleGenerateTimetable = async () => {
@@ -82,6 +145,23 @@ export default function Home() {
     }
   };
 
+  const highlightMatch = (text: string, query: string) => {
+    if (!query.trim()) return text;
+
+    const regex = new RegExp(`(${query.trim()})`, "gi");
+    const parts = text.split(regex);
+
+    return parts.map((part, index) =>
+      regex.test(part) ? (
+        <span key={index} className="bg-yellow-200">
+          {part}
+        </span>
+      ) : (
+        part
+      )
+    );
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-4xl mx-auto p-6">
@@ -89,59 +169,100 @@ export default function Home() {
           Course Timetable Generator
         </h1>
 
-        <div className="space-y-4">
-          {disciplines.map((discipline) => (
-            <div
-              key={discipline}
-              className="bg-white rounded-lg shadow-sm border border-gray-200"
+        {/* Search Bar */}
+        <div className="mb-6 relative">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search courses by code or name..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            />
+            <Search className="absolute left-3 top-3.5 h-5 w-5 text-gray-400" />
+          </div>
+          {searchQuery.trim() !== "" && (
+            <button
+              onClick={clearSearch}
+              className="absolute right-3 top-3 text-sm text-gray-500 hover:text-gray-700"
             >
-              <button
-                onClick={() => toggleDiscipline(discipline)}
-                className="w-full px-4 py-3 flex items-center justify-between text-left"
-              >
-                <span className="text-lg font-medium text-gray-900">
-                  {discipline}
-                </span>
-                {expandedDisciplines.includes(discipline) ? (
-                  <ChevronUp className="h-5 w-5 text-gray-500" />
-                ) : (
-                  <ChevronDown className="h-5 w-5 text-gray-500" />
-                )}
-              </button>
+              Clear
+            </button>
+          )}
+        </div>
 
-              {expandedDisciplines.includes(discipline) && (
-                <div className="px-4 pb-4">
-                  {courses
-                    .filter((course) => course.discipline === discipline)
-                    .map((course) => (
-                      <div
-                        key={course.id}
-                        className="flex items-center space-x-3 py-2"
-                      >
-                        <input
-                          type="checkbox"
-                          id={`course-${course.id}`}
-                          checked={selectedCourses.includes(course.id)}
-                          onChange={() => toggleCourseSelection(course.id)}
-                          className="h-4 w-4 text-blue-600 rounded border-gray-300"
-                        />
-                        <label
-                          htmlFor={`course-${course.id}`}
-                          className="flex-1 cursor-pointer"
+        <div className="space-y-4">
+          {disciplines.length > 0 ? (
+            disciplines.map((discipline) => {
+              const disciplineCourses = filteredCourses.filter(
+                (course) => course.discipline === discipline
+              );
+              const selectedCount = disciplineCourses.filter((course) =>
+                selectedCourses.includes(course.id)
+              ).length;
+
+              return (
+                <div
+                  key={discipline}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200"
+                >
+                  <button
+                    onClick={() => toggleDiscipline(discipline)}
+                    className="w-full px-4 py-3 flex items-center justify-between text-left"
+                  >
+                    <span className="text-lg font-medium text-gray-900">
+                      {discipline}
+                      <span className="ml-2 text-sm text-gray-500">
+                        ({disciplineCourses.length} courses
+                        {selectedCount > 0 && `, ${selectedCount} selected`})
+                      </span>
+                    </span>
+                    {expandedDisciplines.includes(discipline) ? (
+                      <ChevronUp className="h-5 w-5 text-gray-500" />
+                    ) : (
+                      <ChevronDown className="h-5 w-5 text-gray-500" />
+                    )}
+                  </button>
+
+                  {expandedDisciplines.includes(discipline) && (
+                    <div className="px-4 pb-4">
+                      {disciplineCourses.map((course) => (
+                        <div
+                          key={course.id}
+                          className="flex items-center space-x-3 py-2"
                         >
-                          <div className="font-medium text-gray-900">
-                            {course.course_code}
-                          </div>
-                          <div className="text-sm text-gray-500">
-                            {course.course_name}
-                          </div>
-                        </label>
-                      </div>
-                    ))}
+                          <input
+                            type="checkbox"
+                            id={`course-${course.id}`}
+                            checked={selectedCourses.includes(course.id)}
+                            onChange={() => toggleCourseSelection(course.id)}
+                            className="h-4 w-4 text-blue-600 rounded border-gray-300"
+                          />
+                          <label
+                            htmlFor={`course-${course.id}`}
+                            className="flex-1 cursor-pointer"
+                          >
+                            <div className="font-medium text-gray-900">
+                              {highlightMatch(course.course_code, searchQuery)}
+                            </div>
+                            <div className="text-sm text-gray-500">
+                              {highlightMatch(course.course_name, searchQuery)}
+                            </div>
+                          </label>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
-              )}
+              );
+            })
+          ) : (
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 text-center">
+              <p className="text-gray-600">
+                No courses found matching your search criteria.
+              </p>
             </div>
-          ))}
+          )}
         </div>
 
         <button

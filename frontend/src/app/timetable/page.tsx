@@ -1,11 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Download, ArrowLeft } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-import { timetable } from "@/src/lib/types";
 import { timeSlots } from "@/src/lib/types";
 import { days } from "@/src/lib/types";
 import { useSelector } from "react-redux";

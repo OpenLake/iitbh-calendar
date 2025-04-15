@@ -11,4 +11,6 @@ export const isNotCourse = (value: string | string[]): boolean => {
   return /^[A-Z]+\d+$/.test(value.trim());
 };
 
+export const arraysEqual = (a: string[], b: string[]) =>
+  a.length === b.length && a.every((val) => b.includes(val));
 
