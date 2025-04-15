@@ -168,7 +168,6 @@ export default function Home() {
         throw new Error("Submit the selections API could not be triggered");
       }
       const data = await response.json();
-      console.log(data);
       setTimetable(data);
       router.push("/timetable");
     } catch (error) {

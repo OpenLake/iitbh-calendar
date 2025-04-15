@@ -1,19 +1,12 @@
 import { timetable } from "@/src/lib/types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { TimetablePayload } from "@/src/lib/types";
 
 const initialState: timetable = {
     mapping: {},
     clashes: [],
     additional_messages: []
 }
-
-
-// Define a proper payload type
-type TimetablePayload = {
-    mapping: Record<string, any>;
-    clashes: string[];
-    additional_messages: string[];
-};
 
 export const timetableSlice = createSlice({
     name: "timetable",

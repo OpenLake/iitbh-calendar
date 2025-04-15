@@ -18,6 +18,12 @@ export interface timetable {
     additional_messages: string[]
 }
 
+export type TimetablePayload = {
+    mapping: Record<string, any>;
+    clashes: string[];
+    additional_messages: string[];
+};
+
 export const timeSlots = [
     "8:30-9:25",
     "9:30-20:25",
