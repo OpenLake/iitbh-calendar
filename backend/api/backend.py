@@ -145,6 +145,9 @@ def process_submission(user_input):
         i = i + 1
     for NA_courses in index[0]:
         additional_messages.append(f"Course {NA_courses} has no slot defined")
+
+    index.pop(0)
+
     content=[index,clashes,additional_messages]
 
     return content
