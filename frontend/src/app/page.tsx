@@ -15,6 +15,9 @@ export default function Home() {
   const [userExpandedDisciplines, setUserExpandedDisciplines] = useState<
     string[]
   >([]);
+  const [userCollapsedDisciplines, setUserCollapsedDisciplines] = useState<
+    string[]
+  >([]);
   const [searchQuery, setSearchQuery] = useState<string>("");
   const router = useRouter();
 
@@ -58,7 +61,7 @@ export default function Home() {
     new Set(filteredCourses.map((course) => course.discipline))
   );
 
-  // Calculate disciplines with selected courses - fixed Set iteration issue
+  // Calculate disciplines with selected courses
   const disciplinesWithSelectedCourses = useMemo(() => {
     return courses
       .filter((course) => selectedCourses.includes(course.id))
@@ -70,6 +73,7 @@ export default function Home() {
 
   // Manage expanded disciplines based on search and selection
   useEffect(() => {
+    // When searching, override all other settings
     if (searchQuery.trim() !== "") {
       const matchingDisciplines = Array.from(
         new Set(filteredCourses.map((course) => course.discipline))
@@ -77,34 +81,50 @@ export default function Home() {
       if (!arraysEqual(matchingDisciplines, expandedDisciplines)) {
         setExpandedDisciplines(matchingDisciplines);
       }
-    } else {
-      const combined = [...userExpandedDisciplines];
-      disciplinesWithSelectedCourses.forEach((discipline) => {
-        if (!combined.includes(discipline)) {
-          combined.push(discipline);
-        }
-      });
-      if (!arraysEqual(combined, expandedDisciplines)) {
-        setExpandedDisciplines(combined);
+      return;
+    }
+
+    // When not searching, respect user's explicit actions (expanded and collapsed)
+    const shouldBeExpanded = [...userExpandedDisciplines];
+
+    // Add disciplines with selected courses, but only if user hasn't explicitly collapsed them
+    disciplinesWithSelectedCourses.forEach((discipline) => {
+      if (
+        !userCollapsedDisciplines.includes(discipline) &&
+        !shouldBeExpanded.includes(discipline)
+      ) {
+        shouldBeExpanded.push(discipline);
       }
+    });
+
+    // Apply the changes only if needed
+    if (!arraysEqual(shouldBeExpanded, expandedDisciplines)) {
+      setExpandedDisciplines(shouldBeExpanded);
     }
   }, [
     searchQuery,
     filteredCourses,
     userExpandedDisciplines,
+    userCollapsedDisciplines,
     disciplinesWithSelectedCourses,
+    expandedDisciplines,
   ]);
 
   // Toggle discipline expansion by user action
   const toggleDiscipline = (discipline: string) => {
-    // Update user preference for expanded disciplines
-    setUserExpandedDisciplines((prev) => {
-      if (prev.includes(discipline)) {
-        return prev.filter((d) => d !== discipline);
-      } else {
-        return [...prev, discipline];
-      }
-    });
+    if (expandedDisciplines.includes(discipline)) {
+      // User is explicitly closing the discipline
+      setUserExpandedDisciplines((prev) =>
+        prev.filter((d) => d !== discipline)
+      );
+      setUserCollapsedDisciplines((prev) => [...prev, discipline]);
+    } else {
+      // User is explicitly opening the discipline
+      setUserExpandedDisciplines((prev) => [...prev, discipline]);
+      setUserCollapsedDisciplines((prev) =>
+        prev.filter((d) => d !== discipline)
+      );
+    }
   };
 
   // Toggle course selection
@@ -113,6 +133,16 @@ export default function Home() {
       const newSelection = prev.includes(courseId)
         ? prev.filter((id) => id !== courseId)
         : [...prev, courseId];
+
+      // When selecting a course, get its discipline and remove it from collapsed list
+      if (!prev.includes(courseId)) {
+        const course = courses.find((c) => c.id === courseId);
+        if (course) {
+          setUserCollapsedDisciplines((prev) =>
+            prev.filter((d) => d !== course.discipline)
+          );
+        }
+      }
 
       return newSelection;
     });
@@ -138,6 +168,7 @@ export default function Home() {
         throw new Error("Submit the selections API could not be triggered");
       }
       const data = await response.json();
+      console.log(data);
       setTimetable(data);
       router.push("/timetable");
     } catch (error) {
@@ -201,6 +232,13 @@ export default function Home() {
                 selectedCourses.includes(course.id)
               ).length;
 
+              // Get total selected in this discipline (including those filtered out)
+              const totalSelectedInDiscipline = courses.filter(
+                (course) =>
+                  course.discipline === discipline &&
+                  selectedCourses.includes(course.id)
+              ).length;
+
               return (
                 <div
                   key={discipline}
@@ -214,7 +252,9 @@ export default function Home() {
                       {discipline}
                       <span className="ml-2 text-sm text-gray-500">
                         ({disciplineCourses.length} courses
-                        {selectedCount > 0 && `, ${selectedCount} selected`})
+                        {totalSelectedInDiscipline > 0 &&
+                          `, ${totalSelectedInDiscipline} selected`}
+                        )
                       </span>
                     </span>
                     {expandedDisciplines.includes(discipline) ? (

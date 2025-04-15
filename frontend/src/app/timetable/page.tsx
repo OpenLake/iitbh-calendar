@@ -10,12 +10,19 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/src/redux/store";
 import { clearTimetable } from "@/src/redux/slices/timetableSlice";
 import { isNotCourse } from "@/src/lib/utils";
+import { useEffect } from "react";
 
 export default function Timetable() {
   const router = useRouter();
   const { mapping, clashes, additional_messages } = useSelector(
     (state: RootState) => state.timetable
   );
+
+  useEffect(() => {
+    console.log(mapping);
+    console.log(clashes);
+    console.log(additional_messages);
+  }, []);
 
   const downloadPDF = async () => {
     const element = document.getElementById("timetable");
