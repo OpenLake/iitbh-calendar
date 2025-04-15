@@ -5,38 +5,19 @@ import { useRouter } from "next/navigation";
 import { Download, ArrowLeft } from "lucide-react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
-
-interface TimetableData {
-  course_coordinates: { [key: string]: string };
-  clash_messages: string[];
-  additional_messages: string[];
-}
-
-const timeSlots = [
-  "8:30-9:25",
-  "9:30-20:25",
-  "20:30-11:25",
-  "11:30-12:25",
-  "12:30-1:25",
-  "2:30-3:25",
-  "3:30-4:25",
-  "4:30-5:25",
-];
-
-const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+import { timetable } from "@/src/lib/types";
+import { timeSlots } from "@/src/lib/types";
+import { days } from "@/src/lib/types";
+import { useSelector } from "react-redux";
+import { RootState } from "@/src/redux/store";
+import { clearTimetable } from "@/src/redux/slices/timetableSlice";
+import { isNotCourse } from "@/src/lib/utils";
 
 export default function Timetable() {
-  const [timetableData, setTimetableData] = useState<TimetableData | null>(
-    null
-  );
   const router = useRouter();
-
-  useEffect(() => {
-    const data = localStorage.getItem("timetableData");
-    if (data) {
-      setTimetableData(JSON.parse(data));
-    }
-  }, []);
+  const { mapping, clashes, additional_messages } = useSelector(
+    (state: RootState) => state.timetable
+  );
 
   const downloadPDF = async () => {
     const element = document.getElementById("timetable");
@@ -52,7 +33,7 @@ export default function Timetable() {
     pdf.save("timetable.pdf");
   };
 
-  if (!timetableData) {
+  if (!mapping || !clashes || !additional_messages) {
     return <div>Loading...</div>;
   }
 
@@ -61,7 +42,10 @@ export default function Timetable() {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <button
-            onClick={() => router.back()}
+            onClick={() => {
+              clearTimetable();
+              router.back();
+            }}
             className="flex items-center text-gray-600 hover:text-gray-900"
           >
             <ArrowLeft className="h-5 w-5 mr-2" />
@@ -98,13 +82,12 @@ export default function Timetable() {
                     <td className="border p-2 font-medium">{day}</td>
                     {timeSlots.map((_, slotIndex) => {
                       const coordinate = `${dayIndex + 1}${slotIndex + 1}`;
-                      const course =
-                        timetableData.course_coordinates[coordinate];
+                      const course = mapping[coordinate];
                       return (
                         <td
                           key={`${day}-${slotIndex}`}
                           className={`border p-2 text-center ${
-                            course && course !== "  " ? "bg-blue-100" : ""
+                            course && !isNotCourse(course) ? "bg-blue-500" : ""
                           }`}
                         >
                           {course && course !== "  " ? course : ""}
@@ -118,16 +101,15 @@ export default function Timetable() {
           </div>
         </div>
 
-        {(timetableData.clash_messages.length > 0 ||
-          timetableData.additional_messages.length > 0) && (
+        {(clashes.length > 0 || additional_messages.length > 0) && (
           <div className="bg-white rounded-lg shadow-lg p-6">
-            {timetableData.clash_messages.length > 0 && (
+            {clashes.length > 0 && (
               <div className="mb-6">
                 <h3 className="text-xl font-bold text-red-600 mb-3">
                   Clash Detections
                 </h3>
                 <ul className="list-disc pl-5 space-y-2">
-                  {timetableData.clash_messages.map((message, index) => (
+                  {clashes.map((message, index) => (
                     <li key={index} className="text-red-600">
                       {message}
                     </li>
@@ -136,13 +118,13 @@ export default function Timetable() {
               </div>
             )}
 
-            {timetableData.additional_messages.length > 0 && (
+            {additional_messages.length > 0 && (
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
                   Additional Information
                 </h3>
                 <ul className="list-disc pl-5 space-y-2">
-                  {timetableData.additional_messages.map((message, index) => (
+                  {additional_messages.map((message, index) => (
                     <li key={index} className="text-gray-700">
                       {message}
                     </li>

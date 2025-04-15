@@ -5,6 +5,9 @@ import { useRouter } from "next/navigation";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { backendDomain } from "../lib/types";
 import { Course } from "../lib/types";
+import { useDispatch, useSelector } from "react-redux";
+import { AppDispatch, RootState } from "../redux/store";
+import { setTimetable } from "../redux/slices/timetableSlice";
 
 export default function Home() {
   const [courses, setCourses] = useState<Course[]>([]);
@@ -72,7 +75,7 @@ export default function Home() {
         throw new Error("Submit the selections API could not be triggered");
       }
       const data = await response.json();
-      //redux
+      setTimetable(data);
       router.push("/timetable");
     } catch (error) {
       console.error("Error generating timetable:", error);

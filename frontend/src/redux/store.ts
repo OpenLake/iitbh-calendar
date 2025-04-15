@@ -10,7 +10,7 @@ import {
     REHYDRATE,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import { timetableSlice } from "./slices/timetableSlice";
+import timetableSlice from "./slices/timetableSlice";
 
 
 const persistConfig = {
