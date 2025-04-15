@@ -13,5 +13,9 @@ def api_root(request, format=None):
                 "get_all_courses",  request=request, format=format
 
             ),
+            "Submit Selection": reverse(
+                "submit_selection", request=request, format=format
+
+            ),
         }
     )
