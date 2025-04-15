@@ -10,6 +10,7 @@ import {
     REHYDRATE,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+import { timetableSlice } from "./slices/timetableSlice";
 
 
 const persistConfig = {
@@ -19,7 +20,7 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
-
+    timetable: timetableSlice
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
