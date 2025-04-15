@@ -9,3 +9,12 @@ export interface Course {
     discipline: string;
     instructor: string;
 }
+
+export interface timetable {
+    mapping: {
+        [key: string]: string | string[];
+    };
+    clashes: string[];
+    additional_messages: string[]
+}
+
