@@ -19,7 +19,7 @@ export interface timetable {
 }
 
 export type TimetablePayload = {
-    mapping: Record<string, any>;
+    mapping: Record<string, string | string[]>;
     clashes: string[];
     additional_messages: string[];
 };
