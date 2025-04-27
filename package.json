@@ -10,6 +10,7 @@
 		"deploy": "pnpm build && node ./scripts/deploy.js"
 	},
 	"devDependencies": {
+		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/vite-plugin-svelte": "1.0.0-next.34",
 		"dayjs": "^1.10.7",
 		"exceljs": "^4.3.0",
