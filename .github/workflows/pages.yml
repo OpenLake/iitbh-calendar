@@ -1,5 +1,4 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy Hugo site to Pages
+name: Deploy Vite site to Pages
 
 on:
   push:
@@ -15,42 +14,31 @@ concurrency:
   group: 'pages'
   cancel-in-progress: true
 
-defaults:
-  run:
-    shell: bash
-
 jobs:
   build:
     runs-on: ubuntu-22.04
-    env:
-      HUGO_VERSION: 0.99.0
+
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-          
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          submodules: recursive
-          
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
+          node-version: 20
 
-        
-      - name: Build with Hugo
+      - name: Install dependencies
         run: |
-          hugo \
-            --minify \
-            --baseURL ${{ steps.pages.outputs.base_url }}
-            
+          npm install -g pnpm
+          pnpm install
+
+      - name: Build
+        run: pnpm run build
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: dist
 
   deploy:
     environment:
