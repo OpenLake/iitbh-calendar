@@ -1,6 +1,6 @@
 // src/redux/store.ts
 import { configureStore } from '@reduxjs/toolkit';
-import timetableReducer from './slices/timetableSlice';
+import timetableReducer from "./slices/timetableSlice"
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
