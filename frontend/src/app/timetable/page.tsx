@@ -10,19 +10,23 @@ import { useSelector } from "react-redux";
 import { RootState } from "@/src/redux/store";
 import { clearTimetable } from "@/src/redux/slices/timetableSlice";
 import { isNotCourse } from "@/src/lib/utils";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 
 export default function Timetable() {
   const router = useRouter();
+  const dispatch = useDispatch();
   const { mapping, clashes, additional_messages } = useSelector(
     (state: RootState) => state.timetable
   );
 
+  const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
-    console.log(mapping);
-    console.log(clashes);
-    console.log(additional_messages);
-  }, []);
+    // This ensures we only log after the Redux store has been rehydrated
+    setIsLoaded(true);
+    console.log("Timetable state:", { mapping, clashes, additional_messages });
+  }, [mapping, clashes, additional_messages]);
 
   const downloadPDF = async () => {
     const element = document.getElementById("timetable");
@@ -38,8 +42,20 @@ export default function Timetable() {
     pdf.save("timetable.pdf");
   };
 
-  if (!mapping || !clashes || !additional_messages) {
-    return <div>Loading...</div>;
+  const handleBack = () => {
+    dispatch(clearTimetable());
+    router.back();
+  };
+
+  if (!isLoaded || !mapping || Object.keys(mapping).length === 0) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading timetable data...</p>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -47,10 +63,7 @@ export default function Timetable() {
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <button
-            onClick={() => {
-              clearTimetable();
-              router.back();
-            }}
+            onClick={handleBack}
             className="flex items-center text-gray-600 hover:text-gray-900"
           >
             <ArrowLeft className="h-5 w-5 mr-2" />
@@ -111,7 +124,7 @@ export default function Timetable() {
               <h3 className="text-xl font-bold text-red-600 mb-3">
                 Clash Detections
               </h3>
-              {clashes.length > 0 ? (
+              {clashes && clashes.length > 0 ? (
                 <ul className="list-disc pl-5 space-y-2">
                   {clashes.map((message, index) => (
                     <li key={index} className="text-red-600">
@@ -128,7 +141,7 @@ export default function Timetable() {
               <h3 className="text-xl font-bold text-gray-900 mb-3">
                 Additional Information
               </h3>
-              {additional_messages.length > 0 ? (
+              {additional_messages && additional_messages.length > 0 ? (
                 <ul className="list-disc pl-5 space-y-2">
                   {additional_messages.map((message, index) => (
                     <li key={index} className="text-gray-700">
