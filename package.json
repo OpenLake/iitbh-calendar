@@ -25,6 +25,8 @@
 	"dependencies": {
 		"big-integer": "^1.6.52",
 		"bluebird": "^3.7.2",
+		"html2canvas": "^1.4.1",
+		"jspdf": "^3.0.1",
 		"lodash": "^4.17.21",
 		"lodash.isequal": "^4.5.0",
 		"pako": "^2.1.0"
