@@ -46,7 +46,7 @@ function resolveSlot(slot, courseCode) {
 }
 
 const run = async () => {
-	await workbook.xlsx.readFile('./Course-list.xlsx');
+	await workbook.xlsx.readFile('./Courses-2025-26M.xlsx');
 
 	const sheet = workbook.worksheets[0];
 
@@ -58,8 +58,8 @@ const run = async () => {
 		if (table[row][1] == undefined) continue;
 
 		const instructors =
-			typeof table[row][8] === 'string'
-				? table[row][8].split(',').map(item => item.trim())
+			typeof table[row][14] === 'string'
+				? table[row][14].split(',').map(item => item.trim())
 				: [];
 		const newCredits =
 			typeof table[row][4] === 'string' ? table[row][4].split('-') : [0, 0, 0];
@@ -77,7 +77,7 @@ const run = async () => {
 			},
 			location: table[row][9],
 			// Convert slots to the array format manually
-			slot: resolveSlot(table[row][7], table[row][2]),
+			slot: resolveSlot(table[row][11], table[row][2]),
 			instructor: instructors,
 		};
 
@@ -85,7 +85,7 @@ const run = async () => {
 
 		data.push(entry);
 	}
-	await fs.writeFile('../src/data/courses.json', JSON.stringify(data, null, 2));
+	await fs.writeFile('../src/data/Courses-2025-26M.json', JSON.stringify(data, null, 2));
 	console.log('Written to data/courses.json');
 };
 

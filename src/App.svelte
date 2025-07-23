@@ -37,7 +37,7 @@
 	};
 
 	function downloadCalendar() {
-		window.plausible?.('Download Calendar', { props: { courseCount: courses.length } });
+		// window.plausible?.('Download Calendar', { props: { courseCount: courses.length } });
 
 		// Select the timetable container — assuming .table-wrapper holds your calendar
 		const calendarElement = document.querySelector('.table-wrapper');
