@@ -11,6 +11,8 @@
 	import ActionButtons from './components/ActionButtons.svelte';
 	import { makeCalendar, getSlotWise } from './lib/createCalendar';
 	import { download } from './lib/util';
+	import jsPDF from 'jspdf';
+	import html2canvas from 'html2canvas';
 
 	const States = {
 		Selecting: 0,
@@ -35,11 +37,26 @@
 	};
 
 	function downloadCalendar() {
-		window.plausible?.('Download Calendar', {props: {courseCount: courses.length}});
-		download({
-			text: makeCalendar(courses),
-			filename: 'course-calendar.ics',
-			filetype: 'text/calendar',
+		// window.plausible?.('Download Calendar', { props: { courseCount: courses.length } });
+
+		// Select the timetable container — assuming .table-wrapper holds your calendar
+		const calendarElement = document.querySelector('.table-wrapper');
+
+		if (!calendarElement) {
+			alert("Calendar not found!");
+			return;
+		}
+
+		html2canvas(calendarElement, { scale: 2 }).then((canvas) => {
+			const imgData = canvas.toDataURL('image/png');
+			const pdf = new jsPDF({
+			orientation: 'landscape',
+			unit: 'px',
+			format: [canvas.width, canvas.height],
+			});
+
+			pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+			pdf.save('course-calendar.pdf');
 		});
 	}
 	
@@ -140,6 +157,7 @@
 			</div>
 
 			{#if websiteState == States.Settings}
+				<!-- svelte-ignore a11y-click-events-have-key-events -->
 				<div class="settings-overlay" on:click={() => websiteState = States.TimeTable} in:fade={{ duration: 200 }}>
 					<div class="settings-panel" on:click|stopPropagation in:fly={{ y: 20, duration: 300 }}>
 						<Settings 

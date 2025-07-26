@@ -33,10 +33,10 @@
 		
 		return timeStr.split('-').map(time => {
 			let [hour, minute] = time.split(':');
-			let hourNum = parseInt(hour);
+			let hourNum = parseInt(minute.split(' ')[2]);
 			let period = hourNum >= 12 ? 'PM' : 'AM';
-			hourNum = hourNum % 12 || 12; // Convert 0 to 12
-			return `${hourNum}:${minute} ${period}`;
+			hour = hour % 12 || 12; // Convert 0 to 12
+			return `${hour}:${minute}:30 ${period}`;
 		}).join(' - ');
 	}
 	
