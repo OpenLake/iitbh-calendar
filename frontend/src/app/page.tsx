@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { ChevronDown, ChevronUp, Search } from "lucide-react";
 import { backendDomain } from "../lib/types";
 import { Course } from "../lib/types";
+import { useDispatch } from "react-redux";
 import { setTimetable } from "../redux/slices/timetableSlice";
 import { arraysEqual } from "../lib/utils";
 
@@ -19,7 +20,9 @@ export default function Home() {
     string[]
   >([]);
   const [searchQuery, setSearchQuery] = useState<string>("");
+  const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
+  const dispatch = useDispatch();
 
   // Fetch courses when component mounts
   useEffect(() => {
@@ -154,6 +157,7 @@ export default function Home() {
   };
 
   const handleGenerateTimetable = async () => {
+    setIsLoading(true);
     try {
       const response = await fetch(`${backendDomain}/submit/`, {
         method: "POST",
@@ -167,11 +171,18 @@ export default function Home() {
         console.log("Submit the selections API could not be triggered");
         throw new Error("Submit the selections API could not be triggered");
       }
+
       const data = await response.json();
-      setTimetable(data);
+      console.log("Timetable data received:", data);
+
+      // Dispatch to Redux store
+      dispatch(setTimetable(data));
+
+      // Navigate to timetable page after successful storage
       router.push("/timetable");
     } catch (error) {
       console.error("Error generating timetable:", error);
+      setIsLoading(false);
     }
   };
 
@@ -306,10 +317,17 @@ export default function Home() {
 
         <button
           onClick={handleGenerateTimetable}
-          disabled={selectedCourses.length === 0}
+          disabled={selectedCourses.length === 0 || isLoading}
           className="mt-8 w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-medium hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
         >
-          Generate Timetable
+          {isLoading ? (
+            <span className="flex items-center justify-center">
+              <span className="animate-spin h-5 w-5 mr-3 border-t-2 border-b-2 border-white rounded-full"></span>
+              Generating...
+            </span>
+          ) : (
+            "Generate Timetable"
+          )}
         </button>
       </div>
     </div>
