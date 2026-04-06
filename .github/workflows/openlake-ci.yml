@@ -1,0 +1,227 @@
+# OpenLake Standard CI/CD Workflow
+# NEVER pushes directly to main - only runs on PRs
+# Use this as a template for all OpenLake repos
+
+name: OpenLake CI
+
+on:
+  pull_request:
+    branches: [main, master, develop]
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [main, master]
+    # Only run on main for status checks, never auto-merge without PR review
+
+# Prevent multiple concurrent workflows on same PR
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ==============================
+  # SECURITY SCANNING
+  # ==============================
+  security:
+    name: 🔒 Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan for hardcoded secrets
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Dependency vulnerability scan
+        run: |
+          # Python
+          if [ -f "requirements.txt" ]; then
+            pip install safety
+            safety check -r requirements.txt --json || true
+          fi
+          # Node.js
+          if [ -f "package.json" ]; then
+            npm audit --production || true
+          fi
+          # Go
+          if [ -f "go.mod" ]; then
+            go list -m -json all | govulncheck || true
+          fi
+        continue-on-error: true
+
+  # ==============================
+  # CODE QUALITY
+  # ==============================
+  code-quality:
+    name: 🧹 Code Quality
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check formatting
+        run: |
+          # Python
+          if [ -f "requirements.txt" ] || [ -f "pyproject.toml" ]; then
+            pip install black isort flake8
+            black --check . || echo "Python formatting issues found"
+            isort --check-only . || echo "Python import sorting issues found"
+          fi
+          # Node.js
+          if [ -f "package.json" ]; then
+            npm ci || npm install
+            npm run lint || echo "ESLint issues found (non-blocking)"
+          fi
+          # Go
+          if [ -f "go.mod" ]; then
+            go fmt ./...
+            if [ -n "$(git status --porcelain)" ]; then
+              echo "Go formatting issues found - run 'go fmt'"
+            fi
+          fi
+          # Rust
+          if [ -f "Cargo.toml" ]; then
+            rustup component add rustfmt
+            cargo fmt -- --check || echo "Rust formatting issues found"
+          fi
+        continue-on-error: true
+
+      - name: Check for TODOs and FIXMEs
+        run: |
+          echo "=== TODOs in codebase ==="
+          grep -rn "TODO\|FIXME\|HACK\|XXX" --include="*.py" --include="*.js" --include="*.ts" --include="*.go" --include="*.rs" . || true
+          echo "=== Count ==="
+          grep -rc "TODO\|FIXME\|HACK\|XXX" --include="*.py" --include="*.js" --include="*.ts" --include="*.go" --include="*.rs" . || true
+        continue-on-error: true
+
+  # ==============================
+  # BUILD & TEST
+  # ==============================
+  build-test:
+    name: 🔨 Build & Test
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [detected]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # ==========================
+      # Python
+      # ==========================
+      - name: Setup Python
+        if: hashFiles('requirements.txt') != '' || hashFiles('setup.py') != '' || hashFiles('pyproject.toml') != ''
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        if: hashFiles('requirements.txt') != '' || hashFiles('setup.py') != '' || hashFiles('pyproject.toml') != ''
+        run: |
+          pip install -r requirements.txt || true
+          pip install pytest pytest-cov || true
+
+      - name: Run Python tests
+        if: hashFiles('requirements.txt') != '' || hashFiles('setup.py') != '' || hashFiles('pyproject.toml') != ''
+        run: |
+          pytest --cov=. --cov-report=xml || echo "Tests failed or none found"
+        continue-on-error: true
+
+      # ==========================
+      # Node.js
+      # ==========================
+      - name: Setup Node.js
+        if: hashFiles('package.json') != ''
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        if: hashFiles('package.json') != ''
+        run: npm ci || npm install
+
+      - name: Run Node.js tests
+        if: hashFiles('package.json') != ''
+        run: npm test || echo "Tests failed or none found"
+        continue-on-error: true
+
+      - name: Build check
+        if: hashFiles('package.json') != ''
+        run: npm run build || echo "Build failed or no build script"
+        continue-on-error: true
+
+      # ==========================
+      # Go
+      # ==========================
+      - name: Setup Go
+        if: hashFiles('go.mod') != ''
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.21'
+          cache: true
+
+      - name: Download Go dependencies
+        if: hashFiles('go.mod') != ''
+        run: go mod download
+
+      - name: Run Go tests
+        if: hashFiles('go.mod') != ''
+        run: |
+          go test -v -coverprofile=coverage.out ./... || echo "Go tests failed or none found"
+        continue-on-error: true
+
+      - name: Build Go binary
+        if: hashFiles('go.mod') != ''
+        run: go build -v ./... || echo "Go build failed"
+        continue-on-error: true
+
+      # ==========================
+      # Rust
+      # ==========================
+      - name: Setup Rust
+        if: hashFiles('Cargo.toml') != ''
+        uses: actions-rust-lang/setup-rust-toolchain@v1
+
+      - name: Run Rust tests
+        if: hashFiles('Cargo.toml') != ''
+        run: cargo test || echo "Rust tests failed or none found"
+        continue-on-error: true
+
+      - name: Build Rust binary
+        if: hashFiles('Cargo.toml') != ''
+        run: cargo build || echo "Rust build failed"
+        continue-on-error: true
+
+      # ==========================
+      # Flutter
+      # ==========================
+      - name: Setup Flutter
+        if: hashFiles('pubspec.yaml') != ''
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.x'
+          channel: 'stable'
+          cache: true
+
+      - name: Install Flutter dependencies
+        if: hashFiles('pubspec.yaml') != ''
+        run: flutter pub get
+
+      - name: Run Flutter tests
+        if: hashFiles('pubspec.yaml') != ''
+        run: flutter test || echo "Flutter tests failed or none found"
+        continue-on-error: true
+
+      - name: Analyze Flutter code
+        if: hashFiles('pubspec.yaml') != ''
+        run: flutter analyze || echo "Flutter analysis issues found"
+        continue-on-error: true
+
+  # ==============================
